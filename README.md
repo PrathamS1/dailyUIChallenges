@@ -4,7 +4,7 @@ Welcome to my 100 Days Daily UI Challenge journey! This repository showcases my 
 
 ## 🌐 Live Demo
 
-**[View Live Project →](https://daily-ui-challenges-pratham.vercel.app/)**
+**[View Live Project →](https://daily-ui-challenges-iota.vercel.app/)**
 
 
 ## 🚀 Tech Stack
@@ -40,7 +40,7 @@ Welcome to my 100 Days Daily UI Challenge journey! This repository showcases my 
 - ⚡ Performance optimized
 - 🔙 Seamless navigation integration
 
-**[View UI Design →](https://daily-ui-challenges-pratham.vercel.app/001)**
+**[View UI Design →](https://daily-ui-challenges-iota.vercel.app/001)**
 
 ---
 
@@ -54,7 +54,7 @@ This project features a comprehensive navigation system that includes:
 - **🔄 Smart Routing** - Seamless navigation between challenges
 - **📱 Mobile Responsive** - Perfect experience on all devices
 
-**[Explore Navigation →](https://daily-ui-challenges-pratham.vercel.app/)**
+**[Explore Navigation →](https://daily-ui-challenges-iota.vercel.app/)**
 
 ---
 
@@ -121,9 +121,6 @@ dailyUIChallenges/
 ## 🚀 Deployment
 
 This project is deployed on **Vercel** with automatic deployments from the main branch.
-
-**Live URL:** [https://daily-ui-challenges-pratham.vercel.app/](https://daily-ui-challenges-pratham.vercel.app/)
-
 
 ## 🤝 Connect & Follow
 
