@@ -124,10 +124,6 @@ This project is deployed on **Vercel** with automatic deployments from the main 
 
 **Live URL:** [https://daily-ui-challenges-pratham.vercel.app/](https://daily-ui-challenges-pratham.vercel.app/)
 
-### Deploy Your Own
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/PrathamS1/dailyUIChallenges)
-
 
 ## 🤝 Connect & Follow
 
