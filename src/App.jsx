@@ -1,11 +1,19 @@
-import ProductivitySignUp from './components/dailyUI001'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Navigation from './components/Navigation';
+import ProductivitySignUp from './components/dailyUI001';
 
 function App() {
   return (
-    <>
-      <ProductivitySignUp />
-    </>
-  )
+    <Router>
+      <Routes>
+        <Route path="/" element={<Navigation />} />
+        <Route path="/001" element={<ProductivitySignUp />} />
+        {/* <Route path="/002" element={<New Element />} /> */}
+        {/* Fallback route */}
+        <Route path="*" element={<Navigation />} />
+      </Routes>
+    </Router>
+  );
 }
 
-export default App
+export default App;

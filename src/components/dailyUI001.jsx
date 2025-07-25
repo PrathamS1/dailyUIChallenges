@@ -145,10 +145,9 @@ const ProductivitySignUp = () => {
 
   // Floating elements data
   const floatingElements = [
-    { icon: Zap, position: { top: '20%', left: '10%' }, delay: 0 },
     { icon: Code, position: { top: '30%', right: '15%' }, delay: 1 },
     { icon: GitBranch, position: { bottom: '25%', left: '8%' }, delay: 2 },
-    { icon: Monitor, position: { bottom: '35%', right: '12%' }, delay: 0.5 }
+    { icon: Monitor, position: { bottom: '10%', right: '12%' }, delay: 0.5 }
   ];
 
   // Success Modal Component
@@ -243,7 +242,7 @@ const ProductivitySignUp = () => {
           transition={{ duration: 0.3, ease: "easeInOut" }}
           className={`transition-all duration-300 ${
             isScrolled 
-              ? 'bg-white/90 backdrop-blur-lg shadow-lg border border-zinc-200/50 rounded-2xl' 
+              ? 'bg-white/90 backdrop-blur-lg shadow-lg rounded-2xl' 
               : 'bg-transparent'
           }`}
         >
@@ -273,7 +272,7 @@ const ProductivitySignUp = () => {
                 <motion.button
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
-                  className="px-4 py-2 border border-zinc-300 rounded-lg hover:bg-zinc-50 transition-colors font-medium"
+                  className="px-4 py-2 rounded-lg outline-2 outline-zinc-400 hover:text-white hover:bg-zinc-900 hover:outline-1 hover:outline-zinc-800 hover:outline-offset-2 transition-all font-medium"
                 >
                   Sign In
                 </motion.button>
@@ -295,7 +294,10 @@ const ProductivitySignUp = () => {
         {/* Hero Section */}
         <section className="py-20 px-6 relative">
           {/* Background Image Layer with Filter */}
-          <div className="absolute inset-0 bg-[url('/bg.png')] bg-cover bg-center filter invert"></div>
+          {/* <div className="absolute inset-0 bg-[url('/bg.png')] bg-cover bg-center filter invert"></div> */}
+          
+          {/* Subtle Gradient Background */}
+          <div className="absolute inset-0 bg-gradient-to-br from-zinc-500 via-zinc-100 to-zinc-200"></div>
           
           {/* Content Layer (not affected by filter) */}
           <div className="relative z-10">

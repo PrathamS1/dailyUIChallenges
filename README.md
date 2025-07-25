@@ -2,15 +2,24 @@
 
 Welcome to my 100 Days Daily UI Challenge journey! This repository showcases my daily UI designs and implementations, building modern, interactive components with React, Vite, and modern web technologies.
 
+## 🌐 Live Demo
+
+**[View Live Project →](https://daily-ui-challenges-pratham.vercel.app/)**
+
+
 ## 🚀 Tech Stack
 
 - **React 19** - Latest React with modern hooks and features
 - **Vite** - Lightning fast build tool and dev server
 - **Framer Motion** - Smooth animations and micro-interactions
 - **Tailwind CSS** - Utility-first CSS framework
+- **React Router DOM** - Client-side routing and navigation
 - **Lucide React** - Beautiful, customizable icons
+- **Vercel** - Deployment and hosting platform
 
 ## 📅 Challenge Progress
+
+**Current Progress: 1/100** ⭐
 
 ### ✅ Day 1 - Sign Up Page
 **Challenge:** Create a sign up page, modal, form, or app screen related to signing up for something.
@@ -29,8 +38,23 @@ Welcome to my 100 Days Daily UI Challenge journey! This repository showcases my 
 - 📱 Mobile-first responsive design
 - 🎨 Modern zinc aesthetic
 - ⚡ Performance optimized
+- 🔙 Seamless navigation integration
 
-**Live Demo:** [View Component](./src/components/dailyUI001.jsx)
+**[View UI Design →](https://daily-ui-challenges-pratham.vercel.app/001)**
+
+---
+
+## 🗂️ Navigation System
+
+This project features a comprehensive navigation system that includes:
+
+- **📊 Progress Dashboard** - Track completion status with visual progress bar
+- **📅 Interactive Calendar** - See completed challenges highlighted by date
+- **🎯 Challenge Grid** - Browse all 100 challenges with status indicators
+- **🔄 Smart Routing** - Seamless navigation between challenges
+- **📱 Mobile Responsive** - Perfect experience on all devices
+
+**[Explore Navigation →](https://daily-ui-challenges-pratham.vercel.app/)**
 
 ---
 
@@ -44,7 +68,7 @@ Welcome to my 100 Days Daily UI Challenge journey! This repository showcases my 
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/dailyUIChallenges.git
+git clone https://github.com/PrathamS1/dailyUIChallenges.git
 
 # Navigate to project directory
 cd dailyUIChallenges
@@ -93,6 +117,16 @@ dailyUIChallenges/
 ├── public/                   # Static assets
 └── README.md                # This file
 ```
+
+## 🚀 Deployment
+
+This project is deployed on **Vercel** with automatic deployments from the main branch.
+
+**Live URL:** [https://daily-ui-challenges-pratham.vercel.app/](https://daily-ui-challenges-pratham.vercel.app/)
+
+### Deploy Your Own
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/PrathamS1/dailyUIChallenges)
 
 
 ## 🤝 Connect & Follow
