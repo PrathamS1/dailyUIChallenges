@@ -19,7 +19,30 @@ Welcome to my 100 Days Daily UI Challenge journey! This repository showcases my 
 
 ## 📅 Challenge Progress
 
-**Current Progress: 1/100** ⭐
+**Current Progress: 2/100** ⭐
+
+### ✅ Day 2 - Credit Card Checkout
+**Challenge:** Design a credit card checkout form or page. Don't forget the important elements like the security features, visual feedback, and checkout flow.
+
+**Implementation:** Furniture Checkout System
+- Professional black & white design with abstract wave patterns
+- 3D animated credit card with flip animation for CVV input
+- Multi-step checkout process (Contact → Payment → Billing → Success)
+- Accordion-style saved payment methods with brand logos
+- Real-time card type detection and logo integration
+- Functional promo code system with validation
+- Indian pricing with GST calculations
+- Trust-building elements and security indicators
+
+**Features:**
+- 💳 Interactive 3D credit card with flip animation
+- 🎨 Professional black & white aesthetic with subtle patterns
+- 📱 Fully responsive multi-step checkout flow
+- 🏷️ Working promo code simulated  (LUXURY20, FURNITURE15, WELCOME10)
+- 🔒 Security-focused design with SSL indicators
+- 💰 Pricing with GST calculations
+
+**[View UI Design →](https://daily-ui-challenges-iota.vercel.app/002)**
 
 ### ✅ Day 1 - Sign Up Page
 **Challenge:** Create a sign up page, modal, form, or app screen related to signing up for something.
@@ -111,6 +134,7 @@ dailyUIChallenges/
 ├── src/
 │   ├── components/
 │   │   ├── dailyUI001.jsx    # Day 1 - Sign Up Page
+│   │   ├── dailyUI002.jsx    # Day 2 - Credit Card Checkout
 │   │   └── ...               # Future challenges
 │   ├── assets/               # Images, icons, etc.
 │   └── main.jsx             # App entry point
@@ -135,6 +159,6 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ---
 
-**Day 1/100 Complete** ✅ | **Next Challenge:** *Stay Tuned*
+**Day 2/100 Complete** ✅ | **Next Challenge:** *Day 3 - Landing Page*
 
 *Follow along for daily UI inspiration and modern web development techniques!*
