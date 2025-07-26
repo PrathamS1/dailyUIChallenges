@@ -25,6 +25,17 @@ const Navigation = () => {
       difficulty: "Easy",
       completedDate: "2025-07-25",
     },
+    {
+      day: "002",
+      title: "Credit Card Checkout",
+      description:
+        "Checkout page for a credit card payment system with modern UI.",
+      status: "completed",
+      route: "/002",
+      technologies: ["React", "Framer Motion", "Tailwind CSS"],
+      difficulty: "Easy",
+      completedDate: "2025-07-26",
+    },
     // Add more challenges as they're completed
   ];
 
