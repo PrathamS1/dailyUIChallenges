@@ -1,10 +1,32 @@
 @import "tailwindcss";
 
 /* Custom styles for 3D card flip */
-:root{
- --check-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
-
+:root {
+  --check-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+  --landing-primary: #1C1C1E;
+  --landing-secondary: #7E7E87;
+  --landing-background: #FAFAFA;
+  --landing-text: #1C1C1E;
+  /* --landing-accent: #F49D37; */
+  --landing-accent: #FF796F;
 }
+
+/* Custom utility classes for the landing page */
+.bg-landing-primary { background-color: var(--landing-primary); }
+.bg-landing-secondary { background-color: var(--landing-secondary); }
+.bg-landing-background { background-color: var(--landing-background); }
+.bg-landing-accent { background-color: var(--landing-accent); }
+
+.text-landing-primary { color: var(--landing-primary); }
+.text-landing-secondary { color: var(--landing-secondary); }
+.text-landing-background { color: var(--landing-background); }
+.text-landing-text { color: var(--landing-text); }
+.text-landing-accent { color: var(--landing-accent); }
+
+.border-landing-primary { border-color: var(--landing-primary); }
+.border-landing-secondary { border-color: var(--landing-secondary); }
+.border-landing-accent { border-color: var(--landing-accent); }
+
 .perspective-1000 {
   perspective: 1000px;
 }

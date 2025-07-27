@@ -36,6 +36,17 @@ const Navigation = () => {
       difficulty: "Easy",
       completedDate: "2025-07-26",
     },
+    {
+      day: "003",
+      title: "Landing Page",
+      description:
+        "Landing page for an Intern Management Platform - \"Alverno\".",
+      status: "completed",
+      route: "/003",
+      technologies: ["React", "Framer Motion", "Tailwind CSS", "GSAP", "Locomotive"],
+      difficulty: "Intermediate",
+      completedDate: "2025-07-27",
+    },
     // Add more challenges as they're completed
   ];
 

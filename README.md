@@ -19,7 +19,30 @@ Welcome to my 100 Days Daily UI Challenge journey! This repository showcases my 
 
 ## 📅 Challenge Progress
 
-**Current Progress: 2/100** ⭐
+**Current Progress: 3/100** ⭐
+
+### ✅ Day 3 - Landing Page
+**Challenge:** Create a landing page for a product, service, or company. Focus on the layout, messaging, and call-to-action elements.
+
+**Implementation:** Alverno - Internship Management Platform
+- Comprehensive 9-section landing page with advanced interactions
+- Professional design system with consistent CSS variables
+- Real Unsplash images and clean SVG iconography
+- GSAP-powered horizontal scrolling timeline
+- Interactive mentor dashboard demo with real image
+- Advanced Framer Motion animations throughout
+
+**Features:**
+- 🎯 9 comprehensive sections: Hero, Before/After, Features, Timeline, Mentor Demo, Testimonials, Pricing, CTA, Footer
+- 🎨 Professional color scheme with consistent CSS variables
+- 📸 Real Unsplash images replacing mockups
+- 🔄 GSAP horizontal scroll-hijacking timeline
+- 💼 Clean mentor dashboard integration with dash.png
+- 🗣️ Professional testimonials with simple SVG icons
+- 💳 Interactive pricing plans with glassmorphic design
+- ⚡ Advanced micro-interactions and scroll-triggered animations
+
+**[View UI Design →](https://daily-ui-challenges-iota.vercel.app/003)**
 
 ### ✅ Day 2 - Credit Card Checkout
 **Challenge:** Design a credit card checkout form or page. Don't forget the important elements like the security features, visual feedback, and checkout flow.
@@ -135,6 +158,7 @@ dailyUIChallenges/
 │   ├── components/
 │   │   ├── dailyUI001.jsx    # Day 1 - Sign Up Page
 │   │   ├── dailyUI002.jsx    # Day 2 - Credit Card Checkout
+│   │   ├── dailyUI003.tsx    # Day 3 - Landing Page
 │   │   └── ...               # Future challenges
 │   ├── assets/               # Images, icons, etc.
 │   └── main.jsx             # App entry point
