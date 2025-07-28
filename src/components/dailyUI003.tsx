@@ -10,72 +10,6 @@ const DailyUI003: React.FC = () => {
   const containerRef = useRef<HTMLDivElement>(null);
   const [currentStage, setCurrentStage] = useState(0);
 
-  //   useEffect(() => {
-  //     ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
-  //     if (timelineRef.current && containerRef.current) {
-  //       const timeline = timelineRef.current;
-  //       const container = containerRef.current;
-  //       const stages = 6; // Number of timeline stages
-  //     const sections = gsap.utils.toArray<HTMLElement>(".timeline-stage");
-
-  //       // Set up horizontal scroll with snap functionality
-  //       const scrollTween = gsap.to(timeline, {
-  //         x: () => -(timeline.scrollWidth - window.innerWidth),
-  //         ease: "none",
-  //         scrollTrigger: {
-  //           trigger: container,
-  //           start: "top top",
-  //           end: () => `+=${stages * window.innerHeight}`, // Each stage takes 1 viewport height
-  //           scrub: 1,
-  //           pin: true,
-  //           anticipatePin: 1,
-  //           invalidateOnRefresh: true,
-  //           snap: {
-  //             snapTo: (progress) => {
-  //               // Snap to increments of 1/6 (for 6 stages)
-  //               const snapIncrement = 1 / stages;
-  //               const snappedProgress = Math.round(progress / snapIncrement) * snapIncrement;
-  //               return Math.max(0, Math.min(1, snappedProgress));
-  //             },
-  //             duration: { min: 0.3, max: 0.7 },
-  //             delay: 0.05,
-  //             ease: "power2.inOut",
-  //             directional: false
-  //           },
-  //           onUpdate: (self) => {
-  //             // Calculate current stage based on progress
-  //             const stageIndex = Math.floor(self.progress * stages);
-  //             setCurrentStage(Math.min(stageIndex, stages - 1));
-  //             console.log(`Current stage: ${stageIndex + 1}, Progress: ${(self.progress * 100).toFixed(1)}%`);
-  //           }
-  //         },
-  //       });
-
-  //       console.log(
-  //         "Timeline setup - Stages:",
-  //         stages,
-  //         "Scroll Width:",
-  //         timeline.scrollWidth,
-  //         "Window Width:",
-  //         window.innerWidth,
-  //         "Total scroll distance:",
-  //         stages * window.innerHeight
-  //       );
-
-  //       // Handle window resize to recalculate snap points
-  //       const handleResize = () => {
-  //         ScrollTrigger.refresh();
-  //       };
-
-  //       window.addEventListener('resize', handleResize);
-
-  //       return () => {
-  //         scrollTween.kill();
-  //         ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
-  //         window.removeEventListener('resize', handleResize);
-  //       };
-  //     }
-  //   }, []);
   useEffect(() => {
     ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
 
@@ -188,7 +122,6 @@ const DailyUI003: React.FC = () => {
 
       {/* Hero Section - "Internships, Done Right" */}
       <section className="min-h-screen bg-[url('/landingHero.jpg')] bg-cover relative overflow-hidden pt-20">
-
         {/* Main Hero Content */}
         <div className="relative z-20 flex items-center py-16">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -207,7 +140,7 @@ const DailyUI003: React.FC = () => {
                     Internships
                   </span>
                   <span className="text-[var(--landing-text)]">
-                     &nbsp;for Modern Teams
+                    &nbsp;for Modern Teams
                   </span>
                 </motion.h1>
 
@@ -262,17 +195,17 @@ const DailyUI003: React.FC = () => {
                 className="relative order-1 lg:order-2"
               >
                 {/* Main Image Container */}
-                <motion.div 
+                <motion.div
                   className="relative max-w-lg mx-auto lg:max-w-none group"
                   whileHover="hover"
                   initial="initial"
                 >
                   {/* Sample Dashboard Image */}
-                  <motion.div 
+                  <motion.div
                     className="relative rounded-2xl shadow-2xl overflow-hidden bg-white border border-gray-200 aspect-[4/3] cursor-pointer"
-                    whileHover={{ 
+                    whileHover={{
                       scale: 1.02,
-                      boxShadow: "0 25px 50px -12px rgba(0, 0, 0, 0.25)" 
+                      boxShadow: "0 25px 50px -12px rgba(0, 0, 0, 0.25)",
                     }}
                     transition={{ duration: 0.3 }}
                   >
@@ -281,7 +214,7 @@ const DailyUI003: React.FC = () => {
                       alt="Internship Management Dashboard"
                       className="w-full h-full object-cover"
                     />
-                    
+
                     {/* Overlay for better contrast */}
                     <div className="absolute inset-0 bg-gradient-to-br from-landing-primary/20 to-landing-secondary/20 mix-blend-overlay"></div>
                   </motion.div>
@@ -290,18 +223,18 @@ const DailyUI003: React.FC = () => {
                   <motion.div
                     className="absolute -top-4 -right-4 sm:-top-6 sm:-right-6"
                     variants={{
-                      initial: { 
+                      initial: {
                         y: 0,
                         rotate: 0,
-                        scale: 1 
+                        scale: 1,
                       },
-                      hover: { 
+                      hover: {
                         y: 8,
                         x: -8,
                         rotate: -15,
                         scale: 1.1,
-                        transition: { duration: 0.3, ease: "easeOut" }
-                      }
+                        transition: { duration: 0.3, ease: "easeOut" },
+                      },
                     }}
                   >
                     <div className="bg-white rounded-xl shadow-lg border border-gray-200 hover:shadow-xl transition-shadow">
@@ -317,18 +250,18 @@ const DailyUI003: React.FC = () => {
                   <motion.div
                     className="absolute -bottom-4 -left-4 sm:-bottom-6 sm:-left-6"
                     variants={{
-                      initial: { 
+                      initial: {
                         y: 0,
                         rotate: 0,
-                        scale: 1 
+                        scale: 1,
                       },
-                      hover: { 
+                      hover: {
                         y: -8,
                         x: 8,
                         rotate: 15,
                         scale: 1.1,
-                        transition: { duration: 0.3, ease: "easeOut" }
-                      }
+                        transition: { duration: 0.3, ease: "easeOut" },
+                      },
                     }}
                   >
                     <div className="bg-white shadow-lg border border-gray-200 p-1 sm:p-2 hover:shadow-xl transition-shadow">
@@ -344,23 +277,25 @@ const DailyUI003: React.FC = () => {
                   <motion.div
                     className="absolute top-12 -left-3 sm:top-16 sm:-left-4 hidden sm:block"
                     variants={{
-                      initial: { 
+                      initial: {
                         y: 0,
                         rotate: 0,
-                        scale: 1 
+                        scale: 1,
                       },
-                      hover: { 
+                      hover: {
                         y: 4,
                         x: 4,
                         rotate: 10,
                         scale: 1.1,
-                        transition: { duration: 0.3, ease: "easeOut" }
-                      }
+                        transition: { duration: 0.3, ease: "easeOut" },
+                      },
                     }}
                   >
                     <div className="bg-white rounded-lg shadow-md border border-gray-200 p-2 sm:p-3 hover:shadow-lg transition-shadow">
                       <div className="w-6 h-6 sm:w-8 sm:h-8 bg-landing-accent rounded-full flex items-center justify-center">
-                        <span className="text-white text-xs sm:text-sm font-bold">!</span>
+                        <span className="text-white text-xs sm:text-sm font-bold">
+                          !
+                        </span>
                       </div>
                     </div>
                   </motion.div>
@@ -427,7 +362,6 @@ const DailyUI003: React.FC = () => {
               viewport={{ once: true }}
               className="relative"
             >
-
               <div className="relative bg-white rounded-2xl p-8 shadow-lg border border-red-200">
                 <div className="text-center mb-8">
                   <h3 className="text-2xl font-bold text-red-600 mb-2">
@@ -627,7 +561,9 @@ const DailyUI003: React.FC = () => {
                         className="flex items-center gap-3 bg-white p-3 rounded-lg shadow-sm border hover:shadow-md transition-shadow cursor-pointer"
                       >
                         <div className="w-8 h-8 bg-gradient-to-br from-landing-primary to-blue-600 rounded-full flex items-center justify-center">
-                          <span className="text-white text-xs font-bold">JS</span>
+                          <span className="text-white text-xs font-bold">
+                            JS
+                          </span>
                         </div>
                         <div className="flex-1">
                           <div className="h-2 bg-gradient-to-r from-landing-primary to-blue-400 rounded w-20 mb-1"></div>
@@ -646,7 +582,9 @@ const DailyUI003: React.FC = () => {
                         className="flex items-center gap-3 bg-white p-3 rounded-lg shadow-sm border hover:shadow-md transition-shadow cursor-pointer"
                       >
                         <div className="w-8 h-8 bg-gradient-to-br from-landing-accent to-orange-500 rounded-full flex items-center justify-center">
-                          <span className="text-white text-xs font-bold">AR</span>
+                          <span className="text-white text-xs font-bold">
+                            AR
+                          </span>
                         </div>
                         <div className="flex-1">
                           <div className="h-2 bg-gradient-to-r from-landing-accent to-orange-400 rounded w-24 mb-1"></div>
@@ -665,7 +603,9 @@ const DailyUI003: React.FC = () => {
                         className="flex items-center gap-3 bg-white p-3 rounded-lg shadow-sm border hover:shadow-md transition-shadow cursor-pointer"
                       >
                         <div className="w-8 h-8 bg-gradient-to-br from-green-500 to-green-600 rounded-full flex items-center justify-center">
-                          <span className="text-white text-xs font-bold">SM</span>
+                          <span className="text-white text-xs font-bold">
+                            SM
+                          </span>
                         </div>
                         <div className="flex-1">
                           <div className="h-2 bg-gradient-to-r from-green-500 to-green-400 rounded w-16 mb-1"></div>
@@ -701,7 +641,11 @@ const DailyUI003: React.FC = () => {
                         >
                           <motion.div
                             animate={{ x: ["-100%", "100%"] }}
-                            transition={{ duration: 2, repeat: Infinity, ease: "linear" }}
+                            transition={{
+                              duration: 2,
+                              repeat: Infinity,
+                              ease: "linear",
+                            }}
                             className="absolute inset-y-0 w-8 bg-gradient-to-r from-transparent via-white/40 to-transparent"
                           ></motion.div>
                         </motion.div>
@@ -717,7 +661,11 @@ const DailyUI003: React.FC = () => {
                       ></motion.div>
                       <motion.div
                         animate={{ scale: [1, 1.2, 1] }}
-                        transition={{ duration: 3, repeat: Infinity, delay: 0.5 }}
+                        transition={{
+                          duration: 3,
+                          repeat: Infinity,
+                          delay: 0.5,
+                        }}
                         className="w-2 h-2 bg-blue-400 rounded-full opacity-60"
                       ></motion.div>
                       <motion.div
@@ -814,8 +762,18 @@ const DailyUI003: React.FC = () => {
               <div className="grid lg:grid-cols-2 gap-8 items-center">
                 <div>
                   <div className="w-16 h-16 bg-gray-100 rounded-xl flex items-center justify-center mb-6">
-                    <svg className="w-8 h-8 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    <svg
+                      className="w-8 h-8 text-gray-600"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                      />
                     </svg>
                   </div>
                   <h3 className="text-3xl font-bold text-[var(--landing-text)] mb-4">
@@ -855,8 +813,18 @@ const DailyUI003: React.FC = () => {
               <div className="grid lg:grid-cols-2 gap-8 items-center">
                 <div className="lg:order-2">
                   <div className="w-16 h-16 bg-gray-100 rounded-xl flex items-center justify-center mb-6">
-                    <svg className="w-8 h-8 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01" />
+                    <svg
+                      className="w-8 h-8 text-gray-600"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M9 5H7a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"
+                      />
                     </svg>
                   </div>
                   <h3 className="text-3xl font-bold text-[var(--landing-text)] mb-4">
@@ -896,8 +864,18 @@ const DailyUI003: React.FC = () => {
               <div className="grid lg:grid-cols-2 gap-8 items-center">
                 <div>
                   <div className="w-16 h-16 bg-gray-100 rounded-xl flex items-center justify-center mb-6">
-                    <svg className="w-8 h-8 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                    <svg
+                      className="w-8 h-8 text-gray-600"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"
+                      />
                     </svg>
                   </div>
                   <h3 className="text-3xl font-bold text-[var(--landing-text)] mb-4">
@@ -937,8 +915,18 @@ const DailyUI003: React.FC = () => {
               <div className="grid lg:grid-cols-2 gap-8 items-center">
                 <div className="lg:order-2">
                   <div className="w-16 h-16 bg-gray-100 rounded-xl flex items-center justify-center mb-6">
-                    <svg className="w-8 h-8 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197m13.5-9a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0z" />
+                    <svg
+                      className="w-8 h-8 text-gray-600"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197m13.5-9a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0z"
+                      />
                     </svg>
                   </div>
                   <h3 className="text-3xl font-bold text-[var(--landing-text)] mb-4">
@@ -978,8 +966,18 @@ const DailyUI003: React.FC = () => {
               <div className="grid lg:grid-cols-2 gap-8 items-center">
                 <div>
                   <div className="w-16 h-16 bg-gray-100 rounded-xl flex items-center justify-center mb-6">
-                    <svg className="w-8 h-8 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
+                    <svg
+                      className="w-8 h-8 text-gray-600"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"
+                      />
                     </svg>
                   </div>
                   <h3 className="text-3xl font-bold text-[var(--landing-text)] mb-4">
@@ -1019,8 +1017,18 @@ const DailyUI003: React.FC = () => {
               <div className="grid lg:grid-cols-2 gap-8 items-center">
                 <div className="lg:order-2">
                   <div className="w-16 h-16 bg-gray-100 rounded-xl flex items-center justify-center mb-6">
-                    <svg className="w-8 h-8 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
+                    <svg
+                      className="w-8 h-8 text-gray-600"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"
+                      />
                     </svg>
                   </div>
                   <h3 className="text-3xl font-bold text-[var(--landing-text)] mb-4">
@@ -1087,8 +1095,18 @@ const DailyUI003: React.FC = () => {
               <div className="max-w-5xl mx-auto grid lg:grid-cols-2 gap-20 items-center">
                 <div className="text-center lg:text-left">
                   <div className="w-20 h-20 bg-gray-100 rounded-xl flex items-center justify-center mb-8">
-                    <svg className="w-10 h-10 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1" />
+                    <svg
+                      className="w-10 h-10 text-gray-600"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1"
+                      />
                     </svg>
                   </div>
 
@@ -1146,8 +1164,18 @@ const DailyUI003: React.FC = () => {
               <div className="max-w-5xl mx-auto grid lg:grid-cols-2 gap-20 items-center">
                 <div className="text-center lg:text-left">
                   <div className="w-20 h-20 bg-gray-100 rounded-xl flex items-center justify-center mb-8">
-                    <svg className="w-10 h-10 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 6h6m-6 4h6" />
+                    <svg
+                      className="w-10 h-10 text-gray-600"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M9 5H7a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 6h6m-6 4h6"
+                      />
                     </svg>
                   </div>
 
@@ -1210,8 +1238,18 @@ const DailyUI003: React.FC = () => {
               <div className="max-w-5xl mx-auto grid lg:grid-cols-2 gap-20 items-center">
                 <div className="text-center lg:text-left">
                   <div className="w-20 h-20 bg-gray-100 rounded-xl flex items-center justify-center mb-8">
-                    <svg className="w-10 h-10 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                    <svg
+                      className="w-10 h-10 text-gray-600"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"
+                      />
                     </svg>
                   </div>
 
@@ -1274,8 +1312,18 @@ const DailyUI003: React.FC = () => {
               <div className="max-w-5xl mx-auto grid lg:grid-cols-2 gap-20 items-center">
                 <div className="text-center lg:text-left">
                   <div className="w-20 h-20 bg-gray-100 rounded-xl flex items-center justify-center mb-8">
-                    <svg className="w-10 h-10 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    <svg
+                      className="w-10 h-10 text-gray-600"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                      />
                     </svg>
                   </div>
 
@@ -1338,8 +1386,18 @@ const DailyUI003: React.FC = () => {
               <div className="max-w-5xl mx-auto grid lg:grid-cols-2 gap-20 items-center">
                 <div className="text-center lg:text-left">
                   <div className="w-20 h-20 bg-gray-100 rounded-xl flex items-center justify-center mb-8">
-                    <svg className="w-10 h-10 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                    <svg
+                      className="w-10 h-10 text-gray-600"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+                      />
                     </svg>
                   </div>
 
@@ -1397,8 +1455,18 @@ const DailyUI003: React.FC = () => {
               <div className="max-w-5xl mx-auto grid lg:grid-cols-2 gap-20 items-center">
                 <div className="text-center lg:text-left">
                   <div className="w-20 h-20 bg-gray-100 rounded-xl flex items-center justify-center mb-8">
-                    <svg className="w-10 h-10 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
+                    <svg
+                      className="w-10 h-10 text-gray-600"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"
+                      />
                     </svg>
                   </div>
 
@@ -1438,13 +1506,17 @@ const DailyUI003: React.FC = () => {
                         </div>
                       </div>
                       <div className="bg-gray-100 rounded-xl p-6">
-                        <div className="text-lg font-medium">Certificate Generated</div>
+                        <div className="text-lg font-medium">
+                          Certificate Generated
+                        </div>
                         <div className="text-sm opacity-80 mt-2">
                           Ready for download
                         </div>
                       </div>
                       <div className="bg-gray-100 rounded-xl p-6">
-                        <div className="text-lg font-medium">Performance Report</div>
+                        <div className="text-lg font-medium">
+                          Performance Report
+                        </div>
                         <div className="text-sm opacity-80 mt-2">
                           Exported to PDF
                         </div>
@@ -1507,15 +1579,15 @@ const DailyUI003: React.FC = () => {
                 <span className="text-landing-primary">Without the Stress</span>
               </h2>
               <p className="text-xl text-landing-secondary max-w-4xl mx-auto leading-relaxed">
-                Your platform isn't just intern-focused — it equips mentors to guide, 
-                track, and support without extra meetings or micro-management.
+                Your platform isn't just intern-focused — it equips mentors to
+                guide, track, and support without extra meetings or
+                micro-management.
               </p>
             </motion.div>
           </div>
 
           {/* Main Demo Layout */}
           <div className="grid lg:grid-cols-2 gap-12 items-center">
-            
             {/* Left Side - Simplified Features */}
             <motion.div
               initial={{ opacity: 0, x: -50 }}
@@ -1528,29 +1600,29 @@ const DailyUI003: React.FC = () => {
                 <h3 className="text-2xl font-bold text-[var(--landing-text)] mb-8">
                   Everything mentors need in one place
                 </h3>
-                
+
                 <div className="space-y-6">
                   {[
                     {
                       title: "Visual Progress Tracking",
-                      desc: "See who's thriving, who's blocked, and who needs attention at a glance."
+                      desc: "See who's thriving, who's blocked, and who needs attention at a glance.",
                     },
                     {
-                      title: "Instant Feedback Tools", 
-                      desc: "Respond to intern updates, approve work, and give feedback in one click."
+                      title: "Instant Feedback Tools",
+                      desc: "Respond to intern updates, approve work, and give feedback in one click.",
                     },
                     {
                       title: "Smart Notifications",
-                      desc: "Get notified about deadlines, submissions, and requests automatically."
+                      desc: "Get notified about deadlines, submissions, and requests automatically.",
                     },
                     {
                       title: "Centralized Information",
-                      desc: "Access resumes, check-ins, work logs, and performance data instantly."
+                      desc: "Access resumes, check-ins, work logs, and performance data instantly.",
                     },
                     {
                       title: "One-Click Reports",
-                      desc: "Auto-generate performance summaries and completion certificates."
-                    }
+                      desc: "Auto-generate performance summaries and completion certificates.",
+                    },
                   ].map((feature, index) => (
                     <motion.div
                       key={index}
@@ -1587,16 +1659,28 @@ const DailyUI003: React.FC = () => {
                 </h4>
                 <div className="grid grid-cols-3 gap-4 text-center">
                   <div>
-                    <div className="text-2xl font-bold text-landing-primary">5+</div>
-                    <div className="text-sm text-landing-secondary">Hours saved/week</div>
+                    <div className="text-2xl font-bold text-landing-primary">
+                      5+
+                    </div>
+                    <div className="text-sm text-landing-secondary">
+                      Hours saved/week
+                    </div>
                   </div>
                   <div>
-                    <div className="text-2xl font-bold text-landing-primary">92%</div>
-                    <div className="text-sm text-landing-secondary">Completion rate</div>
+                    <div className="text-2xl font-bold text-landing-primary">
+                      92%
+                    </div>
+                    <div className="text-sm text-landing-secondary">
+                      Completion rate
+                    </div>
                   </div>
                   <div>
-                    <div className="text-2xl font-bold text-landing-primary">4.8</div>
-                    <div className="text-sm text-landing-secondary">Mentor rating</div>
+                    <div className="text-2xl font-bold text-landing-primary">
+                      4.8
+                    </div>
+                    <div className="text-sm text-landing-secondary">
+                      Mentor rating
+                    </div>
                   </div>
                 </div>
               </motion.div>
@@ -1629,9 +1713,9 @@ const DailyUI003: React.FC = () => {
             className="text-center mt-16"
           >
             <motion.button
-              whileHover={{ 
+              whileHover={{
                 scale: 1.05,
-                boxShadow: "0 20px 40px rgba(74, 144, 226, 0.3)" 
+                boxShadow: "0 20px 40px rgba(74, 144, 226, 0.3)",
               }}
               whileTap={{ scale: 0.95 }}
               className="bg-landing-primary text-white px-12 py-4 rounded-2xl text-lg font-semibold shadow-xl hover:shadow-2xl transition-all duration-300"
@@ -1654,7 +1738,10 @@ const DailyUI003: React.FC = () => {
       </section>
 
       {/* Testimonials - The Dialogue Wall */}
-      <section id="testimonials" className="py-20 bg-gradient-to-br from-gray-50 to-white relative overflow-hidden">
+      <section
+        id="testimonials"
+        className="py-20 bg-gradient-to-br from-gray-50 to-white relative overflow-hidden"
+      >
         {/* Background Elements */}
         <div className="absolute inset-0 overflow-hidden">
           {/* Floating Quotation Marks */}
@@ -1702,7 +1789,7 @@ const DailyUI003: React.FC = () => {
                 Trusted by Fast-Moving Teams
               </h2>
               <p className="text-xl text-landing-secondary max-w-4xl mx-auto leading-relaxed">
-                Real stories from mentors, founders, and interns who streamlined 
+                Real stories from mentors, founders, and interns who streamlined
                 their internship experience with our platform.
               </p>
             </motion.div>
@@ -1718,20 +1805,21 @@ const DailyUI003: React.FC = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.1 }}
                 viewport={{ once: true }}
-                whileHover={{ 
-                  y: -8, 
-                  boxShadow: "0 20px 40px rgba(0,0,0,0.1)" 
+                whileHover={{
+                  y: -8,
+                  boxShadow: "0 20px 40px rgba(0,0,0,0.1)",
                 }}
                 className="bg-white/90 backdrop-blur-sm rounded-2xl p-6 border border-gray-200/50 shadow-lg hover:shadow-xl transition-all duration-400 relative overflow-hidden group"
-                style={{ 
-                  background: "linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(248,250,252,0.9) 100%)"
+                style={{
+                  background:
+                    "linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(248,250,252,0.9) 100%)",
                 }}
               >
                 {/* Background Quote Mark */}
                 <div className="absolute -top-4 -right-4 text-6xl text-landing-primary/10 group-hover:text-landing-primary/20 transition-colors duration-400">
                   ❝
                 </div>
-                
+
                 <div className="flex items-center gap-4 mb-4">
                   <div className="w-12 h-12 bg-gradient-to-br from-blue-400 to-blue-600 rounded-full flex items-center justify-center text-white font-bold text-sm">
                     AM
@@ -1741,13 +1829,15 @@ const DailyUI003: React.FC = () => {
                       Anita Mehta
                       <span className="inline-block w-8 h-0.5 bg-landing-primary ml-2"></span>
                     </h4>
-                    <p className="text-sm text-landing-secondary">CTO @ FlowState</p>
+                    <p className="text-sm text-landing-secondary">
+                      CTO @ FlowState
+                    </p>
                   </div>
                 </div>
-                
+
                 <blockquote className="text-[var(--landing-text)] italic leading-relaxed">
-                  "Finally, no more scattered spreadsheets. Our interns are onboarded 
-                  seamlessly and stay engaged throughout."
+                  "Finally, no more scattered spreadsheets. Our interns are
+                  onboarded seamlessly and stay engaged throughout."
                 </blockquote>
               </motion.div>
 
@@ -1757,9 +1847,9 @@ const DailyUI003: React.FC = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.3 }}
                 viewport={{ once: true }}
-                whileHover={{ 
-                  y: -8, 
-                  boxShadow: "0 20px 40px rgba(0,0,0,0.1)" 
+                whileHover={{
+                  y: -8,
+                  boxShadow: "0 20px 40px rgba(0,0,0,0.1)",
                 }}
                 className="bg-gradient-to-br from-purple-50/80 to-purple-100/60 backdrop-blur-sm rounded-2xl p-6 border border-purple-200/50 shadow-lg hover:shadow-xl transition-all duration-400 relative overflow-hidden group"
                 style={{ marginTop: "2rem" }}
@@ -1767,7 +1857,7 @@ const DailyUI003: React.FC = () => {
                 <div className="absolute -top-4 -right-4 text-6xl text-purple-400/20 group-hover:text-purple-400/30 transition-colors duration-400">
                   ❞
                 </div>
-                
+
                 <div className="flex items-center gap-4 mb-4">
                   <div className="w-12 h-12 bg-gradient-to-br from-purple-400 to-purple-600 rounded-full flex items-center justify-center text-white font-bold text-sm">
                     RK
@@ -1777,13 +1867,15 @@ const DailyUI003: React.FC = () => {
                       Rohit Kumar
                       <span className="inline-block w-8 h-0.5 bg-purple-500 ml-2"></span>
                     </h4>
-                    <p className="text-sm text-landing-secondary">Engineering Manager @ TechFlow</p>
+                    <p className="text-sm text-landing-secondary">
+                      Engineering Manager @ TechFlow
+                    </p>
                   </div>
                 </div>
-                
+
                 <blockquote className="text-[var(--landing-text)] italic leading-relaxed">
-                  "The progress tracking alone saves me 4+ hours per week. 
-                  I can actually mentor instead of just managing."
+                  "The progress tracking alone saves me 4+ hours per week. I can
+                  actually mentor instead of just managing."
                 </blockquote>
               </motion.div>
             </div>
@@ -1795,10 +1887,10 @@ const DailyUI003: React.FC = () => {
                 whileInView={{ opacity: 1, y: 0, scale: 1 }}
                 transition={{ duration: 0.8, delay: 0.2 }}
                 viewport={{ once: true }}
-                whileHover={{ 
-                  y: -12, 
+                whileHover={{
+                  y: -12,
                   scale: 1.02,
-                  boxShadow: "0 30px 60px rgba(0,0,0,0.15)" 
+                  boxShadow: "0 30px 60px rgba(0,0,0,0.15)",
                 }}
                 className="bg-gradient-to-br from-[var(--landing-accent)]/25 to-landing-accent/5 backdrop-blur-xl rounded-3xl p-8 border border-landing-primary/20 shadow-2xl hover:shadow-3xl transition-all duration-500 relative overflow-hidden group"
               >
@@ -1807,7 +1899,7 @@ const DailyUI003: React.FC = () => {
                 <div className="absolute -top-8 -left-8 text-8xl text-landing-primary/10 group-hover:text-landing-primary/20 transition-colors duration-500">
                   ❝
                 </div>
-                
+
                 <div className="relative z-10">
                   <div className="flex items-center gap-4 mb-6">
                     <div className="w-16 h-16 bg-gradient-to-br from-[var(--landing-primary)] to-landing-accent rounded-full flex items-center justify-center text-black font-bold text-lg">
@@ -1818,28 +1910,30 @@ const DailyUI003: React.FC = () => {
                         Tanaya Shah
                         <span className="inline-block w-12 h-0.5 bg-landing-primary ml-3"></span>
                       </h4>
-                      <p className="text-landing-secondary">Growth Lead @ ArkaTech</p>
+                      <p className="text-landing-secondary">
+                        Growth Lead @ ArkaTech
+                      </p>
                     </div>
                   </div>
-                  
-                  <motion.blockquote 
+
+                  <motion.blockquote
                     initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1 }}
                     transition={{ duration: 1, delay: 0.5 }}
                     viewport={{ once: true }}
                     className="text-xl text-[var(--landing-text)] italic leading-relaxed font-medium mb-4"
                   >
-                    "I used to onboard interns in Notion. This is 5x smoother, 
+                    "I used to onboard interns in Notion. This is 5x smoother,
                     and they actually complete their projects on time now."
                   </motion.blockquote>
-                  
+
                   <div className="flex items-center gap-1">
                     {[...Array(5)].map((_, i) => (
                       <motion.span
                         key={i}
                         initial={{ opacity: 0, scale: 0 }}
                         whileInView={{ opacity: 1, scale: 1 }}
-                        transition={{ duration: 0.3, delay: 0.7 + (i * 0.1) }}
+                        transition={{ duration: 0.3, delay: 0.7 + i * 0.1 }}
                         viewport={{ once: true }}
                         className="text-yellow-400 text-lg"
                       >
@@ -1859,9 +1953,9 @@ const DailyUI003: React.FC = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.4 }}
                 viewport={{ once: true }}
-                whileHover={{ 
-                  y: -8, 
-                  boxShadow: "0 20px 40px rgba(0,0,0,0.1)" 
+                whileHover={{
+                  y: -8,
+                  boxShadow: "0 20px 40px rgba(0,0,0,0.1)",
                 }}
                 className="bg-gradient-to-br from-green-50/80 to-green-100/60 backdrop-blur-sm rounded-2xl p-6 border border-green-200/50 shadow-lg hover:shadow-xl transition-all duration-400 relative overflow-hidden group"
                 style={{ marginTop: "1.5rem" }}
@@ -1869,7 +1963,7 @@ const DailyUI003: React.FC = () => {
                 <div className="absolute -top-4 -right-4 text-6xl text-green-400/20 group-hover:text-green-400/30 transition-colors duration-400">
                   ❝
                 </div>
-                
+
                 <div className="flex items-center gap-4 mb-4">
                   <div className="w-12 h-12 bg-gradient-to-br from-green-400 to-green-600 rounded-full flex items-center justify-center text-white font-bold text-sm">
                     PS
@@ -1879,12 +1973,14 @@ const DailyUI003: React.FC = () => {
                       Priya Singh
                       <span className="inline-block w-8 h-0.5 bg-green-500 ml-2"></span>
                     </h4>
-                    <p className="text-sm text-landing-secondary">Product Manager @ GrowthLab</p>
+                    <p className="text-sm text-landing-secondary">
+                      Product Manager @ GrowthLab
+                    </p>
                   </div>
                 </div>
-                
+
                 <blockquote className="text-[var(--landing-text)] italic leading-relaxed">
-                  "Our intern feedback process went from chaotic to structured. 
+                  "Our intern feedback process went from chaotic to structured.
                   Everyone knows what's expected and when."
                 </blockquote>
               </motion.div>
@@ -1895,16 +1991,16 @@ const DailyUI003: React.FC = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.5 }}
                 viewport={{ once: true }}
-                whileHover={{ 
-                  y: -8, 
-                  boxShadow: "0 20px 40px rgba(0,0,0,0.1)" 
+                whileHover={{
+                  y: -8,
+                  boxShadow: "0 20px 40px rgba(0,0,0,0.1)",
                 }}
                 className="bg-gradient-to-br from-orange-50/80 to-orange-100/60 backdrop-blur-sm rounded-2xl p-6 border border-orange-200/50 shadow-lg hover:shadow-xl transition-all duration-400 relative overflow-hidden group"
               >
                 <div className="absolute -top-4 -right-4 text-6xl text-orange-400/20 group-hover:text-orange-400/30 transition-colors duration-400">
                   ❞
                 </div>
-                
+
                 <div className="flex items-center gap-4 mb-4">
                   <div className="w-12 h-12 bg-gradient-to-br from-orange-400 to-orange-600 rounded-full flex items-center justify-center text-white font-bold text-sm">
                     DC
@@ -1914,12 +2010,14 @@ const DailyUI003: React.FC = () => {
                       David Chen
                       <span className="inline-block w-8 h-0.5 bg-orange-500 ml-2"></span>
                     </h4>
-                    <p className="text-sm text-landing-secondary">Founder @ StartupForge</p>
+                    <p className="text-sm text-landing-secondary">
+                      Founder @ StartupForge
+                    </p>
                   </div>
                 </div>
-                
+
                 <blockquote className="text-[var(--landing-text)] italic leading-relaxed">
-                  "As a small team, we needed something that scaled with us. 
+                  "As a small team, we needed something that scaled with us.
                   This platform grows as our intern program grows."
                 </blockquote>
               </motion.div>
@@ -1933,16 +2031,16 @@ const DailyUI003: React.FC = () => {
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6, delay: 0.6 }}
               viewport={{ once: true }}
-              whileHover={{ 
-                y: -6, 
-                boxShadow: "0 15px 30px rgba(0,0,0,0.1)" 
+              whileHover={{
+                y: -6,
+                boxShadow: "0 15px 30px rgba(0,0,0,0.1)",
               }}
               className="bg-gradient-to-br from-indigo-50/80 to-indigo-100/60 backdrop-blur-sm rounded-2xl p-6 border border-indigo-200/50 shadow-lg hover:shadow-xl transition-all duration-400 relative overflow-hidden group"
             >
               <div className="absolute -top-4 -right-4 text-6xl text-indigo-400/20 group-hover:text-indigo-400/30 transition-colors duration-400">
                 ❝
               </div>
-              
+
               <div className="flex items-center gap-4 mb-4">
                 <div className="w-12 h-12 bg-gradient-to-br from-indigo-400 to-indigo-600 rounded-full flex items-center justify-center text-white font-bold text-sm">
                   SK
@@ -1952,13 +2050,15 @@ const DailyUI003: React.FC = () => {
                     Sarah Kim
                     <span className="inline-block w-8 h-0.5 bg-indigo-500 ml-2"></span>
                   </h4>
-                  <p className="text-sm text-landing-secondary">VP Engineering @ ScaleWorks</p>
+                  <p className="text-sm text-landing-secondary">
+                    VP Engineering @ ScaleWorks
+                  </p>
                 </div>
               </div>
-              
+
               <blockquote className="text-[var(--landing-text)] italic leading-relaxed">
-                "The automated check-ins and progress reports give me peace of mind. 
-                I know exactly how each intern is progressing."
+                "The automated check-ins and progress reports give me peace of
+                mind. I know exactly how each intern is progressing."
               </blockquote>
             </motion.div>
 
@@ -1967,16 +2067,16 @@ const DailyUI003: React.FC = () => {
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6, delay: 0.7 }}
               viewport={{ once: true }}
-              whileHover={{ 
-                y: -6, 
-                boxShadow: "0 15px 30px rgba(0,0,0,0.1)" 
+              whileHover={{
+                y: -6,
+                boxShadow: "0 15px 30px rgba(0,0,0,0.1)",
               }}
               className="bg-gradient-to-br from-pink-50/80 to-pink-100/60 backdrop-blur-sm rounded-2xl p-6 border border-pink-200/50 shadow-lg hover:shadow-xl transition-all duration-400 relative overflow-hidden group"
             >
               <div className="absolute -top-4 -right-4 text-6xl text-pink-400/20 group-hover:text-pink-400/30 transition-colors duration-400">
                 ❞
               </div>
-              
+
               <div className="flex items-center gap-4 mb-4">
                 <div className="w-12 h-12 bg-gradient-to-br from-pink-400 to-pink-600 rounded-full flex items-center justify-center text-white font-bold text-sm">
                   MJ
@@ -1986,13 +2086,15 @@ const DailyUI003: React.FC = () => {
                     Maya Joshi
                     <span className="inline-block w-8 h-0.5 bg-pink-500 ml-2"></span>
                   </h4>
-                  <p className="text-sm text-landing-secondary">Tech Lead @ InnovateHub</p>
+                  <p className="text-sm text-landing-secondary">
+                    Tech Lead @ InnovateHub
+                  </p>
                 </div>
               </div>
-              
+
               <blockquote className="text-[var(--landing-text)] italic leading-relaxed">
-                "From day one onboarding to final presentations, everything flows smoothly. 
-                Our interns love the clarity and structure."
+                "From day one onboarding to final presentations, everything
+                flows smoothly. Our interns love the clarity and structure."
               </blockquote>
             </motion.div>
           </div>
@@ -2008,22 +2110,30 @@ const DailyUI003: React.FC = () => {
             <p className="text-landing-secondary font-medium mb-8">
               Used by teams at
             </p>
-            
+
             <div className="flex flex-wrap justify-center items-center gap-8 opacity-60 hover:opacity-80 transition-opacity duration-300">
               {[
-                "FlowState", "TechFlow", "ArkaTech", "GrowthLab", "StartupForge", 
-                "ScaleWorks", "InnovateHub", "CodeCraft", "BuildNext", "DevCore"
+                "FlowState",
+                "TechFlow",
+                "ArkaTech",
+                "GrowthLab",
+                "StartupForge",
+                "ScaleWorks",
+                "InnovateHub",
+                "CodeCraft",
+                "BuildNext",
+                "DevCore",
               ].map((company, index) => (
                 <motion.div
                   key={index}
                   initial={{ opacity: 0, scale: 0.8 }}
                   whileInView={{ opacity: 1, scale: 1 }}
-                  transition={{ duration: 0.4, delay: 0.9 + (index * 0.1) }}
+                  transition={{ duration: 0.4, delay: 0.9 + index * 0.1 }}
                   viewport={{ once: true }}
-                  whileHover={{ 
-                    scale: 1.1, 
+                  whileHover={{
+                    scale: 1.1,
                     opacity: 1,
-                    color: "var(--landing-primary)" 
+                    color: "var(--landing-primary)",
                   }}
                   className="text-lg font-semibold text-[var(--landing-text)]/50 hover:text-landing-primary transition-all duration-300 cursor-pointer"
                 >
@@ -2036,7 +2146,10 @@ const DailyUI003: React.FC = () => {
       </section>
 
       {/* Pricing Plans - Split-Board Columns */}
-      <section id="pricing" className="py-20 bg-gradient-to-br from-gray-50 to-gray-100 relative overflow-hidden">
+      <section
+        id="pricing"
+        className="py-20 bg-gradient-to-br from-gray-50 to-gray-100 relative overflow-hidden"
+      >
         {/* Background Elements */}
         <div className="absolute inset-0 overflow-hidden">
           {/* Workspace Grid Background */}
@@ -2047,7 +2160,7 @@ const DailyUI003: React.FC = () => {
               ))}
             </div>
           </div>
-          
+
           {/* Floating Elements */}
           <motion.div
             animate={{
@@ -2061,7 +2174,7 @@ const DailyUI003: React.FC = () => {
             }}
             className="absolute top-20 right-20 w-32 h-32 bg-landing-primary/5 rounded-2xl"
           ></motion.div>
-          
+
           <motion.div
             animate={{
               y: [0, 15, 0],
@@ -2090,8 +2203,8 @@ const DailyUI003: React.FC = () => {
                 Simple, Transparent Pricing
               </h2>
               <p className="text-xl text-landing-secondary max-w-4xl mx-auto leading-relaxed">
-                Start free, scale as you grow. No hidden fees, no per-seat surprises. 
-                Built for teams that value clarity over complexity.
+                Start free, scale as you grow. No hidden fees, no per-seat
+                surprises. Built for teams that value clarity over complexity.
               </p>
             </motion.div>
           </div>
@@ -2121,21 +2234,21 @@ const DailyUI003: React.FC = () => {
 
           {/* Pricing Cards */}
           <div className="grid lg:grid-cols-3 gap-8 mb-16">
-            
             {/* Starter Plan */}
             <motion.div
               initial={{ opacity: 0, y: 50, rotateX: -10 }}
               whileInView={{ opacity: 1, y: 0, rotateX: 0 }}
               transition={{ duration: 0.8, delay: 0.1 }}
               viewport={{ once: true }}
-              whileHover={{ 
-                y: -12, 
+              whileHover={{
+                y: -12,
                 rotateX: 5,
-                boxShadow: "0 25px 50px rgba(0,0,0,0.15)" 
+                boxShadow: "0 25px 50px rgba(0,0,0,0.15)",
               }}
               className="bg-white/90 backdrop-blur-lg rounded-3xl p-8 border border-gray-200/50 shadow-xl hover:shadow-2xl transition-all duration-500 relative overflow-hidden group flex flex-col justify-between"
               style={{
-                background: "linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(248,250,252,0.9) 100%)"
+                background:
+                  "linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(248,250,252,0.9) 100%)",
               }}
             >
               {/* Card Header */}
@@ -2143,12 +2256,18 @@ const DailyUI003: React.FC = () => {
                 <div className="inline-flex items-center gap-2 bg-gray-100 text-gray-700 px-4 py-2 rounded-full text-sm font-medium mb-4">
                   🚀 Perfect to Start
                 </div>
-                <h3 className="text-2xl font-bold text-[var(--landing-text)] mb-2">Starter</h3>
+                <h3 className="text-2xl font-bold text-[var(--landing-text)] mb-2">
+                  Starter
+                </h3>
                 <div className="mb-4">
-                  <span className="text-4xl font-bold text-[var(--landing-text)]">₹0</span>
+                  <span className="text-4xl font-bold text-[var(--landing-text)]">
+                    ₹0
+                  </span>
                   <span className="text-landing-secondary ml-2">/ forever</span>
                 </div>
-                <p className="text-landing-secondary">Solo founders, 1-2 interns</p>
+                <p className="text-landing-secondary">
+                  Solo founders, 1-2 interns
+                </p>
               </div>
 
               {/* Features List */}
@@ -2158,20 +2277,22 @@ const DailyUI003: React.FC = () => {
                   "Up to 2 active interns",
                   "Essential progress tracking",
                   "Email notifications",
-                  "Basic templates"
+                  "Basic templates",
                 ].map((feature, index) => (
                   <motion.div
                     key={index}
                     initial={{ opacity: 0, x: -20 }}
                     whileInView={{ opacity: 1, x: 0 }}
-                    transition={{ duration: 0.4, delay: 0.3 + (index * 0.1) }}
+                    transition={{ duration: 0.4, delay: 0.3 + index * 0.1 }}
                     viewport={{ once: true }}
                     className="flex items-center gap-3"
                   >
                     <div className="w-5 h-5 bg-green-100 rounded-full flex items-center justify-center">
                       <span className="text-green-600 text-xs">✓</span>
                     </div>
-                    <span className="text-[var(--landing-text)]">{feature}</span>
+                    <span className="text-[var(--landing-text)]">
+                      {feature}
+                    </span>
                   </motion.div>
                 ))}
               </div>
@@ -2196,10 +2317,10 @@ const DailyUI003: React.FC = () => {
               whileInView={{ opacity: 1, y: 0, rotateX: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
               viewport={{ once: true }}
-              whileHover={{ 
-                y: -16, 
+              whileHover={{
+                y: -16,
                 rotateX: 5,
-                boxShadow: "0 30px 60px rgba(165, 88, 243, 0.2)" 
+                boxShadow: "0 30px 60px rgba(165, 88, 243, 0.2)",
               }}
               className="bg-gradient-to-br flex flex-col justify-between from-landing-primary/5 to-landing-accent/5 backdrop-blur-xl rounded-3xl p-8 border-2 border-landing-primary/30 shadow-2xl hover:shadow-3xl transition-all duration-500 relative group transform scale-105"
             >
@@ -2216,12 +2337,18 @@ const DailyUI003: React.FC = () => {
 
               {/* Card Header */}
               <div className="text-center mb-8 mt-4">
-                <h3 className="text-2xl font-bold text-[var(--landing-text)] mb-2">Team</h3>
+                <h3 className="text-2xl font-bold text-[var(--landing-text)] mb-2">
+                  Team
+                </h3>
                 <div className="mb-4">
-                  <span className="text-4xl font-bold text-landing-primary">₹899</span>
+                  <span className="text-4xl font-bold text-landing-primary">
+                    ₹899
+                  </span>
                   <span className="text-landing-secondary ml-2">/ month</span>
                 </div>
-                <p className="text-landing-secondary">Startups with 3–10 interns</p>
+                <p className="text-landing-secondary">
+                  Startups with 3–10 interns
+                </p>
               </div>
 
               {/* Features List */}
@@ -2234,29 +2361,31 @@ const DailyUI003: React.FC = () => {
                   "Custom task templates",
                   "Progress analytics",
                   "Slack integration",
-                  "Priority support"
+                  "Priority support",
                 ].map((feature, index) => (
                   <motion.div
                     key={index}
                     initial={{ opacity: 0, x: -20 }}
                     whileInView={{ opacity: 1, x: 0 }}
-                    transition={{ duration: 0.4, delay: 0.4 + (index * 0.1) }}
+                    transition={{ duration: 0.4, delay: 0.4 + index * 0.1 }}
                     viewport={{ once: true }}
                     className="flex items-center gap-3"
                   >
                     <div className="w-5 h-5 bg-landing-primary/20 rounded-full flex items-center justify-center">
                       <span className="text-landing-primary text-xs">✓</span>
                     </div>
-                    <span className="text-[var(--landing-text)]">{feature}</span>
+                    <span className="text-[var(--landing-text)]">
+                      {feature}
+                    </span>
                   </motion.div>
                 ))}
               </div>
 
               {/* CTA Button */}
               <motion.button
-                whileHover={{ 
+                whileHover={{
                   scale: 1.05,
-                  boxShadow: "0 10px 30px rgba(165, 88, 243, 0.3)"
+                  boxShadow: "0 10px 30px rgba(165, 88, 243, 0.3)",
                 }}
                 whileTap={{ scale: 0.95 }}
                 className="w-full bg-gradient-to-r from-[var(--landing-primary)] to-[var(--landing-accent)] text-white py-4 rounded-2xl font-semibold shadow-xl hover:shadow-2xl transition-all duration-300"
@@ -2275,10 +2404,10 @@ const DailyUI003: React.FC = () => {
               whileInView={{ opacity: 1, y: 0, rotateX: 0 }}
               transition={{ duration: 0.8, delay: 0.3 }}
               viewport={{ once: true }}
-              whileHover={{ 
-                y: -12, 
+              whileHover={{
+                y: -12,
                 rotateX: 5,
-                boxShadow: "0 25px 50px rgba(0,0,0,0.15)" 
+                boxShadow: "0 25px 50px rgba(0,0,0,0.15)",
               }}
               className="bg-gradient-to-br from-gray-900/5 to-gray-800/5 backdrop-blur-lg rounded-3xl p-8 flex flex-col justify-between border border-gray-300/50 shadow-xl hover:shadow-2xl transition-all duration-500 relative overflow-hidden group"
             >
@@ -2287,11 +2416,17 @@ const DailyUI003: React.FC = () => {
                 <div className="inline-flex items-center gap-2 bg-gray-800 text-white px-4 py-2 rounded-full text-sm font-medium mb-4">
                   ⚡ Enterprise Ready
                 </div>
-                <h3 className="text-2xl font-bold text-[var(--landing-text)] mb-2">Scale</h3>
+                <h3 className="text-2xl font-bold text-[var(--landing-text)] mb-2">
+                  Scale
+                </h3>
                 <div className="mb-4">
-                  <span className="text-3xl font-bold text-[var(--landing-text)]">Custom Quote</span>
+                  <span className="text-3xl font-bold text-[var(--landing-text)]">
+                    Custom Quote
+                  </span>
                 </div>
-                <p className="text-landing-secondary">Large teams, bootcamps, orgs</p>
+                <p className="text-landing-secondary">
+                  Large teams, bootcamps, orgs
+                </p>
               </div>
 
               {/* Features List */}
@@ -2304,20 +2439,22 @@ const DailyUI003: React.FC = () => {
                   "White-label options",
                   "Dedicated success manager",
                   "Custom training sessions",
-                  "99.9% SLA guarantee"
+                  "99.9% SLA guarantee",
                 ].map((feature, index) => (
                   <motion.div
                     key={index}
                     initial={{ opacity: 0, x: -20 }}
                     whileInView={{ opacity: 1, x: 0 }}
-                    transition={{ duration: 0.4, delay: 0.5 + (index * 0.1) }}
+                    transition={{ duration: 0.4, delay: 0.5 + index * 0.1 }}
                     viewport={{ once: true }}
                     className="flex items-center gap-3"
                   >
                     <div className="w-5 h-5 bg-gray-200 rounded-full flex items-center justify-center">
                       <span className="text-gray-700 text-xs">✓</span>
                     </div>
-                    <span className="text-[var(--landing-text)]">{feature}</span>
+                    <span className="text-[var(--landing-text)]">
+                      {feature}
+                    </span>
                   </motion.div>
                 ))}
               </div>
@@ -2348,34 +2485,69 @@ const DailyUI003: React.FC = () => {
             <h3 className="text-xl font-semibold text-[var(--landing-text)] mb-6 text-center">
               Feature Comparison
             </h3>
-            
+
             <div className="overflow-x-auto">
               <table className="w-full">
                 <thead>
                   <tr className="border-b border-gray-200">
-                    <th className="text-left py-4 px-4 font-medium text-[var(--landing-text)]">Feature</th>
-                    <th className="text-center py-4 px-4 font-medium text-[var(--landing-text)]">Starter</th>
-                    <th className="text-center py-4 px-4 font-medium text-landing-primary">Team</th>
-                    <th className="text-center py-4 px-4 font-medium text-[var(--landing-text)]">Scale</th>
+                    <th className="text-left py-4 px-4 font-medium text-[var(--landing-text)]">
+                      Feature
+                    </th>
+                    <th className="text-center py-4 px-4 font-medium text-[var(--landing-text)]">
+                      Starter
+                    </th>
+                    <th className="text-center py-4 px-4 font-medium text-landing-primary">
+                      Team
+                    </th>
+                    <th className="text-center py-4 px-4 font-medium text-[var(--landing-text)]">
+                      Scale
+                    </th>
                   </tr>
                 </thead>
                 <tbody>
                   {[
-                    { feature: "Onboarding Workflows", starter: true, team: true, scale: true },
-                    { feature: "Mentor Dashboard", starter: false, team: true, scale: true },
-                    { feature: "Automated Feedback", starter: false, team: true, scale: true },
-                    { feature: "Custom Integrations", starter: false, team: false, scale: true },
-                    { feature: "API Access", starter: false, team: false, scale: true }
+                    {
+                      feature: "Onboarding Workflows",
+                      starter: true,
+                      team: true,
+                      scale: true,
+                    },
+                    {
+                      feature: "Mentor Dashboard",
+                      starter: false,
+                      team: true,
+                      scale: true,
+                    },
+                    {
+                      feature: "Automated Feedback",
+                      starter: false,
+                      team: true,
+                      scale: true,
+                    },
+                    {
+                      feature: "Custom Integrations",
+                      starter: false,
+                      team: false,
+                      scale: true,
+                    },
+                    {
+                      feature: "API Access",
+                      starter: false,
+                      team: false,
+                      scale: true,
+                    },
                   ].map((row, index) => (
                     <motion.tr
                       key={index}
                       initial={{ opacity: 0, x: -20 }}
                       whileInView={{ opacity: 1, x: 0 }}
-                      transition={{ duration: 0.4, delay: 0.8 + (index * 0.1) }}
+                      transition={{ duration: 0.4, delay: 0.8 + index * 0.1 }}
                       viewport={{ once: true }}
                       className="border-b border-gray-100 hover:bg-gray-50/50 transition-colors duration-200"
                     >
-                      <td className="py-4 px-4 text-[var(--landing-text)]">{row.feature}</td>
+                      <td className="py-4 px-4 text-[var(--landing-text)]">
+                        {row.feature}
+                      </td>
                       <td className="py-4 px-4 text-center">
                         {row.starter ? (
                           <span className="text-green-600 text-lg">✓</span>
@@ -2385,7 +2557,9 @@ const DailyUI003: React.FC = () => {
                       </td>
                       <td className="py-4 px-4 text-center">
                         {row.team ? (
-                          <span className="text-landing-primary text-lg">✓</span>
+                          <span className="text-landing-primary text-lg">
+                            ✓
+                          </span>
                         ) : (
                           <span className="text-gray-300 text-lg">✗</span>
                         )}
@@ -2415,35 +2589,41 @@ const DailyUI003: React.FC = () => {
             <h3 className="text-2xl font-semibold text-[var(--landing-text)] mb-8">
               Frequently Asked Questions
             </h3>
-            
+
             <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
               {[
                 {
                   question: "What counts as an 'active intern'?",
-                  answer: "An intern who has logged in or been assigned tasks in the current billing period."
+                  answer:
+                    "An intern who has logged in or been assigned tasks in the current billing period.",
                 },
                 {
                   question: "Can I change plans anytime?",
-                  answer: "Yes! Upgrade or downgrade your plan at any time. Changes take effect immediately."
+                  answer:
+                    "Yes! Upgrade or downgrade your plan at any time. Changes take effect immediately.",
                 },
                 {
                   question: "Is there a setup fee?",
-                  answer: "No setup fees, ever. Start with our free plan and upgrade when you're ready."
+                  answer:
+                    "No setup fees, ever. Start with our free plan and upgrade when you're ready.",
                 },
                 {
                   question: "Do you offer refunds?",
-                  answer: "Yes, we offer a 30-day money-back guarantee for all paid plans."
-                }
+                  answer:
+                    "Yes, we offer a 30-day money-back guarantee for all paid plans.",
+                },
               ].map((faq, index) => (
                 <motion.div
                   key={index}
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.5, delay: 1 + (index * 0.1) }}
+                  transition={{ duration: 0.5, delay: 1 + index * 0.1 }}
                   viewport={{ once: true }}
                   className="bg-white/60 backdrop-blur-sm rounded-xl p-6 text-left border border-gray-200/50 hover:shadow-lg transition-all duration-300"
                 >
-                  <h4 className="font-semibold text-[var(--landing-text)] mb-2">{faq.question}</h4>
+                  <h4 className="font-semibold text-[var(--landing-text)] mb-2">
+                    {faq.question}
+                  </h4>
                   <p className="text-landing-secondary text-sm">{faq.answer}</p>
                 </motion.div>
               ))}
@@ -2471,7 +2651,7 @@ const DailyUI003: React.FC = () => {
           >
             <div className="w-full h-full bg-gradient-to-br from-[var(--landing-primary)]/10 via-transparent to-[var(--landing-secondary)]/10"></div>
           </motion.div>
-          
+
           {/* Floating Geometric Elements */}
           <motion.div
             animate={{
@@ -2485,7 +2665,7 @@ const DailyUI003: React.FC = () => {
             }}
             className="absolute top-1/4 left-1/4 w-32 h-32 bg-[var(--landing-primary)]/5 rounded-2xl"
           ></motion.div>
-          
+
           <motion.div
             animate={{
               y: [0, 15, 0],
@@ -2513,7 +2693,7 @@ const DailyUI003: React.FC = () => {
             <div className="bg-white/70 backdrop-blur-xl rounded-3xl p-12 lg:p-16 border border-white/30 shadow-2xl relative overflow-hidden">
               {/* Glass Card Background Gradient */}
               <div className="absolute inset-0 bg-gradient-to-br from-white/50 via-transparent to-[var(--landing-primary)]/5 rounded-3xl"></div>
-              
+
               {/* Content */}
               <div className="relative z-10 text-center">
                 {/* Headline */}
@@ -2529,8 +2709,7 @@ const DailyUI003: React.FC = () => {
                     <span className="text-[var(--landing-primary)] bg-gradient-to-r from-[var(--landing-accent)] to-[var(--landing-accent)]/60 bg-clip-text text-transparent">
                       Build clarity, structure, and growth
                     </span>
-                    <br />
-                    — from Day 1.
+                    <br />— from Day 1.
                   </h2>
                 </motion.div>
 
@@ -2559,9 +2738,9 @@ const DailyUI003: React.FC = () => {
                 >
                   {/* Primary CTA */}
                   <motion.button
-                    whileHover={{ 
+                    whileHover={{
                       scale: 1.05,
-                      boxShadow: "0 20px 40px rgba(28, 28, 30, 0.3)" 
+                      boxShadow: "0 20px 40px rgba(28, 28, 30, 0.3)",
                     }}
                     whileTap={{ scale: 0.95 }}
                     className="group relative bg-gradient-to-r from-[var(--landing-primary)] to-[var(--landing-secondary)] text-white px-12 py-5 rounded-2xl text-lg font-semibold shadow-xl hover:shadow-2xl transition-all duration-300 overflow-hidden"
@@ -2573,10 +2752,20 @@ const DailyUI003: React.FC = () => {
                       transition={{ duration: 0.6 }}
                       className="absolute inset-0 bg-white rounded-2xl"
                     ></motion.div>
-                    
+
                     <span className="relative flex items-center gap-3">
-                      <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                      <svg
+                        className="w-5 h-5"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M13 10V3L4 14h7v7l9-11h-7z"
+                        />
                       </svg>
                       Get Started – It's Free
                       <motion.span
@@ -2590,9 +2779,9 @@ const DailyUI003: React.FC = () => {
 
                   {/* Secondary CTA */}
                   <motion.button
-                    whileHover={{ 
+                    whileHover={{
                       scale: 1.05,
-                      backgroundColor: "rgba(28, 28, 30, 0.05)"
+                      backgroundColor: "rgba(28, 28, 30, 0.05)",
                     }}
                     whileTap={{ scale: 0.95 }}
                     className="group border-2 border-[var(--landing-accent)] text-[var(--landing-text)] px-10 py-5 rounded-2xl text-lg font-semibold hover:bg-[var(--landing-accent)] hover:text-black transition-all duration-300"
@@ -2603,7 +2792,11 @@ const DailyUI003: React.FC = () => {
                         transition={{ duration: 2, repeat: Infinity }}
                         className="w-5 h-5 bg-[var(--landing-primary)] rounded-full flex items-center justify-center"
                       >
-                        <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                        <svg
+                          className="w-3 h-3 text-white"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                        >
                           <path d="M8 5v10l8-5-8-5z" />
                         </svg>
                       </motion.div>
@@ -2621,57 +2814,100 @@ const DailyUI003: React.FC = () => {
                   className="mt-12 pt-8 border-t border-gray-200/50"
                 >
                   <p className="text-sm text-[var(--landing-secondary)] mb-4">
-                    Trusted by 200+ teams • No credit card required • Setup in under 5 minutes
+                    Trusted by 200+ teams • No credit card required • Setup in
+                    under 5 minutes
                   </p>
-                  
+
                   {/* Mini Feature Icons */}
                   <div className="flex justify-center items-center gap-8 opacity-60">
                     {[
-                      { 
+                      {
                         icon: (
-                          <svg className="w-5 h-5 text-[var(--landing-secondary)]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+                          <svg
+                            className="w-5 h-5 text-[var(--landing-secondary)]"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              strokeWidth={2}
+                              d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"
+                            />
                           </svg>
-                        ), 
-                        label: "Secure" 
+                        ),
+                        label: "Secure",
                       },
-                      { 
+                      {
                         icon: (
-                          <svg className="w-5 h-5 text-[var(--landing-secondary)]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                          <svg
+                            className="w-5 h-5 text-[var(--landing-secondary)]"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              strokeWidth={2}
+                              d="M13 10V3L4 14h7v7l9-11h-7z"
+                            />
                           </svg>
-                        ), 
-                        label: "Fast Setup" 
+                        ),
+                        label: "Fast Setup",
                       },
-                      { 
+                      {
                         icon: (
-                          <svg className="w-5 h-5 text-[var(--landing-secondary)]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                          <svg
+                            className="w-5 h-5 text-[var(--landing-secondary)]"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              strokeWidth={2}
+                              d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                            />
                           </svg>
-                        ), 
-                        label: "Results Driven" 
+                        ),
+                        label: "Results Driven",
                       },
-                      { 
+                      {
                         icon: (
-                          <svg className="w-5 h-5 text-[var(--landing-secondary)]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                          <svg
+                            className="w-5 h-5 text-[var(--landing-secondary)]"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              strokeWidth={2}
+                              d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"
+                            />
                           </svg>
-                        ), 
-                        label: "Smart Automation" 
-                      }
+                        ),
+                        label: "Smart Automation",
+                      },
                     ].map((item, index) => (
                       <motion.div
                         key={index}
                         initial={{ opacity: 0, y: 10 }}
                         whileInView={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.4, delay: 1 + (index * 0.1) }}
+                        transition={{ duration: 0.4, delay: 1 + index * 0.1 }}
                         viewport={{ once: true }}
                         className="flex flex-col items-center gap-1"
                       >
                         <div className="w-8 h-8 bg-gray-100 rounded-lg flex items-center justify-center">
                           {item.icon}
                         </div>
-                        <span className="text-xs text-[var(--landing-secondary)]">{item.label}</span>
+                        <span className="text-xs text-[var(--landing-secondary)]">
+                          {item.label}
+                        </span>
                       </motion.div>
                     ))}
                   </div>
@@ -2709,7 +2945,7 @@ const DailyUI003: React.FC = () => {
                   Built for intern teams. Designed for growth.
                 </p>
               </motion.div>
-              
+
               {/* Newsletter Signup */}
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
@@ -2749,22 +2985,24 @@ const DailyUI003: React.FC = () => {
                 transition={{ duration: 0.6, delay: 0.2 }}
                 viewport={{ once: true }}
               >
-                <h4 className="font-semibold text-[var(--landing-text)] mb-4">Product</h4>
+                <h4 className="font-semibold text-[var(--landing-text)] mb-4">
+                  Product
+                </h4>
                 <ul className="space-y-3">
                   {[
                     "Features",
                     "Pricing",
                     "Demo",
                     "Integrations",
-                    "API Docs"
+                    "API Docs",
                   ].map((link, index) => (
                     <motion.li
                       key={index}
                       whileHover={{ x: 5 }}
                       transition={{ duration: 0.2 }}
                     >
-                      <a 
-                        href="#" 
+                      <a
+                        href="#"
                         className="text-white hover:text-landing-primary transition-colors duration-300 group"
                       >
                         <span className="relative">
@@ -2786,22 +3024,24 @@ const DailyUI003: React.FC = () => {
                 transition={{ duration: 0.6, delay: 0.3 }}
                 viewport={{ once: true }}
               >
-                <h4 className="font-semibold text-[var(--landing-text)] mb-4">Support</h4>
+                <h4 className="font-semibold text-[var(--landing-text)] mb-4">
+                  Support
+                </h4>
                 <ul className="space-y-3">
                   {[
                     "Help Center",
                     "Blog",
                     "Community",
                     "Contact",
-                    "Status"
+                    "Status",
                   ].map((link, index) => (
                     <motion.li
                       key={index}
                       whileHover={{ x: 5 }}
                       transition={{ duration: 0.2 }}
                     >
-                      <a 
-                        href="#" 
+                      <a
+                        href="#"
                         className="text-white hover:text-landing-primary transition-colors duration-300 group"
                       >
                         <span className="relative">
@@ -2823,31 +3063,29 @@ const DailyUI003: React.FC = () => {
                 transition={{ duration: 0.6, delay: 0.4 }}
                 viewport={{ once: true }}
               >
-                <h4 className="font-semibold text-[var(--landing-text)] mb-4">Company</h4>
+                <h4 className="font-semibold text-[var(--landing-text)] mb-4">
+                  Company
+                </h4>
                 <ul className="space-y-3">
-                  {[
-                    "About",
-                    "Careers",
-                    "Privacy",
-                    "Terms",
-                    "Security"
-                  ].map((link, index) => (
-                    <motion.li
-                      key={index}
-                      whileHover={{ x: 5 }}
-                      transition={{ duration: 0.2 }}
-                    >
-                      <a 
-                        href="#" 
-                        className="text-white hover:text-landing-primary transition-colors duration-300 group"
+                  {["About", "Careers", "Privacy", "Terms", "Security"].map(
+                    (link, index) => (
+                      <motion.li
+                        key={index}
+                        whileHover={{ x: 5 }}
+                        transition={{ duration: 0.2 }}
                       >
-                        <span className="relative">
-                          {link}
-                          <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-landing-primary group-hover:w-full transition-all duration-300"></span>
-                        </span>
-                      </a>
-                    </motion.li>
-                  ))}
+                        <a
+                          href="#"
+                          className="text-white hover:text-landing-primary transition-colors duration-300 group"
+                        >
+                          <span className="relative">
+                            {link}
+                            <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-landing-primary group-hover:w-full transition-all duration-300"></span>
+                          </span>
+                        </a>
+                      </motion.li>
+                    )
+                  )}
                 </ul>
               </motion.div>
             </div>
@@ -2860,31 +3098,33 @@ const DailyUI003: React.FC = () => {
                 transition={{ duration: 0.6, delay: 0.5 }}
                 viewport={{ once: true }}
               >
-                <h4 className="font-semibold text-[var(--landing-text)] mb-4">Connect</h4>
+                <h4 className="font-semibold text-[var(--landing-text)] mb-4">
+                  Connect
+                </h4>
                 <div className="space-y-3 mb-4">
-                  <a 
-                    href="mailto:hello@internops.com" 
+                  <a
+                    href="mailto:hello@internops.com"
                     className="text-white hover:text-landing-primary transition-colors duration-300 block"
                   >
                     hello@alverno.com
                   </a>
                 </div>
-                
+
                 {/* Social Icons */}
                 <div className="flex gap-4">
                   {[
                     { icon: "𝕏", label: "Twitter" },
                     { icon: "in", label: "LinkedIn" },
-                    { icon: "𝗚", label: "GitHub" }
+                    { icon: "𝗚", label: "GitHub" },
                   ].map((social, index) => (
                     <motion.a
                       key={index}
                       href="#"
-                      whileHover={{ 
-                        scale: 1.2, 
+                      whileHover={{
+                        scale: 1.2,
                         rotate: 5,
                         backgroundColor: "var(--landing-primary)",
-                        color: "white"
+                        color: "white",
                       }}
                       whileTap={{ scale: 0.9 }}
                       className="w-10 h-10 bg-white/70 backdrop-blur-sm border border-gray-200/50 rounded-xl flex items-center justify-center font-bold text-[var(--landing-text)] hover:shadow-lg transition-all duration-300"
@@ -2909,23 +3149,23 @@ const DailyUI003: React.FC = () => {
             <p className="text-sm text-white">
               © 2025 Alverno Platform. UI By Pratham Singh. All rights reserved.
             </p>
-            
+
             <div className="flex items-center gap-6 text-sm text-landing-secondary">
-              <motion.a 
+              <motion.a
                 href="#"
                 whileHover={{ color: "var(--landing-primary)" }}
                 className="hover:underline text-white transition-colors duration-300"
               >
                 Privacy Policy
               </motion.a>
-              <motion.a 
+              <motion.a
                 href="#"
                 whileHover={{ color: "var(--landing-primary)" }}
                 className="hover:underline text-white transition-colors duration-300"
               >
                 Terms of Service
               </motion.a>
-              <motion.a 
+              <motion.a
                 href="#"
                 whileHover={{ color: "var(--landing-primary)" }}
                 className="hover:underline text-white transition-colors duration-300"

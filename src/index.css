@@ -9,23 +9,13 @@
   --landing-text: #1C1C1E;
   /* --landing-accent: #F49D37; */
   --landing-accent: #FF796F;
+
+  --calc-primary: #4B5D52;
+  --calc-secondary: #DAD7CD;
+  --calc-background: #F8F8F4;
+  --calc-text: #1E1E1E;
+  --calc-accent: #A3B18A;
 }
-
-/* Custom utility classes for the landing page */
-.bg-landing-primary { background-color: var(--landing-primary); }
-.bg-landing-secondary { background-color: var(--landing-secondary); }
-.bg-landing-background { background-color: var(--landing-background); }
-.bg-landing-accent { background-color: var(--landing-accent); }
-
-.text-landing-primary { color: var(--landing-primary); }
-.text-landing-secondary { color: var(--landing-secondary); }
-.text-landing-background { color: var(--landing-background); }
-.text-landing-text { color: var(--landing-text); }
-.text-landing-accent { color: var(--landing-accent); }
-
-.border-landing-primary { border-color: var(--landing-primary); }
-.border-landing-secondary { border-color: var(--landing-secondary); }
-.border-landing-accent { border-color: var(--landing-accent); }
 
 .perspective-1000 {
   perspective: 1000px;
@@ -33,4 +23,25 @@
 
 .backface-hidden {
   backface-visibility: hidden;
+}
+
+/* Custom reset button styles */
+.reset-button {
+  position: relative;
+  overflow: hidden;
+}
+
+.reset-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.5s;
+}
+
+.reset-button:hover::before {
+  left: 100%;
 }

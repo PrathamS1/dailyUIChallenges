@@ -19,7 +19,30 @@ Welcome to my 100 Days Daily UI Challenge journey! This repository showcases my 
 
 ## 📅 Challenge Progress
 
-**Current Progress: 3/100** ⭐
+**Current Progress: 4/100** ⭐
+
+### ✅ Day 4 - Calculator
+**Challenge:** Design a calculator. Standard, scientific, or specialty calculator for something such as a mortgage, loan, etc.
+
+**Implementation:** Carbon Footprint Calculator
+- Comprehensive environmental impact assessment tool
+- Multi-section form covering Transportation, Energy, Diet & Lifestyle, and Waste Management
+- Real-time emissions calculations with detailed breakdown visualization
+- Sticky results panel with responsive design across all devices
+- Input validation system preventing negative values and unrealistic inputs
+- Educational accordion section explaining calculation formulas and methodology
+- Interactive progress bars and comparison metrics
+
+**Features:**
+- 🌍 Comprehensive carbon footprint assessment across 4 major categories
+- 📊 Real-time calculations with visual breakdown charts
+- 📱 Fully responsive design with sticky positioning for results
+- ✅ Input validation with error handling and user feedback
+- 📚 Educational transparency with calculation formula explanations
+- 🔄 Custom reset functionality with shimmer animation effects
+- 📈 Comparison metrics against global and sustainable targets
+
+**[View UI Design →](https://daily-ui-challenges-iota.vercel.app/004)**
 
 ### ✅ Day 3 - Landing Page
 **Challenge:** Create a landing page for a product, service, or company. Focus on the layout, messaging, and call-to-action elements.
@@ -159,6 +182,7 @@ dailyUIChallenges/
 │   │   ├── dailyUI001.jsx    # Day 1 - Sign Up Page
 │   │   ├── dailyUI002.jsx    # Day 2 - Credit Card Checkout
 │   │   ├── dailyUI003.tsx    # Day 3 - Landing Page
+│   │   ├── dailyUI004.tsx    # Day 4 - Carbon Footprint Calculator
 │   │   └── ...               # Future challenges
 │   ├── assets/               # Images, icons, etc.
 │   └── main.jsx             # App entry point
@@ -183,6 +207,6 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ---
 
-**Day 2/100 Complete** ✅ | **Next Challenge:** *Day 3 - Landing Page*
+**Day 4/100 Complete** ✅ | **Next Challenge:** *Day 5 - Stay Tuned*
 
 *Follow along for daily UI inspiration and modern web development techniques!*

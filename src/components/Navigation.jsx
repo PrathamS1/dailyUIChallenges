@@ -47,6 +47,17 @@ const Navigation = () => {
       difficulty: "Intermediate",
       completedDate: "2025-07-27",
     },
+    {
+      day: "004",
+      title: "Carbon Footprint Calculator",
+      description:
+        "Professional carbon footprint calculator with live calculations and recommendations.",
+      status: "completed",
+      route: "/004",
+      technologies: ["React", "TypeScript", "Tailwind CSS"],
+      difficulty: "Intermediate",
+      completedDate: "2025-07-28",
+    },
     // Add more challenges as they're completed
   ];
 
