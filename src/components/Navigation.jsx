@@ -1,13 +1,10 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import {
-  Calendar,
   ArrowRight,
   CheckCircle2,
   Clock,
-  Zap,
   Github,
-  ExternalLink,
 } from "lucide-react";
 import MiniCalendar from './MiniCalendar';
 
@@ -57,6 +54,17 @@ const Navigation = () => {
       technologies: ["React", "TypeScript", "Tailwind CSS"],
       difficulty: "Intermediate",
       completedDate: "2025-07-28",
+    },
+    {
+      day: "005",
+      title: "App Icon/Logo Design",
+      description:
+        "Meet \"Defio\" - A Decentralized Finance's Logo design, showcasing modern UI principles.",
+      status: "completed",
+      route: "/004",
+      technologies: ["Figma", "Illustrator"],
+      difficulty: "intermediate",
+      completedDate: "2025-07-29",
     },
     // Add more challenges as they're completed
   ];

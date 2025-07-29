@@ -19,7 +19,24 @@ Welcome to my 100 Days Daily UI Challenge journey! This repository showcases my 
 
 ## 📅 Challenge Progress
 
-**Current Progress: 4/100** ⭐
+**Current Progress: 5/100** ⭐
+
+### ✅ Day 5 - App Icon
+**Challenge:** Design an app icon. What best represents the brand or product? Or is it incredibly unique? Does it look great at a distance and does it stand out when put on your home screen alongside other apps?
+
+**Implementation:** DeFio - Decentralized Finance Application Logo
+- Modern cryptocurrency and DeFi-focused app icon design
+- Clean, scalable vector graphics optimized for multiple sizes
+- Brand identity that stands out in the competitive fintech space
+
+**Features:**
+- 💎 Modern DeFi-focused visual identity
+- 🎨 Scalable vector design for all device sizes
+- 📱 Optimized for app store visibility
+- ⚡ Clean, memorable brand mark
+- 🌐 Represents decentralized finance innovation
+
+**[View UI Design →](https://daily-ui-challenges-iota.vercel.app/005)**
 
 ### ✅ Day 4 - Calculator
 **Challenge:** Design a calculator. Standard, scientific, or specialty calculator for something such as a mortgage, loan, etc.
@@ -183,6 +200,7 @@ dailyUIChallenges/
 │   │   ├── dailyUI002.jsx    # Day 2 - Credit Card Checkout
 │   │   ├── dailyUI003.tsx    # Day 3 - Landing Page
 │   │   ├── dailyUI004.tsx    # Day 4 - Carbon Footprint Calculator
+│   │   ├── dailyUI005.jsx    # Day 5 - DeFio App Icon
 │   │   └── ...               # Future challenges
 │   ├── assets/               # Images, icons, etc.
 │   └── main.jsx             # App entry point
@@ -207,6 +225,6 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ---
 
-**Day 4/100 Complete** ✅ | **Next Challenge:** *Day 5 - Stay Tuned*
+**Day 5/100 Complete** ✅ | **Next Challenge:** *Day 6 - Stay Tuned*
 
 *Follow along for daily UI inspiration and modern web development techniques!*
