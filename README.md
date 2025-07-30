@@ -19,7 +19,30 @@ Welcome to my 100 Days Daily UI Challenge journey! This repository showcases my 
 
 ## 📅 Challenge Progress
 
-**Current Progress: 5/100** ⭐
+**Current Progress: 6/100** ⭐
+
+### ✅ Day 6 - User Profile
+**Challenge:** Design a user profile. This could be any type of user profile, whether it's a modal overlay, a profile page, etc. Think about the most important user information, the actions they'd want to take, and how it should look.
+
+**Implementation:** Professional Profile Card - Interactive Developer Portfolio
+- Modern professional profile card with comprehensive developer information
+- Interactive sliding social icons with profile image hover effects
+- CSS custom properties integration for consistent theming
+- Dark/light theme toggle with smooth transitions
+- Clean stats display and project showcase
+- Responsive design with Tailwind CSS utilities
+
+**Features:**
+- 🎭 Interactive profile image with sliding GitHub/LinkedIn icons
+- 🌙 Dark/light theme toggle with CSS custom properties
+- 📊 Clean stats grid showing followers, repos, stars, and projects
+- 🚀 Project showcase with hover animations and external link indicators
+- 🎨 Professional green color palette with dark theme variants
+- 📱 Fully responsive design with modern CSS practices
+- ⚡ Smooth animations and micro-interactions throughout
+- 🔗 Integration with Lucide React and React Icons
+
+**[View UI Design →](https://daily-ui-challenges-iota.vercel.app/006)**
 
 ### ✅ Day 5 - App Icon
 **Challenge:** Design an app icon. What best represents the brand or product? Or is it incredibly unique? Does it look great at a distance and does it stand out when put on your home screen alongside other apps?
@@ -201,6 +224,7 @@ dailyUIChallenges/
 │   │   ├── dailyUI003.tsx    # Day 3 - Landing Page
 │   │   ├── dailyUI004.tsx    # Day 4 - Carbon Footprint Calculator
 │   │   ├── dailyUI005.jsx    # Day 5 - DeFio App Icon
+│   │   ├── dailyUI006.jsx    # Day 6 - Professional Profile Card
 │   │   └── ...               # Future challenges
 │   ├── assets/               # Images, icons, etc.
 │   └── main.jsx             # App entry point
@@ -225,6 +249,6 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ---
 
-**Day 5/100 Complete** ✅ | **Next Challenge:** *Day 6 - Stay Tuned*
+**Day 6/100 Complete** ✅ | **Next Challenge:** *Day 7 - Stay Tuned*
 
 *Follow along for daily UI inspiration and modern web development techniques!*

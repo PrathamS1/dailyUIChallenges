@@ -61,10 +61,21 @@ const Navigation = () => {
       description:
         "Meet \"Defio\" - A Decentralized Finance's Logo design, showcasing modern UI principles.",
       status: "completed",
-      route: "/004",
+      route: "/005",
       technologies: ["Figma", "Illustrator"],
-      difficulty: "intermediate",
+      difficulty: "Intermediate",
       completedDate: "2025-07-29",
+    },
+    {
+      day: "006",
+      title: "User Profile",
+      description:
+        "A Github x LinkedIn user profile design. Showcasing a modern, clean UI with user's data across the platform.",
+      status: "completed",
+      route: "/006",
+      technologies: ["React", "Tailwind CSS"],
+      difficulty: "Intermediate",
+      completedDate: "2025-07-30",
     },
     // Add more challenges as they're completed
   ];

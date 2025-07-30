@@ -5,6 +5,7 @@ import CreditCardCheckout from './components/dailyUI002';
 import LandingPage from './components/dailyUI003';
 import CarbonFootprintCalculator from './components/dailyUI004';
 import AppIconShowcase from './components/dailyUI005';
+import ProfessionalProfileCard from './components/dailyUI006';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/003" element={<LandingPage />} />
         <Route path="/004" element={<CarbonFootprintCalculator />} />
         <Route path="/005" element={<AppIconShowcase />} />
+        <Route path="/006" element={<ProfessionalProfileCard />} />
         {/* <Route path="/002" element={<New Element />} /> */}
         {/* Fallback route */}
         <Route path="*" element={<Navigation />} />

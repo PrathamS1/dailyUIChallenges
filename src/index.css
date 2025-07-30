@@ -15,6 +15,24 @@
   --calc-background: #F8F8F4;
   --calc-text: #1E1E1E;
   --calc-accent: #A3B18A;
+
+  --profile-card-primary: #27D88C;
+  --profile-card-secondary: #70FFB8;
+  --profile-card-background: #E9FFF3;
+  --profile-card-text: #122116;
+  --profile-card-accent: #00B86B;
+
+  --profile-card-primary-dark: #10FF7C;
+  --profile-card-secondary-dark: #07331C;
+  --profile-card-background-dark: #0D1014;
+  --profile-card-text-dark: #F3FFF5;
+  --profile-card-accent-dark: #29E0A9;
+  /* --profile-card-primary: #2D3A61;
+  --profile-card-secondary: #8a9bb7;
+  --profile-card-background: #F5F7FA;
+  --profile-card-text: #1D1D1F;
+  --profile-card-accent: #3EC8E8; */
+  
 }
 
 .perspective-1000 {
