@@ -77,6 +77,17 @@ const Navigation = () => {
       difficulty: "Intermediate",
       completedDate: "2025-07-30",
     },
+    {
+      day: "007",
+      title: "Focus Mode Settings",
+      description:
+        "A comprehensive mobile-first Focus Mode Settings UI with app blocking, notification control, and ambient settings.",
+      status: "completed",
+      route: "/007",
+      technologies: ["React", "CSS3", "Mobile-First Design"],
+      difficulty: "Intermediate",
+      completedDate: "2025-07-31",
+    },
     // Add more challenges as they're completed
   ];
 

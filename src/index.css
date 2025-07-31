@@ -27,6 +27,13 @@
   --profile-card-background-dark: #0D1014;
   --profile-card-text-dark: #F3FFF5;
   --profile-card-accent-dark: #29E0A9;
+
+  --settings-primary: #EF8354  ;
+  --settings-secondary: #F3D1BD  ;
+  --settings-background: #FFF9F5 ;
+  --settings-text: #2B2B2B  ;
+  --settings-accent: #6D6875  ;
+
   /* --profile-card-primary: #2D3A61;
   --profile-card-secondary: #8a9bb7;
   --profile-card-background: #F5F7FA;
