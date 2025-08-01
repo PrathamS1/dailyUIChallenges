@@ -19,7 +19,32 @@ Welcome to my 100 Days Daily UI Challenge journey! This repository showcases my 
 
 ## 📅 Challenge Progress
 
-**Current Progress: 7/100** ⭐
+**Current Progress: 8/100** ⭐
+
+### ✅ Day 8 - 404 Page
+**Challenge:** Design a 404 page. Does it suit the brand? Is it user-friendly? It might sound mundane, but not everything has to be overly flashy or colorful. Every day you might encounter a 404 page, and they're usually terrible, so here's your chance to create something useful and aesthetically pleasing.
+
+**Implementation:** Interactive 404 Error Page - Dark Elegance Meets Playful Interactions
+- Sophisticated dark theme with interactive background elements that respond to mouse movement
+- Dynamic glitch effects on the 404 number with cyberpunk-inspired color separation
+- Mouse-repelling particle system with smooth physics simulation
+- Elegant micro-interactions on all buttons with scaling, rotation, and glow effects
+- Subtle breathing animation for the entire content container
+- Professional typography with parallax text movement
+
+**Features:**
+- 🎭 Interactive glitch effects on 404 number with 5-second duration and random character substitution
+- 💫 Mouse-repelling particle system with gentle physics and smooth transitions
+- 🎮 Interactive background elements including geometric shapes and SVG connecting lines
+- ✨ Elegant button interactions with scaling, rotation, and background tinting
+- 🌊 Subtle breathing animation for content container with sine wave calculations
+- 📱 Fully responsive design maintaining elegance across all device sizes
+- 🎨 Dark theme with sophisticated color palette and gradient accents
+- ⚡ Smooth animations throughout with careful attention to performance
+- 🔄 Automatic random glitch triggers every 8-12 seconds for ambient effect
+- 🎯 Professional error messaging with clear navigation options
+
+**[View UI Design →](https://daily-ui-challenges-iota.vercel.app/008)**
 
 ### ✅ Day 7 - Settings
 **Challenge:** Design a settings page. Think about how you'd organize the various settings, what the typography should look like, and how the user should navigate between the different sections.
@@ -252,6 +277,7 @@ dailyUIChallenges/
 │   │   ├── dailyUI005.jsx    # Day 5 - DeFio App Icon
 │   │   ├── dailyUI006.jsx    # Day 6 - Professional Profile Card
 │   │   ├── dailyUI007.jsx    # Day 7 - CMS Settings Panel
+│   │   ├── dailyUI008.jsx    # Day 8 - Interactive 404 Page
 │   │   └── ...               # Future challenges
 │   ├── assets/               # Images, icons, etc.
 │   └── main.jsx             # App entry point
@@ -276,6 +302,6 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ---
 
-**Day 7/100 Complete** ✅ | **Next Challenge:** *Day 8 - Stay Tuned*
+**Day 8/100 Complete** ✅ | **Next Challenge:** *Day 9 - Stay Tuned*
 
 *Follow along for daily UI inspiration and modern web development techniques!*

@@ -88,6 +88,17 @@ const Navigation = () => {
       difficulty: "Intermediate",
       completedDate: "2025-07-31",
     },
+    {
+      day: "008",
+      title: "Custom 404 Page",
+      description:
+        "A creative 404 error page design that guides users back to the main content.",
+      status: "completed",
+      route: "/008",
+      technologies: ["React", "CSS3", "Mobile-First Design"],
+      difficulty: "Easy",
+      completedDate: "2025-08-01",
+    },
     // Add more challenges as they're completed
   ];
 
