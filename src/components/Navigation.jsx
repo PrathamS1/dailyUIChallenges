@@ -99,6 +99,17 @@ const Navigation = () => {
       difficulty: "Easy",
       completedDate: "2025-08-01",
     },
+    {
+      day: "009",
+      title: "Music Player UI",
+      description:
+        "A sleek music player UI with album artwork, playback controls, and a playlist.",
+      status: "completed",
+      route: "/009",
+      technologies: ["React", "Framer Motion", "Tailwind CSS"],
+      difficulty: "Intermediate",
+      completedDate: "2025-08-02",
+    },
     // Add more challenges as they're completed
   ];
 

@@ -19,7 +19,36 @@ Welcome to my 100 Days Daily UI Challenge journey! This repository showcases my 
 
 ## 📅 Challenge Progress
 
-**Current Progress: 8/100** ⭐
+**Current Progress: 9/100** ⭐
+
+### ✅ Day 9 - Music Player
+**Challenge:** Design a music player. Consider the controls, layout, and visual hierarchy. Also, consider the user's experience - can they easily find and control the music?
+
+**Implementation:** Immersive Music Player - Spotify-Integrated Experience
+- Full Spotify Web API integration with OAuth 2.0 PKCE authentication flow
+- Dynamic background themes that adapt to album artwork colors
+- Real-time search functionality with Spotify track database
+- Interactive card stack visualization with hover effects and physics
+- Comprehensive audio controls with progress tracking and volume management
+- Trending songs, similar artists, and personalized charts integration
+- Guest mode with fallback static data for users without Spotify accounts
+- Responsive design optimized for both desktop and mobile experiences
+
+**Features:**
+- 🎵 Full Spotify Web API integration with secure PKCE authentication
+- 🎨 Dynamic background themes adapting to current track's dominant colors
+- 🔍 Real-time search with instant results from Spotify's massive music database
+- 📚 Interactive card stack with physics-based hover animations and 3D transformations
+- 🎛️ Comprehensive playback controls: play/pause, skip, shuffle, repeat, volume, and progress tracking
+- 📈 Live trending songs, similar artists recommendations, and personalized mood-based playlists
+- 👤 Guest mode with elegant fallback to curated static content for non-Spotify users
+- 📱 Fully responsive design maintaining premium feel across all device sizes
+- 🔐 Secure environment variable configuration with client-side OAuth implementation
+- ⚡ Performance-optimized with efficient API calls and proper state management
+- 💫 Smooth animations throughout using Framer Motion for enhanced user experience
+- 🎯 Professional-grade music player rivaling commercial streaming applications
+
+**[View UI Design →](https://daily-ui-challenges-iota.vercel.app/009)**
 
 ### ✅ Day 8 - 404 Page
 **Challenge:** Design a 404 page. Does it suit the brand? Is it user-friendly? It might sound mundane, but not everything has to be overly flashy or colorful. Every day you might encounter a 404 page, and they're usually terrible, so here's your chance to create something useful and aesthetically pleasing.
@@ -278,7 +307,13 @@ dailyUIChallenges/
 │   │   ├── dailyUI006.jsx    # Day 6 - Professional Profile Card
 │   │   ├── dailyUI007.jsx    # Day 7 - CMS Settings Panel
 │   │   ├── dailyUI008.jsx    # Day 8 - Interactive 404 Page
+│   │   ├── dailyUI009.jsx    # Day 9 - Spotify Music Player
 │   │   └── ...               # Future challenges
+│   ├── hooks/                # Custom React hooks
+│   │   ├── useSpotifyAuth.js # Spotify authentication hook
+│   │   └── useSpotifyData.js # Spotify data fetching hook
+│   ├── services/             # API services
+│   │   └── spotifyAPI.js     # Spotify Web API integration
 │   ├── assets/               # Images, icons, etc.
 │   └── main.jsx             # App entry point
 ├── public/                   # Static assets
@@ -302,6 +337,6 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ---
 
-**Day 8/100 Complete** ✅ | **Next Challenge:** *Day 9 - Stay Tuned*
+**Day 9/100 Complete** ✅ | **Next Challenge:** *Day 10 - Stay Tuned*
 
 *Follow along for daily UI inspiration and modern web development techniques!*
