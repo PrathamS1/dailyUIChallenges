@@ -9,6 +9,7 @@ import ProfessionalProfileCard from './components/dailyUI006';
 import CMSSettingsPanel from './components/dailyUI007';
 import Simple404 from './components/dailyUI008';
 import ImmersiveMusicPlayer from './components/dailyUI009';
+import SocialShare from './components/dailyUI010';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
         <Route path="/007" element={<CMSSettingsPanel />} />
         <Route path="/008" element={<Simple404 />} />
         <Route path="/009" element={<ImmersiveMusicPlayer />} />
+        <Route path="/010" element={<SocialShare />} />
 
         {/* <Route path="/002" element={<New Element />} /> */}
         {/* Fallback route */}

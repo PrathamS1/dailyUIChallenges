@@ -110,6 +110,17 @@ const Navigation = () => {
       difficulty: "Intermediate",
       completedDate: "2025-08-02",
     },
+    {
+      day: "010",
+      title: "Social Share",
+      description:
+        "Social sharing interface for blog posts and articles with platform-specific optimizations and engagement tracking.",
+      status: "completed",
+      route: "/010",
+      technologies: ["React", "Web Share API", "Framer Motion", "Clipboard API"],
+      difficulty: "Intermediate",
+      completedDate: "2025-08-03",
+    },
     // Add more challenges as they're completed
   ];
 
