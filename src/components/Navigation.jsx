@@ -121,6 +121,17 @@ const Navigation = () => {
       difficulty: "Intermediate",
       completedDate: "2025-08-03",
     },
+    {
+      day: "011",
+      title: "Flash Message",
+      description:
+        "Interactive toast notifications with contextual theming, smart timing, and action buttons for login, upload, and subscription flows.",
+      status: "completed",
+      route: "/011",
+      technologies: ["React", "Framer Motion", "Tailwind CSS", "Context API"],
+      difficulty: "Easy",
+      completedDate: "2025-08-04",
+    },
     // Add more challenges as they're completed
   ];
 

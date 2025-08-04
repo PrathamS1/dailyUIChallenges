@@ -19,7 +19,32 @@ Welcome to my 100 Days Daily UI Challenge journey! This repository showcases my 
 
 ## 📅 Challenge Progress
 
-**Current Progress: 10/100** ⭐
+**Current Progress: 11/100** ⭐
+
+### ✅ Day 11 - Flash Message
+**Challenge:** Design a Flash Message with both the error message and success message
+
+**Implementation:** Contextual Flash Messages - Smart Notification System
+- Comprehensive flash message system with 3 themed categories: Login, Upload, and Subscription
+- Category-specific visual design with unique icons, color schemes, and left border styling
+- Smart auto-dismiss timing system (4s success, 6s error, 5s subscription) with hover-to-pause functionality
+- Top-right corner positioning with smooth slide-in animations from the right
+- Complete design showcase section displaying all 6 message variations as static mockups
+- Progress bars with category-themed colors and realistic timing simulation
+
+**Features:**
+- 🎨 Category-specific theming: Login (Blue/Orange), Upload (Green/Red), Subscription (Purple/Pink)
+- 🔔 6 distinct message types with contextual icons: LogIn, AlertTriangle, CheckCircle, XCircle, Crown, CreditCard
+- ⏱️ Smart timing system with different durations based on message importance and type
+- 🎭 Hover-to-pause functionality preserving user control over message visibility
+- 📍 Strategic top-right positioning optimal for toast notifications without blocking content
+- ✨ Framer Motion animations with spring physics for smooth entrance and exit transitions
+- 📋 Complete design showcase with all variations displayed as portfolio-ready mockups
+- 🎯 Progress bars with varying completion states showing realistic user interaction scenarios
+- 📱 Minimal, clean design prioritizing essential information without visual clutter
+- 🔄 Interactive demo buttons for testing each message type with immediate visual feedback
+
+**[View UI Design →](https://daily-ui-challenges-iota.vercel.app/011)**
 
 ### ✅ Day 10 - Social Share
 **Challenge:** Design a social share button/icon and be mindful of the size, imagery, placement, and purpose for sharing.
@@ -330,6 +355,7 @@ dailyUIChallenges/
 │   │   ├── dailyUI008.jsx    # Day 8 - Interactive 404 Page
 │   │   ├── dailyUI009.jsx    # Day 9 - Spotify Music Player
 │   │   ├── dailyUI010.jsx    # Day 10 - Social Share Component
+│   │   ├── dailyUI011.jsx    # Day 11 - Flash Message System
 │   │   └── ...               # Future challenges
 │   ├── hooks/                # Custom React hooks
 │   │   ├── useSpotifyAuth.js # Spotify authentication hook
@@ -359,6 +385,6 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ---
 
-**Day 10/100 Complete** ✅ | **Next Challenge:** *Day 11 - Stay Tuned*
+**Day 11/100 Complete** ✅ | **Next Challenge:** *Day 12 - Stay Tuned*
 
 *Follow along for daily UI inspiration and modern web development techniques!*
