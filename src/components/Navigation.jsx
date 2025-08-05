@@ -132,6 +132,17 @@ const Navigation = () => {
       difficulty: "Easy",
       completedDate: "2025-08-04",
     },
+    {
+      day: "012",
+      title: "Ice Cream Shop",
+      description:
+        "A delightful ice cream shop UI with product listings, cart functionality, and a checkout flow.",
+      status: "completed",
+      route: "/012",
+      technologies: ["React", "Framer Motion", "Tailwind CSS"],
+      difficulty: "Intermediate",
+      completedDate: "2025-08-05",
+    },
     // Add more challenges as they're completed
   ];
 

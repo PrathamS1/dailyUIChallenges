@@ -19,7 +19,24 @@ Welcome to my 100 Days Daily UI Challenge journey! This repository showcases my 
 
 ## 📅 Challenge Progress
 
-**Current Progress: 11/100** ⭐
+**Current Progress: 12/100** ⭐
+
+### ✅ Day 12 - E-commerce Shop
+**Challenge:** Design an E-commerce Shop that allows users to browse products, add them to cart, and manage their shopping experience.
+
+**Implementation:** ScoopJoy Ice Cream Shop - Complete E-commerce Experience
+- Full e-commerce functionality with comprehensive ice cream and cake product catalog
+- Better cart system with toast notifications and expandable modal interface
+- Sophisticated scroll-responsive navigation with dynamic background effects
+- Expandable search functionality with bidirectional container expansion
+
+**Features:**
+- 🛒 Complete shopping cart system with toast notifications and quantity management
+- 🍦 30+ ice cream products across 3 categories with responsive grid layout
+- 🎨 Custom lime green and orange design system throughout
+- Scroll-responsive navigation with dynamic backgrounds
+
+**[View UI Design →](https://daily-ui-challenges-iota.vercel.app/012)**
 
 ### ✅ Day 11 - Flash Message
 **Challenge:** Design a Flash Message with both the error message and success message
@@ -385,6 +402,6 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ---
 
-**Day 11/100 Complete** ✅ | **Next Challenge:** *Day 12 - Stay Tuned*
+**Day 12/100 Complete** ✅ | **Next Challenge:** *Day 13 - Stay Tuned*
 
 *Follow along for daily UI inspiration and modern web development techniques!*

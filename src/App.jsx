@@ -11,6 +11,7 @@ import Simple404 from './components/dailyUI008';
 import ImmersiveMusicPlayer from './components/dailyUI009';
 import SocialShare from './components/dailyUI010';
 import FlashMessages from './components/dailyUI011';
+import IceCreamShop from './components/dailyUI012';
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
         <Route path="/009" element={<ImmersiveMusicPlayer />} />
         <Route path="/010" element={<SocialShare />} />
         <Route path="/011" element={<FlashMessages />} />
+        <Route path="/012" element={<IceCreamShop />} />
 
         {/* <Route path="/002" element={<New Element />} /> */}
         {/* Fallback route */}
