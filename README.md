@@ -19,7 +19,26 @@ Welcome to my 100 Days Daily UI Challenge journey! This repository showcases my 
 
 ## 📅 Challenge Progress
 
-**Current Progress: 12/100** ⭐
+**Current Progress: 13/100** ⭐
+
+### ✅ Day 13 - Direct Messaging
+**Challenge:** Design a Direct Messaging app, profile, or chat box. Consider the parties involved in the messages, images, placement, and context of the messages.
+
+**Implementation:** Marketplace Buyer-Seller Chat - Shopify-Inspired E-commerce Communication
+- Complete buyer-seller chat interface for furniture marketplace transactions
+- Dynamic theme system with 5 color schemes and real-time theme switching
+- Message status indicators (sent, delivered, seen) with realistic conversation flow
+- Product context integration with seller verification and delivery scheduling
+
+**Features:**
+- 💬 Complete chat flow from inquiry to order confirmation with delivery details
+- 🎨 5 dynamic themes with real-time color switching affecting all UI elements
+- ✅ Message status tracking with realistic marketplace conversation progression
+- 🛋️ Product-focused messaging with furniture sofa set transaction example
+- 🔧 Custom scrollbar styling and smooth animations throughout interface
+- 📱 Mobile-first design with professional marketplace aesthetics
+
+**[View UI Design →](https://daily-ui-challenges-iota.vercel.app/013)**
 
 ### ✅ Day 12 - E-commerce Shop
 **Challenge:** Design an E-commerce Shop that allows users to browse products, add them to cart, and manage their shopping experience.
@@ -402,6 +421,6 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ---
 
-**Day 12/100 Complete** ✅ | **Next Challenge:** *Day 13 - Stay Tuned*
+**Day 13/100 Complete** ✅ | **Next Challenge:** *Day 14 - Stay Tuned*
 
 *Follow along for daily UI inspiration and modern web development techniques!*

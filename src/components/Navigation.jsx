@@ -143,6 +143,17 @@ const Navigation = () => {
       difficulty: "Intermediate",
       completedDate: "2025-08-05",
     },
+    {
+      day: "013",
+      title: "Direct Messaging",
+      description:
+        "Marketplace buyer-seller chat UI inspired by Shopify commerce platforms with trust indicators and product context.",
+      status: "completed",
+      route: "/013",
+      technologies: ["React", "Framer Motion", "Tailwind CSS"],
+      difficulty: "Intermediate",
+      completedDate: "2025-08-06",
+    },
     // Add more challenges as they're completed
   ];
 
