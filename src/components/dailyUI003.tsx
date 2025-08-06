@@ -100,7 +100,7 @@ const DailyUI003: React.FC = () => {
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="bg-landing-primary text-white px-4 sm:px-6 py-2 rounded-lg font-medium hover:opacity-90 transition-all text-sm lg:text-base"
+                className="bg-[var(--landing-primary)] text-white px-4 sm:px-6 py-2 rounded-lg font-medium hover:opacity-90 transition-all text-sm lg:text-base"
               >
                 Get Started
               </motion.button>
@@ -111,7 +111,7 @@ const DailyUI003: React.FC = () => {
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="bg-landing-primary text-white px-4 py-2 rounded-lg font-medium hover:opacity-90 transition-all text-sm"
+                className="bg-[var(--landing-primary)] text-white px-4 py-2 rounded-lg font-medium hover:opacity-90 transition-all text-sm"
               >
                 Menu
               </motion.button>
@@ -167,7 +167,7 @@ const DailyUI003: React.FC = () => {
                       boxShadow: "0 10px 25px rgba(74, 144, 226, 0.3)",
                     }}
                     whileTap={{ scale: 0.95 }}
-                    className="bg-landing-primary text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg text-base sm:text-lg font-semibold hover:opacity-90 transition-all shadow-lg"
+                    className="bg-[var(--landing-primary)] text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg text-base sm:text-lg font-semibold hover:opacity-90 transition-all shadow-lg"
                   >
                     Book a Demo
                   </motion.button>
@@ -180,7 +180,7 @@ const DailyUI003: React.FC = () => {
                         .querySelector("#journey")
                         ?.scrollIntoView({ behavior: "smooth" });
                     }}
-                    className="border-2 border-landing-primary text-landing-primary px-6 sm:px-8 py-3 sm:py-4 rounded-lg text-base sm:text-lg font-semibold hover:bg-landing-primary hover:text-white transition-all"
+                    className="border-2 border-landing-primary text-landing-primary px-6 sm:px-8 py-3 sm:py-4 rounded-lg text-base sm:text-lg font-semibold hover:bg-[var(--landing-primary)] hover:text-white transition-all"
                   >
                     See How It Works
                   </motion.button>
@@ -318,7 +318,7 @@ const DailyUI003: React.FC = () => {
           className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
         >
           <div className="w-6 h-10 border-2 border-landing-primary rounded-full flex justify-center">
-            <div className="w-1 h-3 bg-landing-primary rounded-full mt-2"></div>
+            <div className="w-1 h-3 bg-[var(--landing-primary)] rounded-full mt-2"></div>
           </div>
         </motion.div>
       </section>
@@ -711,7 +711,7 @@ const DailyUI003: React.FC = () => {
             viewport={{ once: true }}
             className="flex justify-center mt-12"
           >
-            <div className="bg-landing-primary text-white px-6 py-3 rounded-full flex items-center gap-2 shadow-lg">
+            <div className="bg-[var(--landing-primary)] text-white px-6 py-3 rounded-full flex items-center gap-2 shadow-lg">
               <span className="text-sm font-medium">
                 Transform Your Process
               </span>
@@ -1632,7 +1632,7 @@ const DailyUI003: React.FC = () => {
                       viewport={{ once: true }}
                       className="flex items-start gap-4 group"
                     >
-                      <div className="w-2 h-2 bg-landing-primary rounded-full mt-3 group-hover:scale-150 transition-transform duration-300"></div>
+                      <div className="w-2 h-2 bg-[var(--landing-primary)] rounded-full mt-3 group-hover:scale-150 transition-transform duration-300"></div>
                       <div>
                         <h4 className="font-semibold text-[var(--landing-text)] mb-2 group-hover:text-landing-primary transition-colors">
                           {feature.title}
@@ -1718,7 +1718,7 @@ const DailyUI003: React.FC = () => {
                 boxShadow: "0 20px 40px rgba(74, 144, 226, 0.3)",
               }}
               whileTap={{ scale: 0.95 }}
-              className="bg-landing-primary text-white px-12 py-4 rounded-2xl text-lg font-semibold shadow-xl hover:shadow-2xl transition-all duration-300"
+              className="bg-[var(--landing-primary)] text-white px-12 py-4 rounded-2xl text-lg font-semibold shadow-xl hover:shadow-2xl transition-all duration-300"
             >
               <span className="flex items-center gap-3">
                 Try the Mentor Dashboard
@@ -1827,7 +1827,7 @@ const DailyUI003: React.FC = () => {
                   <div>
                     <h4 className="font-semibold text-[var(--landing-text)]">
                       Anita Mehta
-                      <span className="inline-block w-8 h-0.5 bg-landing-primary ml-2"></span>
+                      <span className="inline-block w-8 h-0.5 bg-[var(--landing-primary)] ml-2"></span>
                     </h4>
                     <p className="text-sm text-landing-secondary">
                       CTO @ FlowState
@@ -1908,7 +1908,7 @@ const DailyUI003: React.FC = () => {
                     <div>
                       <h4 className="text-lg font-bold text-[var(--landing-text)]">
                         Tanaya Shah
-                        <span className="inline-block w-12 h-0.5 bg-landing-primary ml-3"></span>
+                        <span className="inline-block w-12 h-0.5 bg-[var(--landing-primary)] ml-3"></span>
                       </h4>
                       <p className="text-landing-secondary">
                         Growth Lead @ ArkaTech
@@ -2172,7 +2172,7 @@ const DailyUI003: React.FC = () => {
               repeat: Infinity,
               ease: "easeInOut",
             }}
-            className="absolute top-20 right-20 w-32 h-32 bg-landing-primary/5 rounded-2xl"
+            className="absolute top-20 right-20 w-32 h-32 bg-[var(--landing-primary)]/5 rounded-2xl"
           ></motion.div>
 
           <motion.div
@@ -2219,7 +2219,7 @@ const DailyUI003: React.FC = () => {
           >
             <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-2 border border-gray-200/50 shadow-lg">
               <div className="flex items-center gap-4">
-                <button className="px-6 py-3 bg-landing-primary text-white rounded-xl font-medium transition-all duration-300">
+                <button className="px-6 py-3 bg-[var(--landing-primary)] text-white rounded-xl font-medium transition-all duration-300">
                   Monthly
                 </button>
                 <button className="px-6 py-3 text-[var(--landing-text)] hover:bg-gray-100/50 rounded-xl font-medium transition-all duration-300">
@@ -2371,7 +2371,7 @@ const DailyUI003: React.FC = () => {
                     viewport={{ once: true }}
                     className="flex items-center gap-3"
                   >
-                    <div className="w-5 h-5 bg-landing-primary/20 rounded-full flex items-center justify-center">
+                    <div className="w-5 h-5 bg-[var(--landing-primary)]/20 rounded-full flex items-center justify-center">
                       <span className="text-landing-primary text-xs">✓</span>
                     </div>
                     <span className="text-[var(--landing-text)]">
@@ -2966,7 +2966,7 @@ const DailyUI003: React.FC = () => {
                   <motion.button
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
-                    className="bg-landing-primary text-white px-6 py-3 rounded-xl font-medium hover:opacity-90 transition-all duration-300"
+                    className="bg-[var(--landing-primary)] text-white px-6 py-3 rounded-xl font-medium hover:opacity-90 transition-all duration-300"
                   >
                     Subscribe
                   </motion.button>
@@ -3007,7 +3007,7 @@ const DailyUI003: React.FC = () => {
                       >
                         <span className="relative">
                           {link}
-                          <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-landing-primary group-hover:w-full transition-all duration-300"></span>
+                          <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[var(--landing-primary)] group-hover:w-full transition-all duration-300"></span>
                         </span>
                       </a>
                     </motion.li>
@@ -3046,7 +3046,7 @@ const DailyUI003: React.FC = () => {
                       >
                         <span className="relative">
                           {link}
-                          <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-landing-primary group-hover:w-full transition-all duration-300"></span>
+                          <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[var(--landing-primary)] group-hover:w-full transition-all duration-300"></span>
                         </span>
                       </a>
                     </motion.li>
@@ -3080,7 +3080,7 @@ const DailyUI003: React.FC = () => {
                         >
                           <span className="relative">
                             {link}
-                            <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-landing-primary group-hover:w-full transition-all duration-300"></span>
+                            <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[var(--landing-primary)] group-hover:w-full transition-all duration-300"></span>
                           </span>
                         </a>
                       </motion.li>
