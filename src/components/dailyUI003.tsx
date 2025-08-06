@@ -291,11 +291,13 @@ const DailyUI003: React.FC = () => {
                       },
                     }}
                   >
-                    <div className="bg-white rounded-lg shadow-md border border-gray-200 p-2 sm:p-3 hover:shadow-lg transition-shadow">
-                      <div className="w-6 h-6 sm:w-8 sm:h-8 bg-landing-accent rounded-full flex items-center justify-center">
-                        <span className="text-white text-xs sm:text-sm font-bold">
-                          !
-                        </span>
+                    <div className="rounded-lg shadow-md border border-gray-200 hover:shadow-lg transition-shadow">
+                      <div className="w-12 h-12 sm:w-12 sm:h-12 bg-landing-accent rounded-full flex items-center justify-center">
+                        <img
+                          src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGJ1c2luZXNzfGVufDB8fDB8fHww"
+                          alt="Icon"
+                          className="w-full h-full rounded-xl object-cover"
+                        />
                       </div>
                     </div>
                   </motion.div>
