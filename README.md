@@ -19,7 +19,26 @@ Welcome to my 100 Days Daily UI Challenge journey! This repository showcases my 
 
 ## 📅 Challenge Progress
 
-**Current Progress: 13/100** ⭐
+**Current Progress: 14/100** ⭐
+
+### ✅ Day 14 - Countdown Timer
+**Challenge:** Design a Countdown Timer for a special event, product launch, deadline, or sale.
+
+**Implementation:** Retro Launch Countdown - Mission Control Interface
+- Light-themed retro countdown with rotation effects on changing digits
+- Sharp-edged design with clipPath styling for authentic computer terminal aesthetics
+- Smart digit animations that only trigger on value changes with Y-axis box movement
+- Interactive hover effects with sliding overlay animations on timer boxes
+- Mission control status display with pulsing indicators and T-minus time format
+
+**Features:**
+- 🎲 Rotation effects with X and Y axis animations for changing digits only
+- 🎨 Light retro theme with blue backdrop gradients and sharp geometric borders
+- ⚡ Smart change detection preventing unnecessary animations on static digits
+- 💫 Interactive hover effects with sliding blue overlay animations across timer boxes
+- 📱 Responsive design maintaining retro computer terminal feel across all devices
+
+**[View UI Design →](https://daily-ui-challenges-iota.vercel.app/014)**
 
 ### ✅ Day 13 - Direct Messaging
 **Challenge:** Design a Direct Messaging app, profile, or chat box. Consider the parties involved in the messages, images, placement, and context of the messages.
@@ -421,6 +440,6 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ---
 
-**Day 13/100 Complete** ✅ | **Next Challenge:** *Day 14 - Stay Tuned*
+**Day 14/100 Complete** ✅ | **Next Challenge:** *Day 15 - Stay Tuned*
 
 *Follow along for daily UI inspiration and modern web development techniques!*

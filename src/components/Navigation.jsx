@@ -154,6 +154,17 @@ const Navigation = () => {
       difficulty: "Intermediate",
       completedDate: "2025-08-06",
     },
+    {
+      day: "014",
+      title: "Countdown Timer",
+      description:
+        "Retro arcade-style game launch countdown with CRT monitor effects, scanlines, and neon cyberpunk aesthetics.",
+      status: "completed",
+      route: "/014",
+      technologies: ["React", "Framer Motion", "Tailwind CSS"],
+      difficulty: "Advanced",
+      completedDate: "2025-08-07",
+    },
     // Add more challenges as they're completed
   ];
 
