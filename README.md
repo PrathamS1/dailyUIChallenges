@@ -19,7 +19,24 @@ Welcome to my 100 Days Daily UI Challenge journey! This repository showcases my 
 
 ## 📅 Challenge Progress
 
-**Current Progress: 14/100** ⭐
+**Current Progress: 15/100** ⭐
+
+### ✅ Day 15 - On/Off Switch
+**Challenge:** Design an On/Off Switch for user interfaces with smooth state transitions and visual feedback.
+
+**Implementation:** Geometric Toggle Switch - Rhombus to Circle Morphing
+- Dark-themed toggle with sophisticated rhombus-to-circle shape morphing animation
+- 3D depth effects with inset shadows and gradient lighting for premium feel
+- Minimal geometric line patterns and clean abstract design elements
+- Real-world usage example with Push Notifications service in light-themed card interface
+
+**Features:**
+- 💎 Shape morphing animation: white rhombus (on) ↔ dark circle (off) with rotation effects
+- 🎨 Dark theme with sophisticated gradients and 3D shadow depth
+- ⚡ Spring physics for smooth sliding motion and responsive interactions
+- 📱 Practical usage example demonstrating service toggle in modern app interface
+
+**[View UI Design →](https://daily-ui-challenges-iota.vercel.app/015)**
 
 ### ✅ Day 14 - Countdown Timer
 **Challenge:** Design a Countdown Timer for a special event, product launch, deadline, or sale.
@@ -440,6 +457,6 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ---
 
-**Day 14/100 Complete** ✅ | **Next Challenge:** *Day 15 - Stay Tuned*
+**Day 15/100 Complete** ✅ | **Next Challenge:** *Day 16 - Stay Tuned*
 
 *Follow along for daily UI inspiration and modern web development techniques!*

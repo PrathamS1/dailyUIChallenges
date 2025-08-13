@@ -1,16 +1,29 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
+import { useState, useMemo } from "react";
 import {
   ArrowRight,
   CheckCircle2,
   Clock,
   Github,
+  Search,
+  Filter,
+  SortAsc,
+  Calendar,
+  TrendingUp,
+  Award,
 } from "lucide-react";
 import MiniCalendar from './MiniCalendar';
 
 const Navigation = () => {
+  // State for search and filters
+  const [searchTerm, setSearchTerm] = useState("");
+  const [difficultyFilter, setDifficultyFilter] = useState("all");
+  const [sortBy, setSortBy] = useState("day");
+  const [showFilters, setShowFilters] = useState(false);
+
   // UI Challenges data - will expand as you add more
-  const challenges = [
+  const challenges = useMemo(() => [
     {
       day: "001",
       title: "Sign Up Page",
@@ -162,11 +175,113 @@ const Navigation = () => {
       status: "completed",
       route: "/014",
       technologies: ["React", "Framer Motion", "Tailwind CSS"],
-      difficulty: "Advanced",
+      difficulty: "Intermediate",
       completedDate: "2025-08-07",
     },
+    {
+      day: "015",
+      title: "On/Off Switch",
+      description:
+        "Geometric toggle switch with smooth rhombus-to-circle morphing animation.",
+      status: "completed",
+      route: "/015",
+      technologies: ["React", "Framer Motion", "Tailwind CSS"],
+      difficulty: "Easy",
+      completedDate: "2025-08-13",
+    },
     // Add more challenges as they're completed
-  ];
+  ], []);
+
+  // Helper Functions
+  const getProgressStats = () => {
+    const completed = challenges.filter(c => c.status === "completed").length;
+    const total = 100;
+    const percentage = (completed / total) * 100;
+    
+    // Calculate streak (consecutive days)
+    const completedDates = challenges
+      .filter(c => c.status === "completed" && c.completedDate)
+      .map(c => new Date(c.completedDate))
+      .sort((a, b) => b - a);
+    
+    let currentStreak = 0;
+    if (completedDates.length > 0) {
+      const today = new Date();
+      let checkDate = new Date(completedDates[0]);
+      
+      while (completedDates.some(date => 
+        date.toDateString() === checkDate.toDateString()
+      )) {
+        currentStreak++;
+        checkDate.setDate(checkDate.getDate() - 1);
+      }
+    }
+    
+    return { completed, total, percentage, currentStreak };
+  };
+
+  const getDifficultyStats = () => {
+    const stats = challenges.reduce((acc, challenge) => {
+      if (challenge.status === "completed") {
+        acc[challenge.difficulty] = (acc[challenge.difficulty] || 0) + 1;
+      }
+      return acc;
+    }, {});
+    return stats;
+  };
+
+  const getTechnologyStats = () => {
+    const techCount = {};
+    challenges.forEach(challenge => {
+      if (challenge.status === "completed") {
+        challenge.technologies.forEach(tech => {
+          techCount[tech] = (techCount[tech] || 0) + 1;
+        });
+      }
+    });
+    
+    return Object.entries(techCount)
+      .sort(([,a], [,b]) => b - a)
+      .slice(0, 5)
+      .map(([tech, count]) => ({ tech, count }));
+  };
+
+  // Filtering and Sorting Logic
+  const filteredAndSortedChallenges = useMemo(() => {
+    let filtered = challenges.filter(challenge => {
+      const matchesSearch = challenge.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
+                           challenge.description.toLowerCase().includes(searchTerm.toLowerCase()) ||
+                           challenge.technologies.some(tech => 
+                             tech.toLowerCase().includes(searchTerm.toLowerCase())
+                           );
+      
+      const matchesDifficulty = difficultyFilter === "all" || 
+                               challenge.difficulty === difficultyFilter;
+      
+      return matchesSearch && matchesDifficulty;
+    });
+
+    // Sort logic
+    filtered.sort((a, b) => {
+      switch (sortBy) {
+        case "day":
+          return parseInt(a.day) - parseInt(b.day);
+        case "difficulty": {
+          const difficultyOrder = { "Easy": 1, "Intermediate": 2, "Advanced": 3 };
+          return difficultyOrder[a.difficulty] - difficultyOrder[b.difficulty];
+        }
+        case "date":
+          if (!a.completedDate || !b.completedDate) return 0;
+          return new Date(b.completedDate) - new Date(a.completedDate);
+        case "title":
+          return a.title.localeCompare(b.title);
+        default:
+          return 0;
+      }
+    });
+
+    return filtered;
+  }, [challenges, searchTerm, difficultyFilter, sortBy]);
 
   const completedCount = challenges.filter(
     (c) => c.status === "completed"
@@ -284,6 +399,112 @@ const Navigation = () => {
           </div>
         </motion.div>
 
+        {/* Search and Filters Section */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.2 }}
+          className="mb-8"
+        >
+          <div className="bg-white rounded-2xl p-6 border border-zinc-200 shadow-sm">
+            <div className="flex flex-col md:flex-row gap-4 items-center justify-between">
+              {/* Search Bar */}
+              <div className="relative flex-1 max-w-md">
+                <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-zinc-400 w-4 h-4" />
+                <input
+                  type="text"
+                  placeholder="Search challenges..."
+                  value={searchTerm}
+                  onChange={(e) => setSearchTerm(e.target.value)}
+                  className="w-full pl-10 pr-4 py-2 border border-zinc-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-zinc-900 focus:border-transparent"
+                />
+              </div>
+
+              {/* Filter Controls */}
+              <div className="flex items-center gap-3">
+                <button
+                  onClick={() => setShowFilters(!showFilters)}
+                  className={`flex items-center gap-2 px-3 py-2 border rounded-lg transition-colors ${
+                    showFilters 
+                      ? 'border-zinc-900 bg-zinc-900 text-white' 
+                      : 'border-zinc-200 hover:bg-zinc-50'
+                  }`}
+                >
+                  <Filter className="w-4 h-4" />
+                  <span className="text-sm">Filters</span>
+                </button>
+
+                <div className="flex items-center gap-2 px-3 py-2 border border-zinc-200 rounded-lg bg-white">
+                  <SortAsc className="w-4 h-4 text-zinc-400" />
+                  <select
+                    value={sortBy}
+                    onChange={(e) => setSortBy(e.target.value)}
+                    className="text-sm bg-transparent border-none outline-none focus:ring-0 cursor-pointer min-w-0 px-2"
+                  >
+                    <option value="day">Day Order</option>
+                    <option value="difficulty">Difficulty Level</option>
+                    <option value="date">Completion Date</option>
+                    <option value="title">Alphabetical</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            {/* Expanded Filters */}
+            {showFilters && (
+              <motion.div
+                initial={{ opacity: 0, height: 0 }}
+                animate={{ opacity: 1, height: "auto" }}
+                exit={{ opacity: 0, height: 0 }}
+                className="mt-4 pt-4 border-t border-zinc-200"
+              >
+                <div className="flex flex-wrap gap-3">
+                  <div className="flex items-center gap-2">
+                    <label className="text-sm text-zinc-600">Difficulty:</label>
+                    <select
+                      value={difficultyFilter}
+                      onChange={(e) => setDifficultyFilter(e.target.value)}
+                      className="px-3 py-1 border border-zinc-200 rounded text-sm focus:outline-none focus:ring-2 focus:ring-zinc-900"
+                    >
+                      <option value="all">All</option>
+                      <option value="Easy">Easy</option>
+                      <option value="Intermediate">Intermediate</option>
+                      <option value="Advanced">Advanced</option>
+                    </select>
+                  </div>
+
+                  {/* Quick Stats */}
+                  <div className="flex items-center gap-4 ml-auto">
+                    <div className="flex items-center gap-1 text-sm text-zinc-600">
+                      <TrendingUp className="w-4 h-4" />
+                      <span>Streak: {getProgressStats().currentStreak}</span>
+                    </div>
+                    <div className="flex items-center gap-1 text-sm text-zinc-600">
+                      <Award className="w-4 h-4" />
+                      <span>Total: {completedCount}/100</span>
+                    </div>
+                  </div>
+                </div>
+              </motion.div>
+            )}
+          </div>
+        </motion.div>
+
+        {/* Results Counter */}
+        {(searchTerm || difficultyFilter !== "all") && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            className="mb-4"
+          >
+            <p className="text-sm text-zinc-600">
+              Showing {filteredAndSortedChallenges.length} of {challenges.length} challenges
+              {searchTerm && ` for "${searchTerm}"`}
+              {difficultyFilter !== "all" && ` (${difficultyFilter} difficulty)`}
+            </p>
+          </motion.div>
+        )}
+
         {/* Challenges Grid */}
         <motion.div
           variants={containerVariants}
@@ -291,24 +512,36 @@ const Navigation = () => {
           animate="visible"
           className="grid md:grid-cols-2 lg:grid-cols-3 gap-6"
         >
-          {challenges.map((challenge) => (
+          {filteredAndSortedChallenges.length > 0 ? (
+            filteredAndSortedChallenges.map((challenge) => (
+              <motion.div
+                key={challenge.day}
+                variants={itemVariants}
+                whileHover={{ y: -5 }}
+                className="group"
+              >
+                {challenge.status === "completed" ? (
+                  <Link to={challenge.route} className="block">
+                    <ChallengeCard challenge={challenge} />
+                  </Link>
+                ) : (
+                  <div className="cursor-not-allowed">
+                    <ChallengeCard challenge={challenge} />
+                  </div>
+                )}
+              </motion.div>
+            ))
+          ) : (
             <motion.div
-              key={challenge.day}
-              variants={itemVariants}
-              whileHover={{ y: -5 }}
-              className="group"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              className="col-span-full text-center py-12"
             >
-              {challenge.status === "completed" ? (
-                <Link to={challenge.route} className="block">
-                  <ChallengeCard challenge={challenge} />
-                </Link>
-              ) : (
-                <div className="cursor-not-allowed">
-                  <ChallengeCard challenge={challenge} />
-                </div>
-              )}
+              <Search className="w-12 h-12 text-zinc-300 mx-auto mb-4" />
+              <h3 className="text-lg font-medium text-zinc-900 mb-2">No challenges found</h3>
+              <p className="text-zinc-600">Try adjusting your search or filter criteria</p>
             </motion.div>
-          ))}
+          )}
         </motion.div>
 
         {/* Footer Info */}
@@ -319,6 +552,26 @@ const Navigation = () => {
           className="mt-16 text-center border-b rounded-2xl "
         >
           <div className="bg-white rounded-2xl p-8 border border-zinc-200 shadow-sm">
+            {/* Quick Stats */}
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+              <div className="text-center">
+                <div className="text-2xl font-bold text-zinc-900">{getProgressStats().currentStreak}</div>
+                <div className="text-sm text-zinc-600">Day Streak</div>
+              </div>
+              <div className="text-center">
+                <div className="text-2xl font-bold text-zinc-900">{Object.values(getDifficultyStats()).reduce((a, b) => a + b, 0)}</div>
+                <div className="text-sm text-zinc-600">Completed</div>
+              </div>
+              <div className="text-center">
+                <div className="text-2xl font-bold text-zinc-900">{getTechnologyStats().length}</div>
+                <div className="text-sm text-zinc-600">Technologies</div>
+              </div>
+              <div className="text-center">
+                <div className="text-2xl font-bold text-zinc-900">{getProgressStats().percentage.toFixed(0)}%</div>
+                <div className="text-sm text-zinc-600">Progress</div>
+              </div>
+            </div>
+
             {/* Mini Calendar Component */}
             <div className="mb-6">
               <MiniCalendar completedDays={completedDates} />
@@ -335,6 +588,23 @@ const Navigation = () => {
             <p className="mt-2 bg-zinc-800 w-fit mx-auto text-white text-sm px-4 py-1 rounded-full hover:outline-1 hover:outline-zinc-800 hover:outline-offset-4 transition-all ease">
                 Learning on the go...
             </p>
+            
+            {/* Top Technologies */}
+            <div className="mt-6">
+              <h4 className="text-sm font-medium text-zinc-700 mb-3">Most Used Technologies</h4>
+              <div className="flex flex-wrap justify-center gap-2">
+                {getTechnologyStats().map(({ tech, count }) => (
+                  <span
+                    key={tech}
+                    className="px-3 py-1 bg-zinc-100 text-zinc-700 rounded-full text-xs font-medium flex items-center gap-1"
+                  >
+                    {tech}
+                    <span className="bg-zinc-200 px-1.5 py-0.5 rounded-full text-xs">{count}</span>
+                  </span>
+                ))}
+              </div>
+            </div>
+            
             <div className="flex flex-wrap justify-center gap-2 mt-6">
               {[
                 "React",

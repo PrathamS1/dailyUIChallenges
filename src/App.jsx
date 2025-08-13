@@ -14,6 +14,7 @@ import FlashMessages from './components/dailyUI011';
 import IceCreamShop from './components/dailyUI012';
 import BuyerSellerChat from './components/dailyUI013';
 import RetroGameCountdown from './components/dailyUI014';
+import ServiceToggle from './components/dailyUI015';
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function App() {
         <Route path="/012" element={<IceCreamShop />} />
         <Route path="/013" element={<BuyerSellerChat />} />
         <Route path="/014" element={<RetroGameCountdown />} />
+        <Route path="/015" element={<ServiceToggle />} />
 
         {/* <Route path="/002" element={<New Element />} /> */}
         {/* Fallback route */}
