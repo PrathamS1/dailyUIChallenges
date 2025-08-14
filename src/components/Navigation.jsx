@@ -189,6 +189,17 @@ const Navigation = () => {
       difficulty: "Easy",
       completedDate: "2025-08-13",
     },
+    {
+      day: "016",
+      title: "Pop-up Overlay",
+      description:
+        "Premium content gated subscription overlay with sophisticated pricing tiers.",
+      status: "completed",
+      route: "/016",
+      technologies: ["React", "Framer Motion", "Tailwind CSS"],
+      difficulty: "Medium",
+      completedDate: "2025-08-14",
+    },
     // Add more challenges as they're completed
   ], []);
 

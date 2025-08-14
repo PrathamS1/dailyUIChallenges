@@ -19,7 +19,26 @@ Welcome to my 100 Days Daily UI Challenge journey! This repository showcases my 
 
 ## 📅 Challenge Progress
 
-**Current Progress: 15/100** ⭐
+**Current Progress: 16/100** ⭐
+
+### ✅ Day 16 - Pop-up Overlay
+**Challenge:** Design a pop-up overlay. Is it for a newsletter sign-up form? An ad overlay? A gated subscription page for premium content?
+
+**Implementation:** Premium Content Gated Subscription Overlay
+- Sophisticated subscription gateway for premium editorial content with realistic article preview
+- Professional pricing tier system with quarterly plan highlighted as most popular option
+- Stone color palette (warm grays) for non-AI-typical, sophisticated aesthetic design
+- Smooth modal animations with backdrop blur and spring physics for premium feel
+
+**Features:**
+- 📰 Realistic premium content preview with professional article layout and typography
+- 💰 Three-tier pricing structure: Monthly ($24), Quarterly ($18 - Popular), Yearly ($12)
+- 🎨 Stone color theme with warm gray tones instead of typical AI blue/purple schemes
+- ⚡ Auto-trigger after 2 seconds simulating user engagement with re-trigger debug option
+- 💫 Framer Motion animations with backdrop blur, spring physics, and smooth state transitions
+- 📱 Clean, minimal design focusing on typography and spacing over icons and bright colors
+
+**[View UI Design →](https://daily-ui-challenges-iota.vercel.app/016)**
 
 ### ✅ Day 15 - On/Off Switch
 **Challenge:** Design an On/Off Switch for user interfaces with smooth state transitions and visual feedback.
@@ -457,6 +476,6 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ---
 
-**Day 15/100 Complete** ✅ | **Next Challenge:** *Day 16 - Stay Tuned*
+**Day 16/100 Complete** ✅ | **Next Challenge:** *Day 17 - Stay Tuned*
 
 *Follow along for daily UI inspiration and modern web development techniques!*
