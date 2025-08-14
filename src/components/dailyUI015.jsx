@@ -4,6 +4,7 @@ import BackToHome from "./BackToHome";
 
 const GeometricToggle = () => {
   const [isOn, setIsOn] = useState(false);
+  const [enabled, setEnabled] = useState(false);
 
   const handleToggle = () => {
     setIsOn(!isOn);
@@ -25,7 +26,6 @@ const GeometricToggle = () => {
           }}
         />
       </div>
-
       <div className="text-center space-y-12 relative z-10">
         <div>
           <h1 className="text-5xl font-extralight text-white mb-4 tracking-wide">
@@ -441,9 +441,302 @@ const GeometricToggle = () => {
             </motion.div>
           </div>
         </motion.div>
+
+        {/* CTA Button for Plugin Management Demo */}
+        <motion.div
+          className="mt-12"
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.6 }}
+        >
+          <motion.button
+            onClick={() => window.location.href = '/plugin-management'}
+            className="px-5 py-2 bg-white text-black rounded border border-gray-300 text-sm font-medium transition-all duration-300"
+            whileHover={{ 
+              scale: 1.05,
+              backgroundColor: "#f9fafb",
+              borderColor: "#9ca3af",
+              boxShadow: "0 4px 12px rgba(0, 0, 0, 0.15)"
+            }}
+            whileTap={{ 
+              scale: 0.95,
+              backgroundColor: "#f3f4f6"
+            }}
+            transition={{
+              type: "spring",
+              stiffness: 400,
+              damping: 25
+            }}
+          >
+            View Demo
+          </motion.button>
+          <motion.p 
+            className="text-center text-gray-500 mt-2 text-xs"
+            whileHover={{ color: "#374151" }}
+            transition={{ duration: 0.2 }}
+          >
+            Live example
+          </motion.p>
+        </motion.div>
       </div>
     </div>
   );
 };
 
 export default GeometricToggle;
+
+// Reusable Toggle Switch Component - With size variants
+export const ReusableToggleSwitch = ({ isOn, onToggle, size = "medium" }) => {
+  // Size configurations
+  const sizeConfig = {
+    small: {
+      container: { width: "60px", height: "24px" },
+      border: "1px",
+      sliderContainer: { width: "18px", height: "18px", top: "2px" },
+      sliderElement: { 
+        width: isOn ? "20px" : "16px", 
+        height: isOn ? "20px" : "16px" 
+      },
+      sliderOffset: { on: 44, off: 2 },
+      borderRadius: { rhombus: "3px", circle: "50%" },
+      innerInset: "0.5px",
+      innerBorderRadius: { rhombus: "2px", circle: "50%" },
+      centerElement: { width: "0.75px", height: "0.75px", borderRadius: "0.25px" },
+      shadowScale: 0.3,
+      lineHeight: "0.2px"
+    },
+    medium: {
+      container: { width: "120px", height: "48px" },
+      border: "2px",
+      sliderContainer: { width: "38px", height: "38px", top: "4px" },
+      sliderElement: { 
+        width: isOn ? "40px" : "32px", 
+        height: isOn ? "40px" : "32px" 
+      },
+      sliderOffset: { on: 84, off: 6 },
+      borderRadius: { rhombus: "8px", circle: "50%" },
+      innerInset: "1px",
+      innerBorderRadius: { rhombus: "6px", circle: "50%" },
+      centerElement: { width: "1.5px", height: "1.5px", borderRadius: "1px" },
+      shadowScale: 0.6,
+      lineHeight: "0.5px"
+    },
+    large: {
+      container: { width: "160px", height: "64px" },
+      border: "3px",
+      sliderContainer: { width: "50px", height: "50px", top: "5px" },
+      sliderElement: { 
+        width: isOn ? "52px" : "42px", 
+        height: isOn ? "52px" : "42px" 
+      },
+      sliderOffset: { on: 112, off: 8 },
+      borderRadius: { rhombus: "10px", circle: "50%" },
+      innerInset: "2px",
+      innerBorderRadius: { rhombus: "8px", circle: "50%" },
+      centerElement: { width: "2px", height: "2px", borderRadius: "1.5px" },
+      shadowScale: 0.8,
+      lineHeight: "1px"
+    }
+  };
+
+  const config = sizeConfig[size];
+
+  return (
+    <motion.div
+      className="relative cursor-pointer"
+      onClick={onToggle}
+      whileHover={{ scale: 1.02 }}
+      whileTap={{ scale: 0.98 }}
+      style={config.container}
+    >
+      <motion.div
+        className="absolute inset-0 rounded-full"
+        style={{
+          border: `${config.border} solid`,
+          background: isOn
+            ? "linear-gradient(135deg, #1a1a1a, #000000)"
+            : "linear-gradient(135deg, #2a2a2a, #1a1a1a)",
+          borderColor: isOn ? "#ffffff" : "#404040",
+          boxShadow: isOn
+            ? `
+              inset 0 ${2 * config.shadowScale}px ${8 * config.shadowScale}px rgba(0,0,0,0.8), 
+              0 ${4 * config.shadowScale}px ${16 * config.shadowScale}px rgba(255, 255, 255, 0.2),
+              0 0 0 ${1 * config.shadowScale}px rgba(255, 255, 255, 0.1),
+              0 0 ${8 * config.shadowScale}px rgba(255, 255, 255, 0.1)
+            `
+            : `
+              inset 0 ${2 * config.shadowScale}px ${5 * config.shadowScale}px rgba(0,0,0,0.5),
+              0 ${2 * config.shadowScale}px ${8 * config.shadowScale}px rgba(0,0,0,0.3)
+            `,
+        }}
+        animate={{
+          borderColor: isOn ? "#ffffff" : "#404040",
+          scale: isOn ? [1, 1.02, 1.01] : 1,
+        }}
+        transition={{
+          borderColor: { duration: 0.4 },
+          scale: { duration: 0.6, ease: "easeInOut" },
+        }}
+      />
+
+      <motion.div
+        className="absolute flex items-center justify-center"
+        style={{
+          top: config.sliderContainer.top,
+          width: config.sliderContainer.width,
+          height: config.sliderContainer.height,
+        }}
+        animate={{
+          x: isOn ? config.sliderOffset.on : config.sliderOffset.off,
+        }}
+        transition={{
+          type: "spring",
+          stiffness: 400,
+          damping: 25,
+          mass: 0.8,
+        }}
+      >
+        <motion.div
+          className="relative"
+          style={{
+            width: config.sliderElement.width,
+            height: config.sliderElement.height,
+            background: isOn
+              ? `linear-gradient(135deg, #ffffff, #f0f0f0)`
+              : `linear-gradient(135deg, #4a4a4a, #2a2a2a)`,
+            boxShadow: isOn
+              ? `
+                0 ${8 * config.shadowScale}px ${20 * config.shadowScale}px rgba(255, 255, 255, 0.3),
+                0 ${3 * config.shadowScale}px ${8 * config.shadowScale}px rgba(0,0,0,0.6),
+                inset -${3 * config.shadowScale}px -${3 * config.shadowScale}px ${6 * config.shadowScale}px rgba(220, 220, 220, 0.4),
+                inset ${3 * config.shadowScale}px ${3 * config.shadowScale}px ${6 * config.shadowScale}px rgba(255, 255, 255, 0.8)
+              `
+              : `
+                0 ${5 * config.shadowScale}px ${12 * config.shadowScale}px rgba(0, 0, 0, 0.6), 
+                0 ${2 * config.shadowScale}px ${5 * config.shadowScale}px rgba(0,0,0,0.4),
+                inset -${2 * config.shadowScale}px -${2 * config.shadowScale}px ${3 * config.shadowScale}px rgba(0, 0, 0, 0.3),
+                inset ${2 * config.shadowScale}px ${2 * config.shadowScale}px ${3 * config.shadowScale}px rgba(100, 100, 100, 0.2)
+              `,
+          }}
+          animate={{
+            borderRadius: isOn ? config.borderRadius.rhombus : config.borderRadius.circle,
+            rotate: isOn ? 45 : 0,
+            scale: isOn ? [1, 1.2, 1.15] : [1, 0.95, 1],
+          }}
+          transition={{
+            borderRadius: {
+              duration: 0.8,
+              ease: [0.34, 1.56, 0.64, 1],
+            },
+            rotate: {
+              duration: 0.9,
+              ease: "easeInOut",
+            },
+            scale: {
+              duration: 0.7,
+              ease: "easeOut",
+            },
+          }}
+        >
+          <motion.div
+            className="absolute"
+            style={{
+              inset: config.innerInset,
+              background: isOn
+                ? `linear-gradient(225deg, 
+                    rgba(255,255,255,0.6) 0%, 
+                    transparent 40%
+                  )`
+                : `linear-gradient(225deg, 
+                    rgba(120,120,120,0.3) 0%, 
+                    transparent 40%
+                  )`,
+              borderRadius: isOn ? config.innerBorderRadius.rhombus : config.innerBorderRadius.circle,
+            }}
+            animate={{
+              borderRadius: isOn ? config.innerBorderRadius.rhombus : config.innerBorderRadius.circle,
+              opacity: isOn ? 0.8 : 0.6,
+            }}
+            transition={{
+              duration: 0.8,
+              ease: [0.34, 1.56, 0.64, 1],
+            }}
+          />
+
+          <motion.div
+            className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+            animate={{ opacity: isOn ? 1 : 0 }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+          >
+            <motion.div
+              className="border border-black/40"
+              style={{
+                width: config.centerElement.width,
+                height: config.centerElement.height,
+                borderRadius: config.centerElement.borderRadius,
+                background:
+                  "linear-gradient(135deg, rgba(0,0,0,0.1), rgba(0,0,0,0.05))",
+              }}
+              animate={{
+                rotate: isOn ? 45 : 0,
+                scale: isOn ? [0, 1.2, 1] : [1, 0],
+              }}
+              transition={{
+                duration: 0.7,
+                ease: "easeOut",
+              }}
+            />
+          </motion.div>
+        </motion.div>
+      </motion.div>
+
+      <motion.div
+        className="absolute inset-0 pointer-events-none"
+        animate={{ opacity: isOn ? 1 : 0 }}
+        transition={{ duration: 0.4 }}
+      >
+        {[...Array(2)].map((_, i) => (
+          <motion.div
+            key={`h-${i}`}
+            className="absolute bg-white/40"
+            style={{
+              left: "25%",
+              right: "25%",
+              top: `${35 + i * 30}%`,
+              height: config.lineHeight,
+            }}
+            animate={{
+              scaleX: isOn ? [0, 1] : [1, 0],
+              opacity: isOn ? [0, 0.6] : [0.6, 0],
+            }}
+            transition={{
+              duration: 1.2,
+              delay: i * 0.2,
+              ease: "easeInOut",
+            }}
+          />
+        ))}
+
+        <motion.div
+          className="absolute bg-white/30"
+          style={{
+            left: "50%",
+            top: "30%",
+            bottom: "30%",
+            width: config.lineHeight,
+            transform: "translateX(-50%)",
+          }}
+          animate={{
+            scaleY: isOn ? [0, 1] : [1, 0],
+            opacity: isOn ? [0, 0.5] : [0.5, 0],
+          }}
+          transition={{
+            duration: 1.5,
+            delay: 0.3,
+            ease: "easeInOut",
+          }}
+        />
+      </motion.div>
+    </motion.div>
+  );
+};
