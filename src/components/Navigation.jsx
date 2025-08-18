@@ -197,8 +197,19 @@ const Navigation = () => {
       status: "completed",
       route: "/016",
       technologies: ["React", "Framer Motion", "Tailwind CSS"],
-      difficulty: "Medium",
+      difficulty: "Intermediate",
       completedDate: "2025-08-14",
+    },
+    {
+      day: "017",
+      title: "Purchase Receipt",
+      description:
+        "Digital purchase receipt with hybrid professional-playful design and QR tracking.",
+      status: "completed",
+      route: "/017",
+      technologies: ["React", "Framer Motion", "Tailwind CSS"],
+      difficulty: "Easy",
+      completedDate: "2025-08-18",
     },
     // Add more challenges as they're completed
   ], []);

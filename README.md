@@ -19,8 +19,28 @@ Welcome to my 100 Days Daily UI Challenge journey! This repository showcases my 
 
 ## 📅 Challenge Progress
 
-**Current Progress: 16/100** ⭐
+**Current Progress: 17/100** ⭐
 
+### ✅ Day 17 - Purchase Receipt
+**Challenge:** Design a purchase receipt. Think about what information is most important, how to organize it, and what the user might need to reference or do next.
+
+**Implementation:** GoodyTech Electronics Digital Receipt - Modern E-commerce Receipt Design
+- Professional digital receipt for electronics store with clean header design
+- Product listing with animated circle bullets featuring radiating pulse effects instead of static quantity boxes
+- Complete React Icons integration throughout
+- Interactive QR code functionality with real image support for order tracking and invoice downloads
+
+**Features:**
+- 🎨 Clean white header design with centered branding and transaction details card layout
+- 💫 Animated radiating circle bullets for product listing with staggered pulse animations
+- 🔄 Complete React Icons implementation (HiMail, HiDownload, HiPrinter, HiShare, HiClipboardCopy, HiQrcode, HiHeart, HiSparkles)
+- 📱 QR code integration with image support for real order tracking functionality
+- 🛍️ Comprehensive receipt sections: store branding, transaction details, itemized listing, totals, payment method, and actions
+- ⚡ Quantity display moved inline with product names for cleaner visual hierarchy
+- 🎯 Professional receipt actions including email, download, print, share, and copy options
+- 💳 Complete order management with support information and promotional messaging
+
+**[View UI Design →](https://daily-ui-challenges-iota.vercel.app/017)**
 ### ✅ Day 16 - Pop-up Overlay
 **Challenge:** Design a pop-up overlay. Is it for a newsletter sign-up form? An ad overlay? A gated subscription page for premium content?
 
@@ -476,6 +496,6 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ---
 
-**Day 16/100 Complete** ✅ | **Next Challenge:** *Day 17 - Stay Tuned*
+**Day 17/100 Complete** ✅ | **Next Challenge:** *Day 18 - Stay Tuned*
 
 *Follow along for daily UI inspiration and modern web development techniques!*

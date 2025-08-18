@@ -16,6 +16,7 @@ import BuyerSellerChat from './components/dailyUI013';
 import RetroGameCountdown from './components/dailyUI014';
 import ServiceToggle from './components/dailyUI015';
 import PremiumContentOverlay from './components/dailyUI016';
+import DigitalReceipt from './components/dailyUI017';
 import PluginManagement from './components/PluginManagement';
 
 function App() {
@@ -39,6 +40,7 @@ function App() {
         <Route path="/014" element={<RetroGameCountdown />} />
         <Route path="/015" element={<ServiceToggle />} />
         <Route path="/016" element={<PremiumContentOverlay />} />
+        <Route path="/017" element={<DigitalReceipt />} />
         <Route path="/plugin-management" element={<PluginManagement />} />
 
         {/* <Route path="/002" element={<New Element />} /> */}
