@@ -19,7 +19,25 @@ Welcome to my 100 Days Daily UI Challenge journey! This repository showcases my 
 
 ## 📅 Challenge Progress
 
-**Current Progress: 17/100** ⭐
+**Current Progress: 18/100** ⭐
+
+### ✅ Day 18 - Analytics Chart
+**Challenge:** Design a finance analytics dashboard with modern chart visualizations.
+
+**Implementation:** Portfolio Growth & Asset Allocation Dashboard
+- Custom line chart visualizing portfolio growth over time
+- Donut chart showing asset allocation breakdown
+- Clean, modern UI with interactive tooltips and smooth animations
+- Responsive grid layout and professional color palette
+
+**Features:**
+- 📈 Line chart for tracking portfolio performance
+- 🍩 Donut chart for visualizing asset distribution
+- 🎨 Modern teal/cyan color scheme with gradients
+- ⚡ Framer Motion animations for chart transitions
+- 📱 Fully responsive design for all devices
+
+**[View UI Design →](https://daily-ui-challenges-iota.vercel.app/018)**
 
 ### ✅ Day 17 - Purchase Receipt
 **Challenge:** Design a purchase receipt. Think about what information is most important, how to organize it, and what the user might need to reference or do next.
@@ -496,6 +514,6 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ---
 
-**Day 17/100 Complete** ✅ | **Next Challenge:** *Day 18 - Stay Tuned*
+**Day 18/100 Complete** ✅ | **Next Challenge:** *Day 19 - Stay Tuned*
 
 *Follow along for daily UI inspiration and modern web development techniques!*

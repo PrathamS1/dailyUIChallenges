@@ -211,6 +211,17 @@ const Navigation = () => {
       difficulty: "Easy",
       completedDate: "2025-08-18",
     },
+    {
+      day: "018",
+      title: "Analytics Chart",
+      description:
+        "Finance analytics dashboard featuring a custom line chart for portfolio growth and a donut chart for asset allocation.",
+      status: "completed",
+      route: "/018",
+      technologies: ["React", "Framer Motion", "Tailwind CSS"],
+      difficulty: "Intermediate",
+      completedDate: "2025-08-19",
+    },
     // Add more challenges as they're completed
   ], []);
 

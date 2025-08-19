@@ -709,9 +709,6 @@ const CreditCardCheckout = () => {
                                   <span>Valid Thru</span>
                                 </div>
                                 <div className="h-px bg-white/20 w-full"></div>
-                                <div className="text-center text-xs opacity-60">
-                                  Customer Service: 1-800-XXX-XXXX
-                                </div>
                               </div>
                             </div>
                           </div>
