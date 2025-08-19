@@ -1,24 +1,25 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Navigation from './components/Navigation';
-import ProductivitySignUp from './components/dailyUI001';
-import CreditCardCheckout from './components/dailyUI002';
-import LandingPage from './components/dailyUI003';
-import CarbonFootprintCalculator from './components/dailyUI004';
-import AppIconShowcase from './components/dailyUI005';
-import ProfessionalProfileCard from './components/dailyUI006';
-import CMSSettingsPanel from './components/dailyUI007';
-import Simple404 from './components/dailyUI008';
-import ImmersiveMusicPlayer from './components/dailyUI009';
-import SocialShare from './components/dailyUI010';
-import FlashMessages from './components/dailyUI011';
-import IceCreamShop from './components/dailyUI012';
-import BuyerSellerChat from './components/dailyUI013';
-import RetroGameCountdown from './components/dailyUI014';
-import ServiceToggle from './components/dailyUI015';
-import PremiumContentOverlay from './components/dailyUI016';
-import DigitalReceipt from './components/dailyUI017';
-import PluginManagement from './components/PluginManagement';
-import FinanceAnalytics from './components/dailyUI018';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Navigation from "./components/Navigation";
+import ProductivitySignUp from "./components/dailyUI001";
+import CreditCardCheckout from "./components/dailyUI002";
+import LandingPage from "./components/dailyUI003";
+import CarbonFootprintCalculator from "./components/dailyUI004";
+import AppIconShowcase from "./components/dailyUI005";
+import ProfessionalProfileCard from "./components/dailyUI006";
+import CMSSettingsPanel from "./components/dailyUI007";
+import Simple404 from "./components/dailyUI008";
+import ImmersiveMusicPlayer from "./components/dailyUI009";
+import SocialShare from "./components/dailyUI010";
+import FlashMessages from "./components/dailyUI011";
+import IceCreamShop from "./components/dailyUI012";
+import BuyerSellerChat from "./components/dailyUI013";
+import RetroGameCountdown from "./components/dailyUI014";
+import ServiceToggle from "./components/dailyUI015";
+import PremiumContentOverlay from "./components/dailyUI016";
+import DigitalReceipt from "./components/dailyUI017";
+import PluginManagement from "./components/PluginManagement";
+import FinanceAnalytics from "./components/dailyUI018";
+import Leaderboard from "./components/dailyUI019";
 
 function App() {
   return (
@@ -43,6 +44,7 @@ function App() {
         <Route path="/016" element={<PremiumContentOverlay />} />
         <Route path="/017" element={<DigitalReceipt />} />
         <Route path="/018" element={<FinanceAnalytics />} />
+        <Route path="/019" element={<Leaderboard />} />
         <Route path="/plugin-management" element={<PluginManagement />} />
 
         {/* <Route path="/002" element={<New Element />} /> */}

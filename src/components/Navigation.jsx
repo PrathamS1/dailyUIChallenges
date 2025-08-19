@@ -222,6 +222,17 @@ const Navigation = () => {
       difficulty: "Intermediate",
       completedDate: "2025-08-19",
     },
+      {
+        day: "019",
+        title: "Leaderboard",
+        description:
+          "A professional leaderboard UI for top NFT creators, featuring ranks, avatars, stats, and NFT previews in a modern dark theme.",
+        status: "completed",
+        route: "/019",
+        technologies: ["React", "Tailwind CSS"],
+        difficulty: "Intermediate",
+        completedDate: "2025-08-19",
+      },
     // Add more challenges as they're completed
   ], []);
 

@@ -19,7 +19,25 @@ Welcome to my 100 Days Daily UI Challenge journey! This repository showcases my 
 
 ## 📅 Challenge Progress
 
-**Current Progress: 18/100** ⭐
+**Current Progress: 19/100** ⭐
+
+### ✅ Day 19 - Leaderboard
+**Challenge:** Design a leaderboard interface.
+
+**Implementation:** NFT Creator Leaderboard
+- Showcase of top 3 creators with bold, engaging cards  
+- Clean stat overview (total volume, avg floor, market pulse, gainers)  
+- Timeframe filters (24h, 7d, 30d, All) for dynamic insights  
+- Smooth layout balancing data and visuals  
+
+**Features:**
+- 🏆 Ranking system with volume, sales, and floor price  
+- 🔄 Timeframe-based filtering for updated stats  
+- 📊 Market pulse & gainer tracking  
+- 🎨 Bold card layout with immersive visuals for top creators  
+- 📱 Responsive and user-friendly design  
+
+**[View UI Design →](https://daily-ui-challenges-iota.vercel.app/019)**
 
 ### ✅ Day 18 - Analytics Chart
 **Challenge:** Design a finance analytics dashboard with modern chart visualizations.
@@ -514,6 +532,6 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ---
 
-**Day 18/100 Complete** ✅ | **Next Challenge:** *Day 19 - Stay Tuned*
+**Day 19/100 Complete** ✅ | **Next Challenge:** *Day 20 - Stay Tuned*
 
 *Follow along for daily UI inspiration and modern web development techniques!*
