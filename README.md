@@ -19,7 +19,23 @@ Welcome to my 100 Days Daily UI Challenge journey! This repository showcases my 
 
 ## 📅 Challenge Progress
 
-**Current Progress: 19/100** ⭐
+**Current Progress: 20/100** ⭐
+
+### ✅ Day 20 - Location Tracker Pin  
+**Challenge:** Create a location tracking Pin UI.  
+
+**Implementation:** Location Tracker to track location of people  
+- Showcase of interactive pins for tracking people on a real map  
+- Showing the live status of the people tracked  
+- Simple, black and white theme based tracker pins with smooth animation  
+
+**Features:**  
+- 📍 Interactive pins with customizable details    
+- 🎨 Minimal, polished UI for clear visualization  
+- 📱 Responsive design for seamless experience  
+
+**[View UI Design →](https://daily-ui-challenges-iota.vercel.app/020)**  
+
 
 ### ✅ Day 19 - Leaderboard
 **Challenge:** Design a leaderboard interface.
@@ -532,6 +548,6 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ---
 
-**Day 19/100 Complete** ✅ | **Next Challenge:** *Day 20 - Stay Tuned*
+**Day 20/100 Complete** ✅ | **Next Challenge:** *Day 21 - Stay Tuned*
 
 *Follow along for daily UI inspiration and modern web development techniques!*

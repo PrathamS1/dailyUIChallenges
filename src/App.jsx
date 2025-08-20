@@ -20,6 +20,7 @@ import DigitalReceipt from "./components/dailyUI017";
 import PluginManagement from "./components/PluginManagement";
 import FinanceAnalytics from "./components/dailyUI018";
 import Leaderboard from "./components/dailyUI019";
+import LocationTrackerPin from "./components/dailyUI020";
 
 function App() {
   return (
@@ -45,6 +46,7 @@ function App() {
         <Route path="/017" element={<DigitalReceipt />} />
         <Route path="/018" element={<FinanceAnalytics />} />
         <Route path="/019" element={<Leaderboard />} />
+        <Route path="/020" element={<LocationTrackerPin />} />
         <Route path="/plugin-management" element={<PluginManagement />} />
 
         {/* <Route path="/002" element={<New Element />} /> */}

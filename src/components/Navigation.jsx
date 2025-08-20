@@ -13,7 +13,7 @@ import {
   TrendingUp,
   Award,
 } from "lucide-react";
-import MiniCalendar from './MiniCalendar';
+import MiniCalendar from "./MiniCalendar";
 
 const Navigation = () => {
   // State for search and filters
@@ -23,205 +23,217 @@ const Navigation = () => {
   const [showFilters, setShowFilters] = useState(false);
 
   // UI Challenges data - will expand as you add more
-  const challenges = useMemo(() => [
-    {
-      day: "001",
-      title: "Sign Up Page",
-      description:
-        "Sign Up page for an AI-based development automation platform.",
-      status: "completed",
-      route: "/001",
-      technologies: ["React", "Framer Motion", "Tailwind CSS"],
-      difficulty: "Easy",
-      completedDate: "2025-07-25",
-    },
-    {
-      day: "002",
-      title: "Credit Card Checkout",
-      description:
-        "Checkout page for a credit card payment system with modern UI.",
-      status: "completed",
-      route: "/002",
-      technologies: ["React", "Framer Motion", "Tailwind CSS"],
-      difficulty: "Easy",
-      completedDate: "2025-07-26",
-    },
-    {
-      day: "003",
-      title: "Landing Page",
-      description:
-        "Landing page for an Intern Management Platform - \"Alverno\".",
-      status: "completed",
-      route: "/003",
-      technologies: ["React", "Framer Motion", "Tailwind CSS", "GSAP", "Locomotive"],
-      difficulty: "Intermediate",
-      completedDate: "2025-07-27",
-    },
-    {
-      day: "004",
-      title: "Carbon Footprint Calculator",
-      description:
-        "Professional carbon footprint calculator with live calculations and recommendations.",
-      status: "completed",
-      route: "/004",
-      technologies: ["React", "TypeScript", "Tailwind CSS"],
-      difficulty: "Intermediate",
-      completedDate: "2025-07-28",
-    },
-    {
-      day: "005",
-      title: "App Icon/Logo Design",
-      description:
-        "Meet \"Defio\" - A Decentralized Finance's Logo design, showcasing modern UI principles.",
-      status: "completed",
-      route: "/005",
-      technologies: ["Figma", "Illustrator"],
-      difficulty: "Intermediate",
-      completedDate: "2025-07-29",
-    },
-    {
-      day: "006",
-      title: "User Profile",
-      description:
-        "A Github x LinkedIn user profile design. Showcasing a modern, clean UI with user's data across the platform.",
-      status: "completed",
-      route: "/006",
-      technologies: ["React", "Tailwind CSS"],
-      difficulty: "Intermediate",
-      completedDate: "2025-07-30",
-    },
-    {
-      day: "007",
-      title: "Focus Mode Settings",
-      description:
-        "A comprehensive mobile-first Focus Mode Settings UI with app blocking, notification control, and ambient settings.",
-      status: "completed",
-      route: "/007",
-      technologies: ["React", "CSS3", "Mobile-First Design"],
-      difficulty: "Intermediate",
-      completedDate: "2025-07-31",
-    },
-    {
-      day: "008",
-      title: "Custom 404 Page",
-      description:
-        "A creative 404 error page design that guides users back to the main content.",
-      status: "completed",
-      route: "/008",
-      technologies: ["React", "CSS3", "Mobile-First Design"],
-      difficulty: "Easy",
-      completedDate: "2025-08-01",
-    },
-    {
-      day: "009",
-      title: "Music Player UI",
-      description:
-        "A sleek music player UI with album artwork, playback controls, and a playlist.",
-      status: "completed",
-      route: "/009",
-      technologies: ["React", "Framer Motion", "Tailwind CSS"],
-      difficulty: "Intermediate",
-      completedDate: "2025-08-02",
-    },
-    {
-      day: "010",
-      title: "Social Share",
-      description:
-        "Social sharing interface for blog posts and articles with platform-specific optimizations and engagement tracking.",
-      status: "completed",
-      route: "/010",
-      technologies: ["React", "Web Share API", "Framer Motion", "Clipboard API"],
-      difficulty: "Intermediate",
-      completedDate: "2025-08-03",
-    },
-    {
-      day: "011",
-      title: "Flash Message",
-      description:
-        "Interactive toast notifications with contextual theming, smart timing, and action buttons for login, upload, and subscription flows.",
-      status: "completed",
-      route: "/011",
-      technologies: ["React", "Framer Motion", "Tailwind CSS", "Context API"],
-      difficulty: "Easy",
-      completedDate: "2025-08-04",
-    },
-    {
-      day: "012",
-      title: "Ice Cream Shop",
-      description:
-        "A delightful ice cream shop UI with product listings, cart functionality, and a checkout flow.",
-      status: "completed",
-      route: "/012",
-      technologies: ["React", "Framer Motion", "Tailwind CSS"],
-      difficulty: "Intermediate",
-      completedDate: "2025-08-05",
-    },
-    {
-      day: "013",
-      title: "Direct Messaging",
-      description:
-        "Marketplace buyer-seller chat UI inspired by Shopify commerce platforms with trust indicators and product context.",
-      status: "completed",
-      route: "/013",
-      technologies: ["React", "Framer Motion", "Tailwind CSS"],
-      difficulty: "Intermediate",
-      completedDate: "2025-08-06",
-    },
-    {
-      day: "014",
-      title: "Countdown Timer",
-      description:
-        "Retro arcade-style game launch countdown with CRT monitor effects, scanlines, and neon cyberpunk aesthetics.",
-      status: "completed",
-      route: "/014",
-      technologies: ["React", "Framer Motion", "Tailwind CSS"],
-      difficulty: "Intermediate",
-      completedDate: "2025-08-07",
-    },
-    {
-      day: "015",
-      title: "On/Off Switch",
-      description:
-        "Geometric toggle switch with smooth rhombus-to-circle morphing animation.",
-      status: "completed",
-      route: "/015",
-      technologies: ["React", "Framer Motion", "Tailwind CSS"],
-      difficulty: "Easy",
-      completedDate: "2025-08-13",
-    },
-    {
-      day: "016",
-      title: "Pop-up Overlay",
-      description:
-        "Premium content gated subscription overlay with sophisticated pricing tiers.",
-      status: "completed",
-      route: "/016",
-      technologies: ["React", "Framer Motion", "Tailwind CSS"],
-      difficulty: "Intermediate",
-      completedDate: "2025-08-14",
-    },
-    {
-      day: "017",
-      title: "Purchase Receipt",
-      description:
-        "Digital purchase receipt with hybrid professional-playful design and QR tracking.",
-      status: "completed",
-      route: "/017",
-      technologies: ["React", "Framer Motion", "Tailwind CSS"],
-      difficulty: "Easy",
-      completedDate: "2025-08-18",
-    },
-    {
-      day: "018",
-      title: "Analytics Chart",
-      description:
-        "Finance analytics dashboard featuring a custom line chart for portfolio growth and a donut chart for asset allocation.",
-      status: "completed",
-      route: "/018",
-      technologies: ["React", "Framer Motion", "Tailwind CSS"],
-      difficulty: "Intermediate",
-      completedDate: "2025-08-19",
-    },
+  const challenges = useMemo(
+    () => [
+      {
+        day: "001",
+        title: "Sign Up Page",
+        description:
+          "Sign Up page for an AI-based development automation platform.",
+        status: "completed",
+        route: "/001",
+        technologies: ["React", "Framer Motion", "Tailwind CSS"],
+        difficulty: "Easy",
+        completedDate: "2025-07-25",
+      },
+      {
+        day: "002",
+        title: "Credit Card Checkout",
+        description:
+          "Checkout page for a credit card payment system with modern UI.",
+        status: "completed",
+        route: "/002",
+        technologies: ["React", "Framer Motion", "Tailwind CSS"],
+        difficulty: "Easy",
+        completedDate: "2025-07-26",
+      },
+      {
+        day: "003",
+        title: "Landing Page",
+        description:
+          'Landing page for an Intern Management Platform - "Alverno".',
+        status: "completed",
+        route: "/003",
+        technologies: [
+          "React",
+          "Framer Motion",
+          "Tailwind CSS",
+          "GSAP",
+          "Locomotive",
+        ],
+        difficulty: "Intermediate",
+        completedDate: "2025-07-27",
+      },
+      {
+        day: "004",
+        title: "Carbon Footprint Calculator",
+        description:
+          "Professional carbon footprint calculator with live calculations and recommendations.",
+        status: "completed",
+        route: "/004",
+        technologies: ["React", "TypeScript", "Tailwind CSS"],
+        difficulty: "Intermediate",
+        completedDate: "2025-07-28",
+      },
+      {
+        day: "005",
+        title: "App Icon/Logo Design",
+        description:
+          'Meet "Defio" - A Decentralized Finance\'s Logo design, showcasing modern UI principles.',
+        status: "completed",
+        route: "/005",
+        technologies: ["Figma", "Illustrator"],
+        difficulty: "Intermediate",
+        completedDate: "2025-07-29",
+      },
+      {
+        day: "006",
+        title: "User Profile",
+        description:
+          "A Github x LinkedIn user profile design. Showcasing a modern, clean UI with user's data across the platform.",
+        status: "completed",
+        route: "/006",
+        technologies: ["React", "Tailwind CSS"],
+        difficulty: "Intermediate",
+        completedDate: "2025-07-30",
+      },
+      {
+        day: "007",
+        title: "Focus Mode Settings",
+        description:
+          "A comprehensive mobile-first Focus Mode Settings UI with app blocking, notification control, and ambient settings.",
+        status: "completed",
+        route: "/007",
+        technologies: ["React", "CSS3", "Mobile-First Design"],
+        difficulty: "Intermediate",
+        completedDate: "2025-07-31",
+      },
+      {
+        day: "008",
+        title: "Custom 404 Page",
+        description:
+          "A creative 404 error page design that guides users back to the main content.",
+        status: "completed",
+        route: "/008",
+        technologies: ["React", "CSS3", "Mobile-First Design"],
+        difficulty: "Easy",
+        completedDate: "2025-08-01",
+      },
+      {
+        day: "009",
+        title: "Music Player UI",
+        description:
+          "A sleek music player UI with album artwork, playback controls, and a playlist.",
+        status: "completed",
+        route: "/009",
+        technologies: ["React", "Framer Motion", "Tailwind CSS"],
+        difficulty: "Intermediate",
+        completedDate: "2025-08-02",
+      },
+      {
+        day: "010",
+        title: "Social Share",
+        description:
+          "Social sharing interface for blog posts and articles with platform-specific optimizations and engagement tracking.",
+        status: "completed",
+        route: "/010",
+        technologies: [
+          "React",
+          "Web Share API",
+          "Framer Motion",
+          "Clipboard API",
+        ],
+        difficulty: "Intermediate",
+        completedDate: "2025-08-03",
+      },
+      {
+        day: "011",
+        title: "Flash Message",
+        description:
+          "Interactive toast notifications with contextual theming, smart timing, and action buttons for login, upload, and subscription flows.",
+        status: "completed",
+        route: "/011",
+        technologies: ["React", "Framer Motion", "Tailwind CSS", "Context API"],
+        difficulty: "Easy",
+        completedDate: "2025-08-04",
+      },
+      {
+        day: "012",
+        title: "Ice Cream Shop",
+        description:
+          "A delightful ice cream shop UI with product listings, cart functionality, and a checkout flow.",
+        status: "completed",
+        route: "/012",
+        technologies: ["React", "Framer Motion", "Tailwind CSS"],
+        difficulty: "Intermediate",
+        completedDate: "2025-08-05",
+      },
+      {
+        day: "013",
+        title: "Direct Messaging",
+        description:
+          "Marketplace buyer-seller chat UI inspired by Shopify commerce platforms with trust indicators and product context.",
+        status: "completed",
+        route: "/013",
+        technologies: ["React", "Framer Motion", "Tailwind CSS"],
+        difficulty: "Intermediate",
+        completedDate: "2025-08-06",
+      },
+      {
+        day: "014",
+        title: "Countdown Timer",
+        description:
+          "Retro arcade-style game launch countdown with CRT monitor effects, scanlines, and neon cyberpunk aesthetics.",
+        status: "completed",
+        route: "/014",
+        technologies: ["React", "Framer Motion", "Tailwind CSS"],
+        difficulty: "Intermediate",
+        completedDate: "2025-08-07",
+      },
+      {
+        day: "015",
+        title: "On/Off Switch",
+        description:
+          "Geometric toggle switch with smooth rhombus-to-circle morphing animation.",
+        status: "completed",
+        route: "/015",
+        technologies: ["React", "Framer Motion", "Tailwind CSS"],
+        difficulty: "Easy",
+        completedDate: "2025-08-13",
+      },
+      {
+        day: "016",
+        title: "Pop-up Overlay",
+        description:
+          "Premium content gated subscription overlay with sophisticated pricing tiers.",
+        status: "completed",
+        route: "/016",
+        technologies: ["React", "Framer Motion", "Tailwind CSS"],
+        difficulty: "Intermediate",
+        completedDate: "2025-08-14",
+      },
+      {
+        day: "017",
+        title: "Purchase Receipt",
+        description:
+          "Digital purchase receipt with hybrid professional-playful design and QR tracking.",
+        status: "completed",
+        route: "/017",
+        technologies: ["React", "Framer Motion", "Tailwind CSS"],
+        difficulty: "Easy",
+        completedDate: "2025-08-18",
+      },
+      {
+        day: "018",
+        title: "Analytics Chart",
+        description:
+          "Finance analytics dashboard featuring a custom line chart for portfolio growth and a donut chart for asset allocation.",
+        status: "completed",
+        route: "/018",
+        technologies: ["React", "Framer Motion", "Tailwind CSS"],
+        difficulty: "Intermediate",
+        completedDate: "2025-08-19",
+      },
       {
         day: "019",
         title: "Leaderboard",
@@ -233,34 +245,49 @@ const Navigation = () => {
         difficulty: "Intermediate",
         completedDate: "2025-08-19",
       },
-    // Add more challenges as they're completed
-  ], []);
+      {
+        day: "020",
+        title: "Location Tracker",
+        description:
+          "A location tracker UI for showing people's location in a real-time map.",
+        status: "completed",
+        route: "/020",
+        technologies: ["React", "Tailwind CSS"],
+        difficulty: "Easy",
+        completedDate: "2025-08-20",
+      },
+      // Add more challenges as they're completed
+    ],
+    []
+  );
 
   // Helper Functions
   const getProgressStats = () => {
-    const completed = challenges.filter(c => c.status === "completed").length;
+    const completed = challenges.filter((c) => c.status === "completed").length;
     const total = 100;
     const percentage = (completed / total) * 100;
-    
+
     // Calculate streak (consecutive days)
     const completedDates = challenges
-      .filter(c => c.status === "completed" && c.completedDate)
-      .map(c => new Date(c.completedDate))
+      .filter((c) => c.status === "completed" && c.completedDate)
+      .map((c) => new Date(c.completedDate))
       .sort((a, b) => b - a);
-    
+
     let currentStreak = 0;
     if (completedDates.length > 0) {
       const today = new Date();
       let checkDate = new Date(completedDates[0]);
-      
-      while (completedDates.some(date => 
-        date.toDateString() === checkDate.toDateString()
-      )) {
+
+      while (
+        completedDates.some(
+          (date) => date.toDateString() === checkDate.toDateString()
+        )
+      ) {
         currentStreak++;
         checkDate.setDate(checkDate.getDate() - 1);
       }
     }
-    
+
     return { completed, total, percentage, currentStreak };
   };
 
@@ -276,32 +303,35 @@ const Navigation = () => {
 
   const getTechnologyStats = () => {
     const techCount = {};
-    challenges.forEach(challenge => {
+    challenges.forEach((challenge) => {
       if (challenge.status === "completed") {
-        challenge.technologies.forEach(tech => {
+        challenge.technologies.forEach((tech) => {
           techCount[tech] = (techCount[tech] || 0) + 1;
         });
       }
     });
-    
+
     return Object.entries(techCount)
-      .sort(([,a], [,b]) => b - a)
+      .sort(([, a], [, b]) => b - a)
       .slice(0, 5)
       .map(([tech, count]) => ({ tech, count }));
   };
 
   // Filtering and Sorting Logic
   const filteredAndSortedChallenges = useMemo(() => {
-    let filtered = challenges.filter(challenge => {
-      const matchesSearch = challenge.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
-                           challenge.description.toLowerCase().includes(searchTerm.toLowerCase()) ||
-                           challenge.technologies.some(tech => 
-                             tech.toLowerCase().includes(searchTerm.toLowerCase())
-                           );
-      
-      const matchesDifficulty = difficultyFilter === "all" || 
-                               challenge.difficulty === difficultyFilter;
-      
+    let filtered = challenges.filter((challenge) => {
+      const matchesSearch =
+        challenge.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
+        challenge.description
+          .toLowerCase()
+          .includes(searchTerm.toLowerCase()) ||
+        challenge.technologies.some((tech) =>
+          tech.toLowerCase().includes(searchTerm.toLowerCase())
+        );
+
+      const matchesDifficulty =
+        difficultyFilter === "all" || challenge.difficulty === difficultyFilter;
+
       return matchesSearch && matchesDifficulty;
     });
 
@@ -311,7 +341,7 @@ const Navigation = () => {
         case "day":
           return parseInt(a.day) - parseInt(b.day);
         case "difficulty": {
-          const difficultyOrder = { "Easy": 1, "Intermediate": 2, "Advanced": 3 };
+          const difficultyOrder = { Easy: 1, Intermediate: 2, Advanced: 3 };
           return difficultyOrder[a.difficulty] - difficultyOrder[b.difficulty];
         }
         case "date":
@@ -334,8 +364,8 @@ const Navigation = () => {
 
   // Extract completed dates for calendar
   const completedDates = challenges
-    .filter(c => c.status === "completed" && c.completedDate)
-    .map(c => c.completedDate);
+    .filter((c) => c.status === "completed" && c.completedDate)
+    .map((c) => c.completedDate);
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -364,7 +394,6 @@ const Navigation = () => {
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-4">
               <div className="flex items-center space-x-3">
-                
                 <div>
                   <h1 className="text-xl font-bold text-zinc-900">
                     100 Days UI Challenge
@@ -417,8 +446,8 @@ const Navigation = () => {
                   Challenge Progress
                 </h2>
                 <p className="text-zinc-600">
-                  Building UI components, one day at a time, enhancing my UI/UX skills
-                  and development practices.
+                  Building UI components, one day at a time, enhancing my UI/UX
+                  skills and development practices.
                 </p>
               </div>
               <div className="mt-4 md:mt-0">
@@ -469,9 +498,9 @@ const Navigation = () => {
                 <button
                   onClick={() => setShowFilters(!showFilters)}
                   className={`flex items-center gap-2 px-3 py-2 border rounded-lg transition-colors ${
-                    showFilters 
-                      ? 'border-zinc-900 bg-zinc-900 text-white' 
-                      : 'border-zinc-200 hover:bg-zinc-50'
+                    showFilters
+                      ? "border-zinc-900 bg-zinc-900 text-white"
+                      : "border-zinc-200 hover:bg-zinc-50"
                   }`}
                 >
                   <Filter className="w-4 h-4" />
@@ -542,9 +571,11 @@ const Navigation = () => {
             className="mb-4"
           >
             <p className="text-sm text-zinc-600">
-              Showing {filteredAndSortedChallenges.length} of {challenges.length} challenges
+              Showing {filteredAndSortedChallenges.length} of{" "}
+              {challenges.length} challenges
               {searchTerm && ` for "${searchTerm}"`}
-              {difficultyFilter !== "all" && ` (${difficultyFilter} difficulty)`}
+              {difficultyFilter !== "all" &&
+                ` (${difficultyFilter} difficulty)`}
             </p>
           </motion.div>
         )}
@@ -582,8 +613,12 @@ const Navigation = () => {
               className="col-span-full text-center py-12"
             >
               <Search className="w-12 h-12 text-zinc-300 mx-auto mb-4" />
-              <h3 className="text-lg font-medium text-zinc-900 mb-2">No challenges found</h3>
-              <p className="text-zinc-600">Try adjusting your search or filter criteria</p>
+              <h3 className="text-lg font-medium text-zinc-900 mb-2">
+                No challenges found
+              </h3>
+              <p className="text-zinc-600">
+                Try adjusting your search or filter criteria
+              </p>
             </motion.div>
           )}
         </motion.div>
@@ -599,19 +634,30 @@ const Navigation = () => {
             {/* Quick Stats */}
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
               <div className="text-center">
-                <div className="text-2xl font-bold text-zinc-900">{getProgressStats().currentStreak}</div>
+                <div className="text-2xl font-bold text-zinc-900">
+                  {getProgressStats().currentStreak}
+                </div>
                 <div className="text-sm text-zinc-600">Day Streak</div>
               </div>
               <div className="text-center">
-                <div className="text-2xl font-bold text-zinc-900">{Object.values(getDifficultyStats()).reduce((a, b) => a + b, 0)}</div>
+                <div className="text-2xl font-bold text-zinc-900">
+                  {Object.values(getDifficultyStats()).reduce(
+                    (a, b) => a + b,
+                    0
+                  )}
+                </div>
                 <div className="text-sm text-zinc-600">Completed</div>
               </div>
               <div className="text-center">
-                <div className="text-2xl font-bold text-zinc-900">{getTechnologyStats().length}</div>
+                <div className="text-2xl font-bold text-zinc-900">
+                  {getTechnologyStats().length}
+                </div>
                 <div className="text-sm text-zinc-600">Technologies</div>
               </div>
               <div className="text-center">
-                <div className="text-2xl font-bold text-zinc-900">{getProgressStats().percentage.toFixed(0)}%</div>
+                <div className="text-2xl font-bold text-zinc-900">
+                  {getProgressStats().percentage.toFixed(0)}%
+                </div>
                 <div className="text-sm text-zinc-600">Progress</div>
               </div>
             </div>
@@ -620,22 +666,24 @@ const Navigation = () => {
             <div className="mb-6">
               <MiniCalendar completedDays={completedDates} />
             </div>
-            
+
             <h3 className="text-xl font-bold text-zinc-900 mb-2">
               Daily UI Challenge
             </h3>
             <p className="text-zinc-600 max-w-2xl mx-auto">
-              Hi!, I am following the popular Daily UI challenge to improve my design and
-              development skills. Each day features a new UI component built
-              with modern web technologies and best practices.
+              Hi!, I am following the popular Daily UI challenge to improve my
+              design and development skills. Each day features a new UI
+              component built with modern web technologies and best practices.
             </p>
             <p className="mt-2 bg-zinc-800 w-fit mx-auto text-white text-sm px-4 py-1 rounded-full hover:outline-1 hover:outline-zinc-800 hover:outline-offset-4 transition-all ease">
-                Learning on the go...
+              Learning on the go...
             </p>
-            
+
             {/* Top Technologies */}
             <div className="mt-6">
-              <h4 className="text-sm font-medium text-zinc-700 mb-3">Most Used Technologies</h4>
+              <h4 className="text-sm font-medium text-zinc-700 mb-3">
+                Most Used Technologies
+              </h4>
               <div className="flex flex-wrap justify-center gap-2">
                 {getTechnologyStats().map(({ tech, count }) => (
                   <span
@@ -643,12 +691,14 @@ const Navigation = () => {
                     className="px-3 py-1 bg-zinc-100 text-zinc-700 rounded-full text-xs font-medium flex items-center gap-1"
                   >
                     {tech}
-                    <span className="bg-zinc-200 px-1.5 py-0.5 rounded-full text-xs">{count}</span>
+                    <span className="bg-zinc-200 px-1.5 py-0.5 rounded-full text-xs">
+                      {count}
+                    </span>
                   </span>
                 ))}
               </div>
             </div>
-            
+
             <div className="flex flex-wrap justify-center gap-2 mt-6">
               {[
                 "React",
