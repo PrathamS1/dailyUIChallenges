@@ -620,7 +620,7 @@ export default function HomeMonitoringDashboard() {
                   <img
                     src="/airq.png"
                     alt="air quality icon"
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover custom-icon"
                   />
                 </span>
                 <span className="text-xs text-[var(--home-control-primary)]">

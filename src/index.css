@@ -41,7 +41,9 @@
   --home-control-accent: #83C5BE;
   
 }
-
+.custom-icon {
+  filter: invert(86%) sepia(40%) saturate(540%) hue-rotate(132deg) brightness(91%) contrast(100%);
+}
 /* Utility classes for retro arcade countdown */
 .bg-gradient-radial {
   background: radial-gradient(circle, var(--tw-gradient-stops));
