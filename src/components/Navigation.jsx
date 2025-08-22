@@ -242,7 +242,7 @@ const Navigation = () => {
         status: "completed",
         route: "/019",
         technologies: ["React", "Tailwind CSS"],
-        difficulty: "Intermediate",
+        difficulty: "Advanced",
         completedDate: "2025-08-19",
       },
       {
@@ -255,6 +255,17 @@ const Navigation = () => {
         technologies: ["React", "Tailwind CSS"],
         difficulty: "Easy",
         completedDate: "2025-08-20",
+      },
+      {
+        day: "021",
+        title: "Home Monitoring Dashboard",
+        description:
+          "A smart home dashboard UI with security, CCTV, energy usage, rooms, devices, and environment controls.",
+        status: "completed",
+        route: "/021",
+        technologies: ["React", "Tailwind CSS", "Framer Motion"],
+        difficulty: "Advanced",
+        completedDate: "2025-08-21",
       },
       // Add more challenges as they're completed
     ],

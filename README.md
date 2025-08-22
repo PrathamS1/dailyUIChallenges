@@ -19,7 +19,25 @@ Welcome to my 100 Days Daily UI Challenge journey! This repository showcases my 
 
 ## 📅 Challenge Progress
 
-**Current Progress: 20/100** ⭐
+**Current Progress: 21/100** ⭐
+
+### ✅ Day 21 - Home Monitoring Dashboard  
+**Challenge:** Design a smart home dashboard interface with controls for rooms, devices, security, and environment.  
+
+**Implementation:** SmartHome Control Panel UI  
+- Dashboard UI for lights, appliances, CCTV, temperature, and energy usage  
+- Modular card system for rooms and devices with quick toggle actions  
+- CCTV preview panels and security alerts integration  
+- Energy usage tracking with minimal data visualization  
+
+**Features:**  
+- 🏠 Centralized control for rooms, devices, and environment  
+- 📹 CCTV preview with security status indicators  
+- ⚡ Energy usage tracking with visual insights  
+- 🎨 Clean minimal design with Tailwind-based layout  
+- 📱 Fully responsive dashboard for desktop and mobile  
+
+**[View UI Design →](https://daily-ui-challenges-iota.vercel.app/021)**  
 
 ### ✅ Day 20 - Location Tracker Pin  
 **Challenge:** Create a location tracking Pin UI.  
@@ -548,6 +566,6 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ---
 
-**Day 20/100 Complete** ✅ | **Next Challenge:** *Day 21 - Stay Tuned*
+**Day 21/100 Complete** ✅ | **Next Challenge:** *Day 22 - Stay Tuned*
 
 *Follow along for daily UI inspiration and modern web development techniques!*

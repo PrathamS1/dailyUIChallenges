@@ -34,11 +34,11 @@
   --settings-text: #2B2B2B  ;
   --settings-accent: #6D6875  ;
 
-  /* --profile-card-primary: #2D3A61;
-  --profile-card-secondary: #8a9bb7;
-  --profile-card-background: #F5F7FA;
-  --profile-card-text: #1D1D1F;
-  --profile-card-accent: #3EC8E8; */
+  --home-control-primary: #006D77;
+  --home-control-secondary: #11bfcf;
+  --home-control-background: #F9FAFF;
+  --home-control-text: #111827;
+  --home-control-accent: #83C5BE;
   
 }
 
