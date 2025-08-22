@@ -19,7 +19,25 @@ Welcome to my 100 Days Daily UI Challenge journey! This repository showcases my 
 
 ## 📅 Challenge Progress
 
-**Current Progress: 21/100** ⭐
+**Current Progress: 22/100** ⭐
+
+### ✅ Day 22 - Retro Search Bar  
+**Challenge:** Design something search related.  
+
+**Implementation:** Retro Search Bar UI  
+- Bold, black & white search bar with classic monospace font  
+- Animated suggestions dropdown with Framer Motion  
+- Mouse-responsive abstract background for interactive retro feel  
+- Filter dropdown and search button for enhanced usability  
+
+**Features:**  
+- 🕹️ Retro-inspired black & white theme with bold lines  
+- 🖱️ Mouse movement controls animated background  
+- ✨ Animated suggestions and smooth UI transitions  
+- 🎨 Tailwind CSS and Framer Motion for modern effects  
+- 📱 Fully responsive and accessible design  
+
+**[View UI Design →](https://daily-ui-challenges-iota.vercel.app/022)**
 
 ### ✅ Day 21 - Home Monitoring Dashboard  
 **Challenge:** Design a smart home dashboard interface with controls for rooms, devices, security, and environment.  
@@ -37,7 +55,7 @@ Welcome to my 100 Days Daily UI Challenge journey! This repository showcases my 
 - 🎨 Clean minimal design with Tailwind-based layout  
 - 📱 Fully responsive dashboard for desktop and mobile  
 
-**[View UI Design →](https://daily-ui-challenges-iota.vercel.app/021)**  
+**[View UI Design →](https://daily-ui-challenges-iota.vercel.app/021)**
 
 ### ✅ Day 20 - Location Tracker Pin  
 **Challenge:** Create a location tracking Pin UI.  
@@ -566,6 +584,6 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ---
 
-**Day 21/100 Complete** ✅ | **Next Challenge:** *Day 22 - Stay Tuned*
+**Day 22/100 Complete** ✅ | **Next Challenge:** *Day 23 - Stay Tuned*
 
 *Follow along for daily UI inspiration and modern web development techniques!*

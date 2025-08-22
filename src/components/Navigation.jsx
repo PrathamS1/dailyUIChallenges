@@ -267,6 +267,17 @@ const Navigation = () => {
         difficulty: "Advanced",
         completedDate: "2025-08-21",
       },
+      {
+        day: "022",
+        title: "Search Bar",
+        description:
+          "An immersive search bar UI with contextual suggestions and animations.",
+        status: "completed",
+        route: "/022",
+        technologies: ["React", "Framer Motion", "Tailwind CSS"],
+        difficulty: "Intermediate",
+        completedDate: "2025-08-22",
+      },
       // Add more challenges as they're completed
     ],
     []
