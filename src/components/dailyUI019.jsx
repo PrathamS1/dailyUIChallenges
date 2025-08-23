@@ -1,4 +1,4 @@
-import React, { useMemo, useState } from 'react';
+import { useMemo, useState } from 'react';
 import { motion } from 'framer-motion';
 import { Crown, TrendingUp, TrendingDown, ChevronLeft, ChevronRight, Clock, Award, Filter } from 'lucide-react';
 import BackToHome from './BackToHome';
@@ -220,7 +220,6 @@ const Leaderboard = () => {
         transition={{ duration: 0.5 }}
         className="border-b border-zinc-200 bg-white/90 backdrop-blur sticky top-0 z-30 relative overflow-hidden"
       >
-        {/* Ambient accent halo */}
         <div
           aria-hidden
           className="absolute inset-0 pointer-events-none"
@@ -248,7 +247,6 @@ const Leaderboard = () => {
               </div>
             </div>
 
-            {/* Timeframe Filters */}
             <div className="flex items-center gap-2">
               <div className="text-zinc-500 hidden md:flex items-center gap-2 pr-1 border-r border-zinc-200">
                 <Filter className="w-4 h-4" />
@@ -399,11 +397,10 @@ const TopThreeCard = ({ index, rank, creator }) => {
   const heightClass = rank === 1 ? 'h-[360px]' : 'h-[320px]';
   const ambientOpacity = rank === 1 ? 0.25 : rank === 2 ? 0.5 : 0.12;
 
-  const [hovered, setHovered] = React.useState(false);
+  const [hovered, setHovered] = useState(false);
 
   return (
     <div className="relative group" onMouseEnter={() => setHovered(true)} onMouseLeave={() => setHovered(false)}>
-      {/* Ambient accent glow around the card (not on border) */}
       <motion.div
         aria-hidden
         className="absolute -inset-4 rounded-3xl"
