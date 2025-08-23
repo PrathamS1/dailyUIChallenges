@@ -19,7 +19,25 @@ Welcome to my 100 Days Daily UI Challenge journey! This repository showcases my 
 
 ## 📅 Challenge Progress
 
-**Current Progress: 22/100** ⭐
+**Current Progress: 23/100** ⭐
+
+### ✅ Day 23 - Modern SaaS Onboarding Flow
+**Challenge:** Onboarding
+
+**Implementation:** Minimal, Professional Onboarding UI for SaaS
+- 4-step onboarding flow with modern progress indicator
+- Animated transitions using Framer Motion
+- Trust badge and workspace-themed illustrations for credibility
+- Selectable cards, personalized questions, and success screen
+- All theme colors via variables for consistent branding
+
+**Features:**
+- 🟢 Subtle, single-color progress indicator with depth effect
+- 🛡️ Four Step Flow with Animated navigation
+- ✨ Animated check icon and success feedback
+- 📱 Responsive, minimal, and professional layout
+
+**[View UI Design →](https://daily-ui-challenges-iota.vercel.app/023)**
 
 ### ✅ Day 22 - Retro Search Bar  
 **Challenge:** Design something search related.  
@@ -584,6 +602,6 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ---
 
-**Day 22/100 Complete** ✅ | **Next Challenge:** *Day 23 - Stay Tuned*
+**Day 23/100 Complete** ✅ | **Next Challenge:** *Day 24 - Stay Tuned*
 
 *Follow along for daily UI inspiration and modern web development techniques!*

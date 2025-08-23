@@ -23,6 +23,7 @@ import Leaderboard from "./components/dailyUI019";
 import LocationTrackerPin from "./components/dailyUI020";
 import HomeMonitoringDashboard from "./components/dailyUI021";
 import SearchBar from "./components/dailyUI022";
+import Onboarding from "./components/dailyUI023";
 
 function App() {
   return (
@@ -51,6 +52,7 @@ function App() {
         <Route path="/020" element={<LocationTrackerPin />} />
         <Route path="/021" element={<HomeMonitoringDashboard />} />
         <Route path="/022" element={<SearchBar />} />
+        <Route path="/023" element={<Onboarding />} />
         <Route path="/plugin-management" element={<PluginManagement />} />
 
         {/* <Route path="/002" element={<New Element />} /> */}

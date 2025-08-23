@@ -278,6 +278,17 @@ const Navigation = () => {
         difficulty: "Intermediate",
         completedDate: "2025-08-22",
       },
+      {
+        day: "023",
+        title: "Onboarding",
+        description:
+          "A multi-step onboarding flow with progress indicators and animations.",
+        status: "completed",
+        route: "/023",
+        technologies: ["React", "Framer Motion", "Tailwind CSS"],
+        difficulty: "Intermediate",
+        completedDate: "2025-08-23",
+      },
       // Add more challenges as they're completed
     ],
     []
