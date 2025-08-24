@@ -289,6 +289,17 @@ const Navigation = () => {
         difficulty: "Intermediate",
         completedDate: "2025-08-23",
       },
+      {
+        day: "024",
+        title: "Boarding Pass",
+        description:
+          "A digital boarding pass UI with flight details, QR code, and responsive design.",
+        status: "completed",
+        route: "/024",
+        technologies: ["React", "Framer Motion", "Tailwind CSS"],
+        difficulty: "Intermediate",
+        completedDate: "2025-08-24",
+      },
       // Add more challenges as they're completed
     ],
     []

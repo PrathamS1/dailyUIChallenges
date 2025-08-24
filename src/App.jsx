@@ -24,6 +24,7 @@ import LocationTrackerPin from "./components/dailyUI020";
 import HomeMonitoringDashboard from "./components/dailyUI021";
 import SearchBar from "./components/dailyUI022";
 import Onboarding from "./components/dailyUI023";
+import BoardingPass from "./components/dailyUI024";
 
 function App() {
   return (
@@ -53,6 +54,7 @@ function App() {
         <Route path="/021" element={<HomeMonitoringDashboard />} />
         <Route path="/022" element={<SearchBar />} />
         <Route path="/023" element={<Onboarding />} />
+        <Route path="/024" element={<BoardingPass />} />
         <Route path="/plugin-management" element={<PluginManagement />} />
 
         {/* <Route path="/002" element={<New Element />} /> */}

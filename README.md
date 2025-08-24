@@ -19,7 +19,28 @@ Welcome to my 100 Days Daily UI Challenge journey! This repository showcases my 
 
 ## 📅 Challenge Progress
 
-**Current Progress: 23/100** ⭐
+**Current Progress: 24/100** ⭐
+
+### ✅ Day 24 - Boarding Pass
+**Challenge:** Boarding Pass UI (Web & Mobile)
+
+**Implementation:** Modern Boarding Pass for Airline Travel
+- Two distinct designs: horizontal for web, vertical for mobile
+- Web pass features animated 3D card reveal with destination image and ticket-style edge
+- Mobile pass features premium gradient backgrounds, ticket edge, and animated depth effect
+- Custom SVG barcode generator for realistic boarding pass look
+- All layouts built with Tailwind CSS and Framer Motion for smooth transitions
+- Responsive, accessible, and visually rich design
+
+**Features:**
+- ✈️ Airline logo, name, passenger, flight, origin, destination, gate, seat, class, date, times, barcode
+- 🖥️ Web pass: 3D hover effect, destination image reveal, ticket edge, full-width barcode
+- 📱 Mobile pass: premium gradient, ticket edge, animated depth on hover
+- 🎨 Custom SVG barcode for scan-ready look
+- ⚡ Framer Motion for entrance and hover animations
+- 📱 Fully responsive and mobile-friendly
+
+**[View UI Design →](https://daily-ui-challenges-iota.vercel.app/024)**
 
 ### ✅ Day 23 - Modern SaaS Onboarding Flow
 **Challenge:** Onboarding
@@ -602,6 +623,6 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ---
 
-**Day 23/100 Complete** ✅ | **Next Challenge:** *Day 24 - Stay Tuned*
+**Day 24/100 Complete** ✅ | **Next Challenge:** *Day 25 - Stay Tuned*
 
 *Follow along for daily UI inspiration and modern web development techniques!*
