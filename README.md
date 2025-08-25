@@ -19,7 +19,26 @@ Welcome to my 100 Days Daily UI Challenge journey! This repository showcases my 
 
 ## 📅 Challenge Progress
 
-**Current Progress: 24/100** ⭐
+**Current Progress: 25/100** ⭐
+
+### ✅ Day 25 - TV App
+**Challenge:** TV App
+
+**Implementation:** Immersive Movie Streaming TV App
+- Crafted a visually engaging TV app interface for streaming movies
+- Cinematic backgrounds and overlays create a premium feel
+- Framer Motion transitions and micro-interactions deliver smooth, immersive navigation
+- Interactive movie selection, genre filters, and detailed info panels
+- Responsive design for both large screens and mobile devices
+
+**Features:**
+- 🎬 Animated movie browsing with immersive transitions
+- 🖥️ Dynamic overlays for movie details, ratings, and summaries
+- ⚡ Framer Motion for entrance, hover, and selection animations
+- 🎨 Tailwind CSS for clean, modern styling
+- 📱 Fully responsive and accessible design
+
+**[View UI Design →](https://daily-ui-challenges-iota.vercel.app/025)**
 
 ### ✅ Day 24 - Boarding Pass
 **Challenge:** Boarding Pass UI (Web & Mobile)
@@ -623,6 +642,6 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ---
 
-**Day 24/100 Complete** ✅ | **Next Challenge:** *Day 25 - Stay Tuned*
+**Day 25/100 Complete** ✅ | **Next Challenge:** *Day 26 - Stay Tuned*
 
 *Follow along for daily UI inspiration and modern web development techniques!*

@@ -300,6 +300,17 @@ const Navigation = () => {
         difficulty: "Intermediate",
         completedDate: "2025-08-24",
       },
+      {
+        day: "025",
+        title: "TV App",
+        description:
+          "A sleek TV app interface showcasing a movies and shows.",
+        status: "completed",
+        route: "/025",
+        technologies: ["React", "Framer Motion", "Tailwind CSS"],
+        difficulty: "Intermediate",
+        completedDate: "2025-08-25",
+      },
       // Add more challenges as they're completed
     ],
     []
