@@ -434,8 +434,6 @@ function FinanceAnalytics() {
           </motion.div>
           
         </div>
-          {/* Another chart here */}
-
       </div>
     </div>
   );

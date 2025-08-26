@@ -311,6 +311,17 @@ const Navigation = () => {
         difficulty: "Intermediate",
         completedDate: "2025-08-25",
       },
+      {
+        day: "026",
+        title: "Subscription",
+        description:
+          "A subscription modal UI on 8-bit design theme.",
+        status: "completed",
+        route: "/026",
+        technologies: ["React", "Framer Motion", "Tailwind CSS"],
+        difficulty: "Intermediate",
+        completedDate: "2025-08-26",
+      },
       // Add more challenges as they're completed
     ],
     []

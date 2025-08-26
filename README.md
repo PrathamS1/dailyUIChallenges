@@ -19,26 +19,47 @@ Welcome to my 100 Days Daily UI Challenge journey! This repository showcases my 
 
 ## 📅 Challenge Progress
 
-**Current Progress: 25/100** ⭐
+**Current Progress: 26/100** ⭐
 
-### ✅ Day 25 - TV App
-**Challenge:** TV App
+### ✅ Day 26 - Subscribe
+**Challenge:** Subscribe
 
-**Implementation:** Immersive Movie Streaming TV App
-- Crafted a visually engaging TV app interface for streaming movies
-- Cinematic backgrounds and overlays create a premium feel
-- Framer Motion transitions and micro-interactions deliver smooth, immersive navigation
-- Interactive movie selection, genre filters, and detailed info panels
-- Responsive design for both large screens and mobile devices
+**Implementation:** Pixelated Subscription Experience
+- Designed a premium subscription modal with a pixel-art inspired theme
+- Agent image and heading use pixel fonts for a classic, retro look
+- Dramatic radial gradient backgrounds and glassy overlays create a cinematic feel
+- Framer Motion powers smooth modal entrance, animated agent image, and interactive button effects
+- Responsive layout for both desktop and mobile
 
 **Features:**
-- 🎬 Animated movie browsing with immersive transitions
-- 🖥️ Dynamic overlays for movie details, ratings, and summaries
-- ⚡ Framer Motion for entrance, hover, and selection animations
-- 🎨 Tailwind CSS for clean, modern styling
+- 🕹️ Pixelated agent image and heading for authentic retro vibes
+- 🟩 Glassmorphism overlays and dramatic gradients
+- ⚡ Framer Motion for immersive entrance, blur, and hover animations
+- 📧 Email subscription form with animated buttons
 - 📱 Fully responsive and accessible design
 
-**[View UI Design →](https://daily-ui-challenges-iota.vercel.app/025)**
+**[View UI Design →](https://daily-ui-challenges-iota.vercel.app/026)**
+
+### ✅ Day 26 - Subscription Modal  
+**Challenge:** Subscribe  
+
+**Implementation:** Premium Gradient-Enhanced Pixelated Subscription Modal  
+- Built a modal with a **pixelated retro theme** blended with modern premium styling  
+- Gradient border with fading glow creates a high-end, eye-catching effect  
+- Pixel-inspired background texture adds uniqueness while keeping the layout minimal  
+- Tailwind CSS utilities combined with custom border effects for the polished look  
+- Smooth hover states on buttons for interactive feedback  
+- Clear and balanced typography for readability  
+
+**Features:**  
+- 🟪 **Pixelated theme** for a playful slight pixel vibe  
+- ✨ Gradient border with soft fading premium effect  
+- 📧 Clean email input field with accessible styling  
+- 🔘 Dual CTAs — “Subscribe” (primary) and “Maybe” (secondary)  
+- ⚡ Smooth hover transitions on buttons  
+- 🎨 Dark modern theme fused with pixel aesthetics  
+
+**[View UI Design →](https://daily-ui-challenges-iota.vercel.app/026)**
 
 ### ✅ Day 24 - Boarding Pass
 **Challenge:** Boarding Pass UI (Web & Mobile)
@@ -642,6 +663,6 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ---
 
-**Day 25/100 Complete** ✅ | **Next Challenge:** *Day 26 - Stay Tuned*
+**Day 26/100 Complete** ✅ | **Next Challenge:** *Day 27 - Stay Tuned*
 
 *Follow along for daily UI inspiration and modern web development techniques!*
