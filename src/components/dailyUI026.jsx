@@ -1,9 +1,10 @@
 import { motion } from "framer-motion";
 import LetterGlitch from "../ui/LetterGlitch";
-
+import BackToHome from "./BackToHome";
 export default function Subscription() {
   return (
     <div className="w-full h-screen flex items-center relative justify-center">
+      <BackToHome />
       <LetterGlitch
         glitchSpeed={50}
         centerVignette={true}
