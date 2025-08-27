@@ -13,6 +13,7 @@ import {
 } from "react-icons/fi";
 import { IoNotificationsOutline, IoHelp } from "react-icons/io5";
 import { MdAttachMoney } from "react-icons/md";
+import BackToHome from "./BackToHome";
 
 function MultiselectDropdown() {
   const options = ["React", "Vue", "Angular", "Django", "React Native"];
@@ -209,7 +210,9 @@ function ProfileDropdown() {
             {menuOptions.map((opt, idx) => (
               <div
                 key={opt.label}
-                className={`flex items-center px-4 py-2 cursor-pointer hover:bg-gray-200 gap-2 ${idx === menuOptions.length - 1 ? "text-red-600" : "text-black"}`}
+                className={`flex items-center px-4 py-2 cursor-pointer hover:bg-gray-200 gap-2 ${
+                  idx === menuOptions.length - 1 ? "text-red-600" : "text-black"
+                }`}
                 role="menuitem"
                 tabIndex={0}
               >
@@ -227,6 +230,7 @@ function ProfileDropdown() {
 export default function DropdownShowcase() {
   return (
     <div className="w-full h-screen bg-[url('/dropbg.jpg')] bg-cover bg-no-repeat">
+      <BackToHome />
       <h1 className="text-5xl font-bold text-black w-full text-center font-[Inter] py-10">
         Dropdowns
       </h1>
