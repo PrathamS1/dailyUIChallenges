@@ -322,6 +322,17 @@ const Navigation = () => {
         difficulty: "Intermediate",
         completedDate: "2025-08-26",
       },
+      {
+        day: "027",
+        title: "Dropdowns",
+        description:
+          "A showcase of various dropdown styles and interactions.",
+        status: "completed",
+        route: "/027",
+        technologies: ["React", "Framer Motion", "Tailwind CSS"],
+        difficulty: "Intermediate",
+        completedDate: "2025-08-27",
+      },
       // Add more challenges as they're completed
     ],
     []

@@ -19,7 +19,25 @@ Welcome to my 100 Days Daily UI Challenge journey! This repository showcases my 
 
 ## 📅 Challenge Progress
 
-**Current Progress: 26/100** ⭐
+**Current Progress: 27/100** ⭐
+
+### ✅ Day 27 - Dropdowns UI
+**Challenge:** Dropdown 
+
+**Implementation:** Black & White Modern Dropdown Showcase
+- Built three distinct dropdowns: Multiselect, Quick Actions, and Profile menu
+- Minimalist black and white theme with comfortable contrast for easy viewing
+- Framer Motion used for smooth open/close transitions and interactive states
+- All dropdowns feature keyboard accessibility, focus/click effects, and consistent iconography
+
+**Features:**
+- ⚡ Framer Motion for animated dropdown entrances and icon transitions
+- ✔️ Multiselect dropdown with tags and animated arrow
+- 🟩 Quick Actions dropdown with rich icon set and focus/click feedback
+- 👤 Profile dropdown with avatar, icons, and extended options
+- 📱 Fully responsive and accessible design
+
+**[View UI Design →](https://daily-ui-challenges-iota.vercel.app/027)**
 
 ### ✅ Day 26 - Subscribe
 **Challenge:** Subscribe
@@ -52,7 +70,7 @@ Welcome to my 100 Days Daily UI Challenge journey! This repository showcases my 
 - Clear and balanced typography for readability  
 
 **Features:**  
-- 🟪 **Pixelated theme** for a playful slight pixel vibe  
+- 🟪 **Pixelated theme** for a playful slight pixel vibe
 - ✨ Gradient border with soft fading premium effect  
 - 📧 Clean email input field with accessible styling  
 - 🔘 Dual CTAs — “Subscribe” (primary) and “Maybe” (secondary)  
@@ -663,6 +681,6 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ---
 
-**Day 26/100 Complete** ✅ | **Next Challenge:** *Day 27 - Stay Tuned*
+**Day 27/100 Complete** ✅ | **Next Challenge:** *Day 28 - Stay Tuned*
 
 *Follow along for daily UI inspiration and modern web development techniques!*

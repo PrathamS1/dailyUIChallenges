@@ -27,6 +27,7 @@ import Onboarding from "./components/dailyUI023";
 import BoardingPass from "./components/dailyUI024";
 import TVApp from "./components/dailyUI025";
 import Subscription from "./components/dailyUI026";
+import DropdownShowcase from "./components/dailyUI027";
 
 function App() {
   return (
@@ -59,6 +60,7 @@ function App() {
         <Route path="/024" element={<BoardingPass />} />
         <Route path="/025" element={<TVApp />} />
         <Route path="/026" element={<Subscription />} />
+        <Route path="/027" element={<DropdownShowcase/>} />
         <Route path="/plugin-management" element={<PluginManagement />} />
 
         {/* <Route path="/002" element={<New Element />} /> */}
