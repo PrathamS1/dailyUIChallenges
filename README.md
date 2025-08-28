@@ -19,7 +19,24 @@ Welcome to my 100 Days Daily UI Challenge journey! This repository showcases my 
 
 ## 📅 Challenge Progress
 
-**Current Progress: 27/100** ⭐
+**Current Progress: 28/100** ⭐
+
+### ✅ Day 28 - Contact & Support Page UI
+**Challenge:** Contact Page
+
+**Implementation:** Green-Themed SaaS Contact & Support Page
+- Hero, support cards, FAQ, ticket tracking, community, and animated footer
+- Framer Motion for reveal effects, staggered entrances, and interactive states
+- Clickable support cards for guided navigation to FAQ, Community, and Track Ticket
+- Multi-step contact form with animated progress indicator and file upload
+
+**Features:**
+- ⚡ Animated entrances and transitions
+- ✔️ FAQ with live search, filter, and highlight
+- 🎫 Track Ticket with animated status/result reveal
+- 📱 Fully responsive and accessible design
+
+**[View UI Design →](https://daily-ui-challenges-iota.vercel.app/028)**
 
 ### ✅ Day 27 - Dropdowns UI
 **Challenge:** Dropdown 
@@ -681,6 +698,6 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ---
 
-**Day 27/100 Complete** ✅ | **Next Challenge:** *Day 28 - Stay Tuned*
+**Day 28/100 Complete** ✅ | **Next Challenge:** *Day 29 - Stay Tuned*
 
 *Follow along for daily UI inspiration and modern web development techniques!*

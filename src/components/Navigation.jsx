@@ -333,6 +333,17 @@ const Navigation = () => {
         difficulty: "Intermediate",
         completedDate: "2025-08-27",
       },
+      {
+        day: "028",
+        title: "Contact Page",
+        description:
+          "A contact page designed for a SaaS platform for helping users seek support and assistance.",
+        status: "completed",
+        route: "/028",
+        technologies: ["React", "Framer Motion", "Tailwind CSS"],
+        difficulty: "Intermediate",
+        completedDate: "2025-08-28",
+      },
       // Add more challenges as they're completed
     ],
     []
@@ -352,7 +363,6 @@ const Navigation = () => {
 
     let currentStreak = 0;
     if (completedDates.length > 0) {
-      const today = new Date();
       let checkDate = new Date(completedDates[0]);
 
       while (
