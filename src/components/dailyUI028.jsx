@@ -671,7 +671,7 @@ export default function ContactPage() {
           <span className="text-green-500">SPHERE</span>
         </motion.h3>
         <motion.div
-          className="flex items-center gap-4"
+          className="flex items-center gap-8"
           initial="hidden"
           animate="visible"
           variants={{
@@ -680,9 +680,9 @@ export default function ContactPage() {
           }}
         >
           {[
-            { name: "Home", href: "/contact", active: false },
-            { name: "Services", href: "/contact", active: false },
-            { name: "Contact Us", href: "/contact", active: true },
+            { name: "Home", href: "#", active: false },
+            { name: "Services", href: "#", active: false },
+            { name: "Contact Us", href: "#", active: true },
           ].map((item) => (
             <motion.div
               key={item.name}
@@ -690,20 +690,16 @@ export default function ContactPage() {
                 hidden: { opacity: 0, y: 10 },
                 visible: { opacity: 1, y: 0 },
               }}
+              className="group"
             >
               <Link
                 to={item.href}
-                className={`relative font-[Roboto] px-2 py-1 text-lg transition-colors duration-200 ${
+                className={`relative font-[Roboto] py-1 text-md transition-colors duration-200 ${
                   item.active ? "text-[#16a34a] font-bold" : "text-green-900"
-                } group`}
+                }`}
               >
                 {item.name}
-                <motion.span
-                  layoutId="nav-underline"
-                  className="absolute left-0 -bottom-0.5 w-0 h-0.5 bg-green-500 rounded transition-all duration-300 group-hover:w-full"
-                  initial={{ width: 0 }}
-                  whileHover={{ width: "100%" }}
-                />
+              <span className="absolute left-0 -bottom-0.5 w-0 h-0.5 bg-green-400 transition-all duration-300 group-hover:w-full"></span>
               </Link>
             </motion.div>
           ))}
@@ -847,11 +843,11 @@ export default function ContactPage() {
           transition={{ duration: 0.7, type: "spring", stiffness: 80 }}
         >
           <motion.div
-            initial={{ opacity: 0, scale: 0.95, rotate: 25 }}
+            initial={{ opacity: 0, scale: 0.95, rotate: -25 }}
             whileInView={{ opacity: 1, scale: 1, rotate: 0 }}
             viewport={{ once: true, amount: 0.3 }}
-            transition={{ duration: 0.2, delay: 0.2 }}
-            className="absolute w-[20rem] h-[20rem] drop-shadow-[0_5px_4px_#0edc7f] top-1/3 right-12 rotate-12 overflow-hidden pointer-events-none select-none hidden sm:block md:w-[16rem] md:h-[16rem] lg:w-[20rem] lg:h-[20rem]"
+            transition={{ duration: 0.8, delay: 0.2 }}
+            className="absolute w-[20rem] h-[20rem] drop-shadow-[0_5px_4px_#0edc7f] top-10 left-16 -rotate-12 overflow-hidden pointer-events-none select-none hidden sm:block md:w-[16rem] md:h-[16rem] lg:w-[20rem] lg:h-[20rem]"
           >
             <img
               src="/faq.png"
