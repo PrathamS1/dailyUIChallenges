@@ -19,7 +19,20 @@ Welcome to my 100 Days Daily UI Challenge journey! This repository showcases my 
 
 ## 📅 Challenge Progress
 
-**Current Progress: 28/100** ⭐
+**Current Progress: 29/100** ⭐
+
+### ✅ Day 29 - Estate Site Map Design
+**Challenge:** Map Design
+
+**Implementation:** Real Estate Residential Site Map Design Using Figma
+- Simple Map Design made in Figma
+- Map showing different sectors in a site map
+
+**Features:**
+- Showcasing Numerous sectors in a residential society
+- Clean and easy to follow design
+
+**[View UI Design →](https://daily-ui-challenges-iota.vercel.app/029)**
 
 ### ✅ Day 28 - Contact & Support Page UI
 **Challenge:** Contact Page
@@ -698,6 +711,6 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ---
 
-**Day 28/100 Complete** ✅ | **Next Challenge:** *Day 29 - Stay Tuned*
+**Day 29/100 Complete** ✅ | **Next Challenge:** *Day 30 - Stay Tuned*
 
 *Follow along for daily UI inspiration and modern web development techniques!*

@@ -344,6 +344,17 @@ const Navigation = () => {
         difficulty: "Intermediate",
         completedDate: "2025-08-28",
       },
+      {
+        day: "029",
+        title: "Map Design",
+        description:
+          "A simple map design UI showcasing a real estate residential site.",
+        status: "completed",
+        route: "/029",
+        technologies: ["Figma"],
+        difficulty: "Easy",
+        completedDate: "2025-08-29",
+      },
       // Add more challenges as they're completed
     ],
     []
