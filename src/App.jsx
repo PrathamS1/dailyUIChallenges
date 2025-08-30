@@ -30,6 +30,7 @@ import Subscription from "./components/dailyUI026";
 import DropdownShowcase from "./components/dailyUI027";
 import ContactPage from "./components/dailyUI028";
 import MapDesign from "./components/dailyUI029";
+import PricingCard from "./components/dailyUI030";
 
 function App() {
   return (
@@ -65,6 +66,7 @@ function App() {
         <Route path="/027" element={<DropdownShowcase />} />
         <Route path="/028" element={<ContactPage />} />
         <Route path="/029" element={<MapDesign />} />
+        <Route path="/030" element={<PricingCard />} />
         <Route path="/plugin-management" element={<PluginManagement />} />
 
         {/* <Route path="/002" element={<New Element />} /> */}

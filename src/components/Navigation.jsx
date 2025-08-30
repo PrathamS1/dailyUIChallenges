@@ -355,6 +355,17 @@ const Navigation = () => {
         difficulty: "Easy",
         completedDate: "2025-08-29",
       },
+      {
+        day: "030",
+        title: "Pricing Card",
+        description:
+          "Premium pricing card design showcasing premium plan and features.",
+        status: "completed",
+        route: "/030",
+        technologies: ["React", "Framer Motion", "Tailwind CSS"],
+        difficulty: "Intermediate",
+        completedDate: "2025-08-30",
+      },
       // Add more challenges as they're completed
     ],
     []

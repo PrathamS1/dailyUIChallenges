@@ -19,7 +19,21 @@ Welcome to my 100 Days Daily UI Challenge journey! This repository showcases my 
 
 ## 📅 Challenge Progress
 
-**Current Progress: 29/100** ⭐
+**Current Progress: 30/100** ⭐
+
+### ✅ Day 30 - Premium Pricing Card
+**Challenge:** Pricing
+
+**Implementation:** Modern SaaS Pricing Card
+- Premium card with animated entrance, badge, and feature list
+- Framer Motion for smooth transitions, staggered list, and interactive states
+
+**Features:**
+- ⚡ Animated card entrance, badge pop, and feature list reveal
+- 💎 Premium badge with gradient and blur
+- 📱 Fully responsive and accessible design
+
+**[View UI Design →](https://daily-ui-challenges-iota.vercel.app/030)**
 
 ### ✅ Day 29 - Estate Site Map Design
 **Challenge:** Map Design
@@ -711,6 +725,6 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ---
 
-**Day 29/100 Complete** ✅ | **Next Challenge:** *Day 30 - Stay Tuned*
+**Day 30/100 Complete** ✅ | **Next Challenge:** *Day 31 - Stay Tuned*
 
 *Follow along for daily UI inspiration and modern web development techniques!*
