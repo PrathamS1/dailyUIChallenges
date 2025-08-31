@@ -21,6 +21,26 @@ Welcome to my 100 Days Daily UI Challenge journey! This repository showcases my 
 
 **Current Progress: 30/100** ⭐
 
+### ✅ Day 31 - Animated File Upload
+**Challenge:** File Upload
+
+**Implementation:** Immersive File Upload Card with Animated Overlay & Success Capsule
+- Fixed-size card (16rem) with simple black slate background
+- Animated overlay indicating file upload input
+- Framer Motion for file icon animation, overlay transitions, and success check
+- Capsule appears on upload success, showing file name and remove button
+- Clean, comment-free code for maintainability
+
+**Features:**
+- ⚡ Animated overlay and file icon for immersive upload experience
+- ✅ Success feedback: check mark, capsule with file name, and remove (cross) icon
+- 🟩 Overlay layout and card size remain fixed for consistent UI
+- 🌑 Simple dark theme (black slate) for premium look
+- 📱 Fully responsive and accessible design
+
+**[View UI Design →](https://daily-ui-challenges-iota.vercel.app/031)**
+
+
 ### ✅ Day 30 - Premium Pricing Card
 **Challenge:** Pricing
 
@@ -725,6 +745,6 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ---
 
-**Day 30/100 Complete** ✅ | **Next Challenge:** *Day 31 - Stay Tuned*
+**Day 31/100 Complete** ✅ | **Next Challenge:** *Day 32 - Stay Tuned*
 
 *Follow along for daily UI inspiration and modern web development techniques!*

@@ -366,6 +366,17 @@ const Navigation = () => {
         difficulty: "Intermediate",
         completedDate: "2025-08-30",
       },
+      {
+        day: "031",
+        title: "File Upload",
+        description:
+          "A file upload component with drag-and-drop support and preview.",
+        status: "completed",
+        route: "/031",
+        technologies: ["React", "Framer Motion", "Tailwind CSS"],
+        difficulty: "Intermediate",
+        completedDate: "2025-08-31",
+      },
       // Add more challenges as they're completed
     ],
     []
