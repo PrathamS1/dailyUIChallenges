@@ -2,6 +2,7 @@ import React, { useRef, useState } from "react";
 import { motion } from "framer-motion";
 import { File, Check, X } from "lucide-react";
 import BackToHome from "./BackToHome";
+import { FaFileLines } from "react-icons/fa6";
 
 export default function FileUpload() {
   const cardRef = useRef();
@@ -70,7 +71,7 @@ export default function FileUpload() {
             className="absolute inset-0 flex flex-col items-center justify-center z-20 pointer-events-none p-2"
           >
             <div className="bg-white/10 rounded-xl w-full h-full justify-center flex items-center gap-2">
-              <File className="w-6 h-6 text-white opacity-80" />
+              <FaFileLines className="w-6 h-6 text-white opacity-80" />
               <span className="text-white text-base font-semibold opacity-80">
                 Upload file
               </span>
@@ -90,7 +91,7 @@ export default function FileUpload() {
               transition={{ type: "spring", stiffness: 200, damping: 18 }}
               style={{ perspective: 400 }}
             >
-              <File className="w-16 h-16 text-white drop-shadow-lg" />
+              <FaFileLines className="w-16 h-16 text-white drop-shadow-lg" />
             </motion.div>
           </motion.div>
         )}

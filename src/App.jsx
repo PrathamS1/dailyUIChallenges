@@ -32,6 +32,19 @@ import ContactPage from "./components/dailyUI028";
 import MapDesign from "./components/dailyUI029";
 import PricingCard from "./components/dailyUI030";
 import FileUpload from "./components/dailyUI031";
+import WeatherUI from "./components/dailyUI037";
+import Calendar from "./components/dailyUI038";
+import Testimonials from "./components/dailyUI039";
+import KitchenDisplaySystem from "./components/dailyUI040";
+import WorkoutUI from "./components/dailyUI041";
+import ToDoTask from "./components/dailyUI042";
+import FoodMenu from "./components/dailyUI043";
+import FavoriteSection from "./components/dailyUI044";
+import StartupFunding from "./components/dailyUI032";
+import CustomizeProduct from "./components/dailyUI033";
+import AutomotiveInterface from "./components/dailyUI034";
+import BlogPost from "./components/dailyUI035";
+import SpecialOffer from "./components/dailyUI036";
 
 function App() {
   return (
@@ -69,6 +82,23 @@ function App() {
         <Route path="/029" element={<MapDesign />} />
         <Route path="/030" element={<PricingCard />} />
         <Route path="/031" element={<FileUpload />} />
+
+        {/* figma files only */}
+        <Route path="/032" element={<StartupFunding />} />
+        <Route path="/033" element={<CustomizeProduct />} />
+        <Route path="/034" element={<AutomotiveInterface />} />
+        <Route path="/035" element={<BlogPost />} />
+        <Route path="/036" element={<SpecialOffer />} />
+
+
+        <Route path="/037" element={<WeatherUI />} />
+        <Route path="/038" element={<Calendar />} />
+        <Route path="/039" element={<Testimonials />} />
+        <Route path="/040" element={<KitchenDisplaySystem />} />
+        <Route path="/041" element={<WorkoutUI />} />
+        <Route path="/042" element={<ToDoTask />} />
+        <Route path="/043" element={<FoodMenu />} />
+        <Route path="/044" element={<FavoriteSection />} />
         <Route path="/plugin-management" element={<PluginManagement />} />
 
         {/* <Route path="/002" element={<New Element />} /> */}

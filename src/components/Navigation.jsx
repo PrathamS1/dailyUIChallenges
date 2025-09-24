@@ -1,6 +1,7 @@
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import { Link } from "react-router-dom";
 import { useState, useMemo } from "react";
+import { IoIosArrowDown } from "react-icons/io";
 import {
   ArrowRight,
   CheckCircle2,
@@ -21,6 +22,8 @@ const Navigation = () => {
   const [difficultyFilter, setDifficultyFilter] = useState("all");
   const [sortBy, setSortBy] = useState("day");
   const [showFilters, setShowFilters] = useState(false);
+  const [sortDropdownOpen, setSortDropdownOpen] = useState(false);
+  const [difficultyDropdownOpen, setDifficultyDropdownOpen] = useState(false);
 
   // UI Challenges data - will expand as you add more
   const challenges = useMemo(
@@ -377,6 +380,137 @@ const Navigation = () => {
         difficulty: "Intermediate",
         completedDate: "2025-08-31",
       },
+      {
+        day: "032",
+        title: "Crowdfunding",
+        description: "A startup funding landing page with project details, funding progress, and backer information.",
+        status: "completed",
+        route: "/032",
+        technologies: ["Figma"],
+        difficulty: "Advanced",
+        completedDate: "2025-09-01",
+      },
+      {
+        day: "033",
+        title: "Product Customization",
+        description: "A product customization interface for customizing an ear bud product.",
+        status: "completed",
+        route: "/033",
+        technologies: ["Figma"],
+        difficulty: "Intermediate",
+        completedDate: "2025-09-02",
+      },
+      {
+        day: "034",
+        title: "Automotive Interface",
+        description: "An automotive interface design showcasing a modern car dashboard with navigation, media, and vehicle controls.",
+        status: "completed",
+        route: "/034",
+        technologies: ["Figma"],
+        difficulty: "Advanced",
+        completedDate: "2025-09-03",
+      },
+      {
+        day: "035",
+        title: "Blog Post",
+        description: "A modern blog post layout with featured image, title, author info, and content sections.",
+        status: "completed",
+        route: "/035",
+        technologies: ["Figma"],
+        difficulty: "Easy",
+        completedDate: "2025-09-04",
+      },
+      {
+        day: "036",
+        title: "Special Offer",
+        description: "A special offer modal design with promotional details, countdown timer, and call-to-action buttons.",
+        status: "completed",
+        route: "/036",
+        technologies: ["Figma"],
+        difficulty: "Easy",
+        completedDate: "2025-09-05",
+      },
+
+      {
+        day: "037",
+        title: "Weather UI",
+        description: "A weather UI component displaying current weather, forecasts, and insights.",
+        status: "completed",
+        route: "/037",
+        technologies: ["React", "Framer Motion", "Tailwind CSS"],
+        difficulty: "Intermediate",
+        completedDate: "2025-09-06",
+      },
+      {
+        day: "038",
+        title: "Calendar",
+        description: "A booking calendar UI for scheduling appointments and managing availability.",
+        status: "completed",
+        route: "/038",
+        technologies: ["React", "Framer Motion", "Tailwind CSS"],
+        difficulty: "Intermediate",
+        completedDate: "2025-09-07",
+      },
+      {
+        day: "039",
+        title: "Testimonials",
+        description: "A testimonials section showcasing user reviews and feedback with ratings.",
+        status: "completed",
+        route: "/039",
+        technologies: ["React", "Framer Motion", "Tailwind CSS"],
+        difficulty: "Intermediate",
+        completedDate: "2025-09-08",
+      },
+      {
+        day: "040",
+        title: "Kitchen Display System",
+        description: "A kitchen display system UI for managing and tracking food orders in a restaurant.",
+        status: "completed",
+        route: "/040",
+        technologies: ["React", "Framer Motion", "Tailwind CSS"],
+        difficulty: "Advanced",
+        completedDate: "2025-09-09",
+      },
+      {
+        day: "041",
+        title: "Workout App",
+        description: "A workout app UI with exercise tracking, categories, and progress monitoring.",
+        status: "completed",
+        route: "/041",
+        technologies: ["React", "Tailwind CSS"],
+        difficulty: "Advanced",
+        completedDate: "2025-09-10",
+      },
+      {
+        day: "042",
+        title: "To-Do Task Management",
+        description: "A to-do task management UI with task lists, categories, and progress tracking.",
+        status: "completed",
+        route: "/042",
+        technologies: ["React", "Framer Motion", "Tailwind CSS"],
+        difficulty: "Advanced",
+        completedDate: "2025-09-11",
+      },
+      {
+        day: "043",
+        title:" Food Menu",
+        description: "A food menu UI with categories, featured items, and a modern design.",
+        status: "completed",
+        route: "/043",
+        technologies: ["React", "Framer Motion", "Tailwind CSS"],
+        difficulty: "Intermediate",
+        completedDate: "2025-09-12",
+      },
+      {
+        day: "044",
+        title : "Favorites",
+        description: "A favorite section for movies, designed fully responsive and with clean layout.",
+        status: "completed",
+        route:"/044",
+        technologies: ["React", "Framer Motion", "Tailwind CSS"],
+        difficulty: "Easy",
+        completedDate: "2025-09-13",
+      }
       // Add more challenges as they're completed
     ],
     []
@@ -615,71 +749,152 @@ const Navigation = () => {
 
               {/* Filter Controls */}
               <div className="flex items-center gap-3">
-                <button
+                {/* Sort Dropdown */}
+                <motion.div className="relative">
+                  <motion.div
+                    onClick={() => setSortDropdownOpen(!sortDropdownOpen)}
+                    className={`flex items-center gap-2 px-3 py-2 border rounded-lg cursor-pointer transition-colors hover:bg-zinc-50 ${
+                      sortDropdownOpen
+                        ? "border-zinc-900 ring-1 ring-zinc-900 ring-offset-2"
+                        : "border-zinc-200"
+                    }`}
+                  >
+                    <SortAsc className="w-4 h-4 text-zinc-600" />
+                    <span className="text-sm text-zinc-800">Sort: {sortBy}</span>
+                    <motion.span
+                      animate={{ rotate: sortDropdownOpen ? 180 : 0 }}
+                      transition={{ type: "spring", stiffness: 300, damping: 20 }}
+                    >
+                      <IoIosArrowDown className="w-4 h-4" />
+                    </motion.span>
+                  </motion.div>
+                  <AnimatePresence>
+                    {sortDropdownOpen && (
+                      <motion.div
+                        initial={{ opacity: 0, y: -10 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        exit={{ opacity: 0, y: -10 }}
+                        transition={{ duration: 0.2 }}
+                        className="absolute right-0 mt-2 bg-white border border-zinc-200 rounded-lg shadow-lg z-50 min-w-[180px]"
+                      >
+                        {["day", "difficulty", "date", "title"].map((option) => (
+                          <div
+                            key={option}
+                            onClick={() => {
+                              setSortBy(option);
+                              setSortDropdownOpen(false);
+                            }}
+                            className={`px-4 py-2 cursor-pointer hover:bg-zinc-50 ${
+                              sortBy === option
+                                ? "bg-zinc-100 text-zinc-900"
+                                : "text-zinc-600"
+                            }`}
+                          >
+                            {option.charAt(0).toUpperCase() + option.slice(1)}
+                          </div>
+                        ))}
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
+                </motion.div>
+
+                {/* Filter Button */}
+                <motion.button
                   onClick={() => setShowFilters(!showFilters)}
-                  className={`flex items-center gap-2 px-3 py-2 border rounded-lg transition-colors ${
+                  className={`flex items-center gap-2 px-3 py-2 border rounded-lg transition-all ${
                     showFilters
-                      ? "border-zinc-900 bg-zinc-900 text-white"
+                      ? "border-zinc-900 bg-zinc-900 text-white ring-1 ring-zinc-900 ring-offset-2"
                       : "border-zinc-200 hover:bg-zinc-50"
                   }`}
                 >
                   <Filter className="w-4 h-4" />
                   <span className="text-sm">Filters</span>
-                </button>
-
-                <div className="flex items-center gap-2 px-3 py-2 border border-zinc-200 rounded-lg bg-white">
-                  <SortAsc className="w-4 h-4 text-zinc-400" />
-                  <select
-                    value={sortBy}
-                    onChange={(e) => setSortBy(e.target.value)}
-                    className="text-sm bg-transparent border-none outline-none focus:ring-0 cursor-pointer min-w-0 px-2"
-                  >
-                    <option value="day">Day Order</option>
-                    <option value="difficulty">Difficulty Level</option>
-                    <option value="date">Completion Date</option>
-                    <option value="title">Alphabetical</option>
-                  </select>
-                </div>
+                </motion.button>
               </div>
             </div>
 
             {/* Expanded Filters */}
-            {showFilters && (
-              <motion.div
-                initial={{ opacity: 0, height: 0 }}
-                animate={{ opacity: 1, height: "auto" }}
-                exit={{ opacity: 0, height: 0 }}
-                className="mt-4 pt-4 border-t border-zinc-200"
-              >
-                <div className="flex flex-wrap gap-3">
-                  <div className="flex items-center gap-2">
-                    <label className="text-sm text-zinc-600">Difficulty:</label>
-                    <select
-                      value={difficultyFilter}
-                      onChange={(e) => setDifficultyFilter(e.target.value)}
-                      className="px-3 py-1 border border-zinc-200 rounded text-sm focus:outline-none focus:ring-2 focus:ring-zinc-900"
-                    >
-                      <option value="all">All</option>
-                      <option value="Easy">Easy</option>
-                      <option value="Intermediate">Intermediate</option>
-                      <option value="Advanced">Advanced</option>
-                    </select>
-                  </div>
+            <AnimatePresence>
+              {showFilters && (
+                <motion.div
+                  initial={{ opacity: 0, height: 0 }}
+                  animate={{ opacity: 1, height: "auto" }}
+                  exit={{ opacity: 0, height: 0 }}
+                  className="mt-4 pt-4 border-t border-zinc-200"
+                >
+                  <div className="flex flex-wrap gap-3">
+                    <motion.div className="relative">
+                      <label className="text-sm text-zinc-600 mb-2 block">
+                        Difficulty:
+                      </label>
+                      <motion.div
+                        onClick={() => setDifficultyDropdownOpen(!difficultyDropdownOpen)}
+                        className={`flex items-center gap-2 px-3 py-2 border rounded-lg cursor-pointer min-w-[160px] ${
+                          difficultyDropdownOpen
+                            ? "border-zinc-900 ring-1 ring-zinc-900 ring-offset-2"
+                            : "border-zinc-200 hover:bg-zinc-50"
+                        }`}
+                      >
+                        <span className="text-sm text-zinc-800">
+                          {difficultyFilter === "all"
+                            ? "All Levels"
+                            : difficultyFilter}
+                        </span>
+                        <motion.span
+                          className="ml-auto"
+                          animate={{ rotate: difficultyDropdownOpen ? 180 : 0 }}
+                          transition={{ type: "spring", stiffness: 300, damping: 20 }}
+                        >
+                          <IoIosArrowDown className="w-4 h-4" />
+                        </motion.span>
+                      </motion.div>
+                      <AnimatePresence>
+                        {difficultyDropdownOpen && (
+                          <motion.div
+                            initial={{ opacity: 0, y: -10 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            exit={{ opacity: 0, y: -10 }}
+                            transition={{ duration: 0.2 }}
+                            className="absolute left-0 mt-2 bg-white border border-zinc-200 rounded-lg shadow-lg z-50 min-w-[160px]"
+                          >
+                            {["all", "Easy", "Intermediate", "Advanced"].map(
+                              (level) => (
+                                <div
+                                  key={level}
+                                  onClick={() => {
+                                    setDifficultyFilter(level);
+                                    setDifficultyDropdownOpen(false);
+                                  }}
+                                  className={`px-4 py-2 cursor-pointer hover:bg-zinc-50 ${
+                                    difficultyFilter === level
+                                      ? "bg-zinc-100 text-zinc-900"
+                                      : "text-zinc-600"
+                                  }`}
+                                >
+                                  {level === "all" ? "All Levels" : level}
+                                </div>
+                              )
+                            )}
+                          </motion.div>
+                        )}
+                      </AnimatePresence>
+                    </motion.div>
 
-                  {/* Quick Stats */}
-                  <div className="flex items-center gap-4 ml-auto">
-                    <div className="flex items-center gap-1 text-sm text-zinc-600">
-                      <TrendingUp className="w-4 h-4" />
-                      <span>Streak: {getProgressStats().currentStreak}</span>
-                    </div>
-                    <div className="flex items-center gap-1 text-sm text-zinc-600">
-                      <Award className="w-4 h-4" />
-                      <span>Total: {completedCount}/100</span>
+                    {/* Quick Stats */}
+                    <div className="flex items-center gap-4 ml-auto">
+                      <div className="flex items-center gap-1 text-sm text-zinc-600">
+                        <TrendingUp className="w-4 h-4" />
+                        <span>Streak: {getProgressStats().currentStreak}</span>
+                      </div>
+                      <div className="flex items-center gap-1 text-sm text-zinc-600">
+                        <Award className="w-4 h-4" />
+                        <span>Total: {completedCount}/100</span>
+                      </div>
                     </div>
                   </div>
-                </div>
-              </motion.div>
-            )}
+                </motion.div>
+              )}
+            </AnimatePresence>
           </div>
         </motion.div>
 

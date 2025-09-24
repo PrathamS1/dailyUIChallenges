@@ -39,7 +39,13 @@
   --home-control-background: #F9FAFF;
   --home-control-text: #111827;
   --home-control-accent: #83C5BE;
-  
+
+  --fav-primary: #42275A;
+  --fav-secondary: #734B6C;
+  --fav-bg: #1c1c28;
+  --fav-text: #f5f5f7;
+  --fav-muted: #c7c7d3;
+  --fav-accent: #e11d48;
 }
 .custom-icon {
   filter: invert(86%) sepia(40%) saturate(540%) hue-rotate(132deg) brightness(91%) contrast(100%);
