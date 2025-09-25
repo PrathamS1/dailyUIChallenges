@@ -510,6 +510,16 @@ const Navigation = () => {
         technologies: ["React", "Framer Motion", "Tailwind CSS"],
         difficulty: "Easy",
         completedDate: "2025-09-13",
+      },
+      {
+        day: "045",
+        title: "NFT Info Card",
+        description: "An NFT information card showcasing artwork, owner details, and nft related data.",
+        status: "completed",
+        route: "/045",
+        technologies: ["Figma"],
+        difficulty: "Intermediate",
+        completedDate: "2025-09-14",
       }
       // Add more challenges as they're completed
     ],
