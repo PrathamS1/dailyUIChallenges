@@ -46,6 +46,8 @@ import AutomotiveInterface from "./components/dailyUI034";
 import BlogPost from "./components/dailyUI035";
 import SpecialOffer from "./components/dailyUI036";
 import NFTInfoCard from "./components/dailyUI045";
+import InvoiceCard from "./components/dailyUI046";
+import ActivityFeed from "./components/dailyUI047";
 
 function App() {
   return (
@@ -103,6 +105,9 @@ function App() {
 
         {/* figma file */}
         <Route path="/045" element={<NFTInfoCard />} />
+
+        <Route path="/046" element={<InvoiceCard />} />
+        <Route path="/047" element={<ActivityFeed />} />
         <Route path="/plugin-management" element={<PluginManagement />} />
 
         {/* <Route path="/002" element={<New Element />} /> */}

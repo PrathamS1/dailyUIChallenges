@@ -520,6 +520,26 @@ const Navigation = () => {
         technologies: ["Figma"],
         difficulty: "Intermediate",
         completedDate: "2025-09-14",
+      },
+      {
+        day: "046",
+        title: "Invoice",
+        description: "A professional invoice card UI with billing details, itemized charges, and payment options.",
+        status: "completed",
+        route: "/046",
+        technologies: ["React", "Tailwind CSS"],
+        difficulty: "Intermediate",
+        completedDate: "2025-09-15",
+      },
+      {
+        day: "047",
+        title: "Activity Feed",
+        description: "An activity feed UI showcasing recent user activities, updates, and notifications.",
+        status: "completed",
+        route: "/047",
+        technologies: ["React", "Tailwind CSS"],
+        difficulty: "Advanced",
+        completedDate: "2025-09-16",
       }
       // Add more challenges as they're completed
     ],

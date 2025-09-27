@@ -78,7 +78,7 @@ export default function FavoriteSection() {
     <section className="min-h-screen p-6 md:p-10 bg-gradient-to-br from-black via-[var(--fav-primary)] to-[var(--fav-bg)] text-[var(--fav-text)] font-[Inter]">
       <div className="max-w-6xl mx-auto">
         {/* Header */}
-        <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 mb-20">
+        <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 mb-16">
           <div>
             <h2 className="text-3xl md:text-4xl font-[Poppins] leading-tight">
               Your Favorites
