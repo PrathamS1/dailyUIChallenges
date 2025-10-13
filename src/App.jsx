@@ -48,6 +48,11 @@ import SpecialOffer from "./components/dailyUI036";
 import NFTInfoCard from "./components/dailyUI045";
 import InvoiceCard from "./components/dailyUI046";
 import ActivityFeed from "./components/dailyUI047";
+import PresPage from "./components/dailyUI051";
+import LogoDesign from "./components/dailyUI052";
+import Navbar from "./components/dailyUI053";
+import VideoPlayer from "./components/dailyUI057";
+import ShoppingCartUI from "./components/dailyUI058";
 
 function App() {
   return (
@@ -93,7 +98,6 @@ function App() {
         <Route path="/035" element={<BlogPost />} />
         <Route path="/036" element={<SpecialOffer />} />
 
-
         <Route path="/037" element={<WeatherUI />} />
         <Route path="/038" element={<Calendar />} />
         <Route path="/039" element={<Testimonials />} />
@@ -108,6 +112,16 @@ function App() {
 
         <Route path="/046" element={<InvoiceCard />} />
         <Route path="/047" element={<ActivityFeed />} />
+
+        <Route path="/051" element={<PresPage />} />
+        <Route path="/052" element={<LogoDesign />} />
+        <Route path="/053" element={<Navbar />} />
+
+        {/* <Route path="/057" element={<VideoPlayer ambientMode="general" />}/> */}
+        <Route path="/057" element={<VideoPlayer ambientMode="dark" />} />
+        {/* <Route path="/057" element={<VideoPlayer ambientMode="vibrant" />}/> */}
+        <Route path="/058" element={<ShoppingCartUI />} />
+
         <Route path="/plugin-management" element={<PluginManagement />} />
 
         {/* <Route path="/002" element={<New Element />} /> */}

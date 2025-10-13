@@ -56,6 +56,8 @@
   --accent-600: #6d28d9;    
   --act-font-sans: 'Inter', system-ui, "Segoe UI", "Roboto", "Helvetica Neue", Arial;
   --act-font-heading: 'Merriweather', Georgia, serif;
+
+  
 }
 .custom-icon {
   filter: invert(86%) sepia(40%) saturate(540%) hue-rotate(132deg) brightness(91%) contrast(100%);
@@ -118,4 +120,49 @@
 .scrollbar-hide {
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;     /* Firefox */
+}
+
+/* ...existing code... */
+
+/* Ambient Animations */
+.animate-ambient-dark {
+  background-image: linear-gradient(to right, #1a1a1a, #2d2d2d, #1a1a1a);
+  animation: ambient-dark 5s ease infinite;
+}
+
+.animate-ambient-vibrant {
+  background-image: linear-gradient(to right, #ff0080, #7928ca, #ff0080);
+  animation: ambient-vibrant 5s ease infinite;
+}
+
+.animate-ambient-general {
+  background-image: linear-gradient(to right, #3b82f6, #14b8a6, #3b82f6);
+  animation: ambient-general 5s ease infinite;
+}
+
+@keyframes ambient-dark {
+  0%, 100% { 
+    background-image: linear-gradient(to right, #1a1a1a, #2d2d2d, #1a1a1a);
+  }
+  50% { 
+    background-image: linear-gradient(to right, #2d2d2d, #1a1a1a, #2d2d2d);
+  }
+}
+
+@keyframes ambient-vibrant {
+  0%, 100% { 
+    background-image: linear-gradient(to right, #ff0080, #7928ca, #ff0080);
+  }
+  50% { 
+    background-image: linear-gradient(to right, #7928ca, #ff0080, #7928ca);
+  }
+}
+
+@keyframes ambient-general {
+  0%, 100% { 
+    background-image: linear-gradient(to right, #3b82f6, #14b8a6, #3b82f6);
+  }
+  50% { 
+    background-image: linear-gradient(to right, #14b8a6, #3b82f6, #14b8a6);
+  }
 }
