@@ -25,7 +25,6 @@ const Navigation = () => {
   const [sortDropdownOpen, setSortDropdownOpen] = useState(false);
   const [difficultyDropdownOpen, setDifficultyDropdownOpen] = useState(false);
 
-  // UI Challenges data - will expand as you add more
   const challenges = useMemo(
     () => [
       {
@@ -306,8 +305,7 @@ const Navigation = () => {
       {
         day: "025",
         title: "TV App",
-        description:
-          "A sleek TV app interface showcasing a movies and shows.",
+        description: "A sleek TV app interface showcasing a movies and shows.",
         status: "completed",
         route: "/025",
         technologies: ["React", "Framer Motion", "Tailwind CSS"],
@@ -317,8 +315,7 @@ const Navigation = () => {
       {
         day: "026",
         title: "Subscription",
-        description:
-          "A subscription modal UI on 8-bit design theme.",
+        description: "A subscription modal UI on 8-bit design theme.",
         status: "completed",
         route: "/026",
         technologies: ["React", "Framer Motion", "Tailwind CSS"],
@@ -328,8 +325,7 @@ const Navigation = () => {
       {
         day: "027",
         title: "Dropdowns",
-        description:
-          "A showcase of various dropdown styles and interactions.",
+        description: "A showcase of various dropdown styles and interactions.",
         status: "completed",
         route: "/027",
         technologies: ["React", "Framer Motion", "Tailwind CSS"],
@@ -383,7 +379,8 @@ const Navigation = () => {
       {
         day: "032",
         title: "Crowdfunding",
-        description: "A startup funding landing page with project details, funding progress, and backer information.",
+        description:
+          "A startup funding landing page with project details, funding progress, and backer information.",
         status: "completed",
         route: "/032",
         technologies: ["Figma"],
@@ -393,7 +390,8 @@ const Navigation = () => {
       {
         day: "033",
         title: "Product Customization",
-        description: "A product customization interface for customizing an ear bud product.",
+        description:
+          "A product customization interface for customizing an ear bud product.",
         status: "completed",
         route: "/033",
         technologies: ["Figma"],
@@ -403,7 +401,8 @@ const Navigation = () => {
       {
         day: "034",
         title: "Automotive Interface",
-        description: "An automotive interface design showcasing a modern car dashboard with navigation, media, and vehicle controls.",
+        description:
+          "An automotive interface design showcasing a modern car dashboard with navigation, media, and vehicle controls.",
         status: "completed",
         route: "/034",
         technologies: ["Figma"],
@@ -413,7 +412,8 @@ const Navigation = () => {
       {
         day: "035",
         title: "Blog Post",
-        description: "A modern blog post layout with featured image, title, author info, and content sections.",
+        description:
+          "A modern blog post layout with featured image, title, author info, and content sections.",
         status: "completed",
         route: "/035",
         technologies: ["Figma"],
@@ -423,7 +423,8 @@ const Navigation = () => {
       {
         day: "036",
         title: "Special Offer",
-        description: "A special offer modal design with promotional details, countdown timer, and call-to-action buttons.",
+        description:
+          "A special offer modal design with promotional details, countdown timer, and call-to-action buttons.",
         status: "completed",
         route: "/036",
         technologies: ["Figma"],
@@ -434,7 +435,8 @@ const Navigation = () => {
       {
         day: "037",
         title: "Weather UI",
-        description: "A weather UI component displaying current weather, forecasts, and insights.",
+        description:
+          "A weather UI component displaying current weather, forecasts, and insights.",
         status: "completed",
         route: "/037",
         technologies: ["React", "Framer Motion", "Tailwind CSS"],
@@ -444,7 +446,8 @@ const Navigation = () => {
       {
         day: "038",
         title: "Calendar",
-        description: "A booking calendar UI for scheduling appointments and managing availability.",
+        description:
+          "A booking calendar UI for scheduling appointments and managing availability.",
         status: "completed",
         route: "/038",
         technologies: ["React", "Framer Motion", "Tailwind CSS"],
@@ -454,7 +457,8 @@ const Navigation = () => {
       {
         day: "039",
         title: "Testimonials",
-        description: "A testimonials section showcasing user reviews and feedback with ratings.",
+        description:
+          "A testimonials section showcasing user reviews and feedback with ratings.",
         status: "completed",
         route: "/039",
         technologies: ["React", "Framer Motion", "Tailwind CSS"],
@@ -464,7 +468,8 @@ const Navigation = () => {
       {
         day: "040",
         title: "Kitchen Display System",
-        description: "A kitchen display system UI for managing and tracking food orders in a restaurant.",
+        description:
+          "A kitchen display system UI for managing and tracking food orders in a restaurant.",
         status: "completed",
         route: "/040",
         technologies: ["React", "Framer Motion", "Tailwind CSS"],
@@ -474,7 +479,8 @@ const Navigation = () => {
       {
         day: "041",
         title: "Workout App",
-        description: "A workout app UI with exercise tracking, categories, and progress monitoring.",
+        description:
+          "A workout app UI with exercise tracking, categories, and progress monitoring.",
         status: "completed",
         route: "/041",
         technologies: ["React", "Tailwind CSS"],
@@ -484,7 +490,8 @@ const Navigation = () => {
       {
         day: "042",
         title: "To-Do Task Management",
-        description: "A to-do task management UI with task lists, categories, and progress tracking.",
+        description:
+          "A to-do task management UI with task lists, categories, and progress tracking.",
         status: "completed",
         route: "/042",
         technologies: ["React", "Framer Motion", "Tailwind CSS"],
@@ -493,8 +500,9 @@ const Navigation = () => {
       },
       {
         day: "043",
-        title:" Food Menu",
-        description: "A food menu UI with categories, featured items, and a modern design.",
+        title: " Food Menu",
+        description:
+          "A food menu UI with categories, featured items, and a modern design.",
         status: "completed",
         route: "/043",
         technologies: ["React", "Framer Motion", "Tailwind CSS"],
@@ -503,10 +511,11 @@ const Navigation = () => {
       },
       {
         day: "044",
-        title : "Favorites",
-        description: "A favorite section for movies, designed fully responsive and with clean layout.",
+        title: "Favorites",
+        description:
+          "A favorite section for movies, designed fully responsive and with clean layout.",
         status: "completed",
-        route:"/044",
+        route: "/044",
         technologies: ["React", "Framer Motion", "Tailwind CSS"],
         difficulty: "Easy",
         completedDate: "2025-09-13",
@@ -514,7 +523,8 @@ const Navigation = () => {
       {
         day: "045",
         title: "NFT Info Card",
-        description: "An NFT information card showcasing artwork, owner details, and nft related data.",
+        description:
+          "An NFT information card showcasing artwork, owner details, and nft related data.",
         status: "completed",
         route: "/045",
         technologies: ["Figma"],
@@ -524,7 +534,8 @@ const Navigation = () => {
       {
         day: "046",
         title: "Invoice",
-        description: "A professional invoice card UI with billing details, itemized charges, and payment options.",
+        description:
+          "A professional invoice card UI with billing details, itemized charges, and payment options.",
         status: "completed",
         route: "/046",
         technologies: ["React", "Tailwind CSS"],
@@ -534,18 +545,51 @@ const Navigation = () => {
       {
         day: "047",
         title: "Activity Feed",
-        description: "An activity feed UI showcasing recent user activities, updates, and notifications.",
+        description:
+          "An activity feed UI showcasing recent user activities, updates, and notifications.",
         status: "completed",
         route: "/047",
         technologies: ["React", "Tailwind CSS"],
         difficulty: "Advanced",
         completedDate: "2025-09-16",
       },
-
+      {
+        day: "048",
+        title: "Coming Soon",
+        description: "Coming Soon page design for a web tool.",
+        status: "completed",
+        route: "/048",
+        technologies: ["React", "Tailwind CSS"],
+        difficulty: "Easy",
+        completedDate: "2025-09-17",
+      },
+      {
+        day: "049",
+        title: "Notification",
+        description:
+          "Notification ui design for mobile screens to demonstrate how notification is received.",
+        status: "completed",
+        route: "/049",
+        technologies: ["Figma"],
+        difficulty: "Easy",
+        completedDate: "2025-09-18",
+      },
+      {
+        day: "050",
+        title: "Job Listing",
+        description:
+          "UI design for a job portal with job listing, custom job searching and filters functionality.",
+        status: "completed",
+        route: "/050",
+        technologies: ["Figma"],
+        difficulty: "Advanced",
+        completedDate: "2025-09-19",
+      },
       {
         day: "051",
         title: "Press Page",
-        description: "A press page UI showcasing news articles, media coverage, and press releases.",
+        description:
+          "A press page UI showcasing news articles, media coverage, and press releases.",
         status: "completed",
         route: "/051",
         technologies: ["React", "Tailwind CSS"],
@@ -555,7 +599,8 @@ const Navigation = () => {
       {
         day: "052",
         title: "Logo Design",
-        description: "A logo design for a tech startup, showcasing modern design principles.",
+        description:
+          "A logo design for a tech startup, showcasing modern design principles.",
         status: "completed",
         route: "/052",
         technologies: ["Figma", "Illustrator"],
@@ -565,7 +610,8 @@ const Navigation = () => {
       {
         day: "053",
         title: "Navigation Bar",
-        description: "A responsive navigation bar with dropdowns and mobile menu.",
+        description:
+          "A responsive navigation bar with dropdowns and mobile menu.",
         status: "completed",
         route: "/053",
         technologies: ["React", "Framer Motion", "Tailwind CSS"],
@@ -576,7 +622,8 @@ const Navigation = () => {
       {
         day: "057",
         title: "Video Player UI",
-        description: "A video player UI designed to give immersive feel when watching.",
+        description:
+          "A video player UI designed to give immersive feel when watching.",
         status: "completed",
         route: "/057",
         technologies: ["React", "Tailwind CSS"],
@@ -586,25 +633,68 @@ const Navigation = () => {
       {
         day: "058",
         title: "Shopping Cart",
-        description: "A shopping cart page's ui design with focus on user's need and seamless experience.",
+        description:
+          "A shopping cart page's ui design with focus on user's need and seamless experience.",
         status: "completed",
         route: "/058",
         technologies: ["React", "Framer Motion", "Tailwind CSS"],
         difficulty: "Intermediate",
         completedDate: "2025-09-27",
+      },
+      {
+        day: "059",
+        title: "Background Pattern",
+        description:
+          "Modern Dark geometric based background pattern design, made in figma.",
+        status: "completed",
+        route: "/059",
+        technologies: ["Figma"],
+        difficulty: "Intermediate",
+        completedDate: "2025-09-28",
+      },
+      {
+        day: "060",
+        title: "Color Picker",
+        description:
+          "Custom designed color picker component",
+        status: "completed",
+        route: "/060",
+        technologies: ["React", "Tailwind"],
+        difficulty: "Intermediate",
+        completedDate: "2025-09-29",
+      },
+      {
+        day: "061",
+        title: "Redeem Coupon",
+        description:
+          "Modal Design for redeem coupon functionality with coupon validation and successful integration.",
+        status: "completed",
+        route: "/061",
+        technologies: ["React", "Tailwind"],
+        difficulty: "Easy",
+        completedDate: "2025-09-30",
+      },
+
+      {
+        day: "062",
+        title: "Sign Up Form",
+        description:
+          "Simple zinc-theme Sign Up Form UI design",
+        status: "completed",
+        route: "/062",
+        technologies: ["React", "Tailwind", "Framer Motion"],
+        difficulty: "Intermediate",
+        completedDate: "2025-10-01",
       }
-      // Add more challenges as they're completed
     ],
     []
   );
 
-  // Helper Functions
   const getProgressStats = () => {
     const completed = challenges.filter((c) => c.status === "completed").length;
     const total = 100;
     const percentage = (completed / total) * 100;
 
-    // Calculate streak (consecutive days)
     const completedDates = challenges
       .filter((c) => c.status === "completed" && c.completedDate)
       .map((c) => new Date(c.completedDate))
@@ -653,7 +743,6 @@ const Navigation = () => {
       .map(([tech, count]) => ({ tech, count }));
   };
 
-  // Filtering and Sorting Logic
   const filteredAndSortedChallenges = useMemo(() => {
     let filtered = challenges.filter((challenge) => {
       const matchesSearch =
@@ -842,10 +931,16 @@ const Navigation = () => {
                     }`}
                   >
                     <SortAsc className="w-4 h-4 text-zinc-600" />
-                    <span className="text-sm text-zinc-800">Sort: {sortBy}</span>
+                    <span className="text-sm text-zinc-800">
+                      Sort: {sortBy}
+                    </span>
                     <motion.span
                       animate={{ rotate: sortDropdownOpen ? 180 : 0 }}
-                      transition={{ type: "spring", stiffness: 300, damping: 20 }}
+                      transition={{
+                        type: "spring",
+                        stiffness: 300,
+                        damping: 20,
+                      }}
                     >
                       <IoIosArrowDown className="w-4 h-4" />
                     </motion.span>
@@ -859,22 +954,24 @@ const Navigation = () => {
                         transition={{ duration: 0.2 }}
                         className="absolute right-0 mt-2 bg-white border border-zinc-200 rounded-lg shadow-lg z-50 min-w-[180px]"
                       >
-                        {["day", "difficulty", "date", "title"].map((option) => (
-                          <div
-                            key={option}
-                            onClick={() => {
-                              setSortBy(option);
-                              setSortDropdownOpen(false);
-                            }}
-                            className={`px-4 py-2 cursor-pointer hover:bg-zinc-50 ${
-                              sortBy === option
-                                ? "bg-zinc-100 text-zinc-900"
-                                : "text-zinc-600"
-                            }`}
-                          >
-                            {option.charAt(0).toUpperCase() + option.slice(1)}
-                          </div>
-                        ))}
+                        {["day", "difficulty", "date", "title"].map(
+                          (option) => (
+                            <div
+                              key={option}
+                              onClick={() => {
+                                setSortBy(option);
+                                setSortDropdownOpen(false);
+                              }}
+                              className={`px-4 py-2 cursor-pointer hover:bg-zinc-50 ${
+                                sortBy === option
+                                  ? "bg-zinc-100 text-zinc-900"
+                                  : "text-zinc-600"
+                              }`}
+                            >
+                              {option.charAt(0).toUpperCase() + option.slice(1)}
+                            </div>
+                          )
+                        )}
                       </motion.div>
                     )}
                   </AnimatePresence>
@@ -910,7 +1007,9 @@ const Navigation = () => {
                         Difficulty:
                       </label>
                       <motion.div
-                        onClick={() => setDifficultyDropdownOpen(!difficultyDropdownOpen)}
+                        onClick={() =>
+                          setDifficultyDropdownOpen(!difficultyDropdownOpen)
+                        }
                         className={`flex items-center gap-2 px-3 py-2 border rounded-lg cursor-pointer min-w-[160px] ${
                           difficultyDropdownOpen
                             ? "border-zinc-900 ring-1 ring-zinc-900 ring-offset-2"
@@ -925,7 +1024,11 @@ const Navigation = () => {
                         <motion.span
                           className="ml-auto"
                           animate={{ rotate: difficultyDropdownOpen ? 180 : 0 }}
-                          transition={{ type: "spring", stiffness: 300, damping: 20 }}
+                          transition={{
+                            type: "spring",
+                            stiffness: 300,
+                            damping: 20,
+                          }}
                         >
                           <IoIosArrowDown className="w-4 h-4" />
                         </motion.span>

@@ -53,6 +53,13 @@ import LogoDesign from "./components/dailyUI052";
 import Navbar from "./components/dailyUI053";
 import VideoPlayer from "./components/dailyUI057";
 import ShoppingCartUI from "./components/dailyUI058";
+import ComingSoon from "./components/dailyUI048";
+import NotificationUI from "./components/dailyUI049";
+import JobListing from "./components/dailyUI050";
+import BackgroundPattern from "./components/dailyUI059";
+import SignUpForm from "./components/dailyUI062";
+import ColorPicker from "./components/dailyUI060";
+import RedeemCouponModal from "./components/dailyUI061";
 
 function App() {
   return (
@@ -112,6 +119,11 @@ function App() {
 
         <Route path="/046" element={<InvoiceCard />} />
         <Route path="/047" element={<ActivityFeed />} />
+        <Route path="/048" element={<ComingSoon />} />
+        <Route path="/049" element={<NotificationUI />} />
+
+        {/* figma file */}
+        <Route path="/050" element={<JobListing />} />
 
         <Route path="/051" element={<PresPage />} />
         <Route path="/052" element={<LogoDesign />} />
@@ -121,6 +133,10 @@ function App() {
         <Route path="/057" element={<VideoPlayer ambientMode="dark" />} />
         {/* <Route path="/057" element={<VideoPlayer ambientMode="vibrant" />}/> */}
         <Route path="/058" element={<ShoppingCartUI />} />
+        <Route path="/059" element={<BackgroundPattern />} />
+        <Route path="/060" element={<ColorPicker />} />
+        <Route path="/061" element={<RedeemCouponModal />} />
+        <Route path="/062" element={<SignUpForm />} />
 
         <Route path="/plugin-management" element={<PluginManagement />} />
 
