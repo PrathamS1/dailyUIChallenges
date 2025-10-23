@@ -685,6 +685,17 @@ const Navigation = () => {
         technologies: ["React", "Tailwind", "Framer Motion"],
         difficulty: "Intermediate",
         completedDate: "2025-10-01",
+      },
+      {
+        day: "063",
+        title: "Best Of Page",
+        description:
+          "A Best Of page design showcasing best of productivity tools.",
+        status: "completed",
+        route: "/063",
+        technologies: ["React", "Tailwind", "Framer Motion"],
+        difficulty: "Intermediate",
+        completedDate: "2025-10-02",
       }
     ],
     []

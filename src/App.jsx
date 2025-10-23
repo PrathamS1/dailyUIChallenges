@@ -60,6 +60,7 @@ import BackgroundPattern from "./components/dailyUI059";
 import SignUpForm from "./components/dailyUI062";
 import ColorPicker from "./components/dailyUI060";
 import RedeemCouponModal from "./components/dailyUI061";
+import BestOfPage from "./components/dailyUI063";
 
 function App() {
   return (
@@ -137,6 +138,7 @@ function App() {
         <Route path="/060" element={<ColorPicker />} />
         <Route path="/061" element={<RedeemCouponModal />} />
         <Route path="/062" element={<SignUpForm />} />
+        <Route path="/063" element={<BestOfPage />} />
 
         <Route path="/plugin-management" element={<PluginManagement />} />
 

@@ -19,7 +19,7 @@ Welcome to my 100 Days Daily UI Challenge journey! This repository showcases my 
 
 ## 📅 Challenge Progress
 
-**Current Progress: 62/100** ⭐
+**Current Progress: 63/100** ⭐
 
 ### ✅ Completed Challenges
 
@@ -84,7 +84,8 @@ Welcome to my 100 Days Daily UI Challenge journey! This repository showcases my 
 59. [Day 59 – Background Pattern](https://daily-ui-challenges-iota.vercel.app/059)  
 60. [Day 60 – Color Picker](https://daily-ui-challenges-iota.vercel.app/060)
 61. [Day 61 - Redeem Coupon](https://daily-ui-challenges-iota.vercel.app/061)
-62. [Day 62 – Sign Up Form](https://daily-ui-challenges-iota.vercel.app/062)  
+62. [Day 62 – Sign Up Form](https://daily-ui-challenges-iota.vercel.app/062)
+63. [Day 63 - Best Of page](https://daily-ui-challenges-iota.vercel.app/063)
 
 ---
 
