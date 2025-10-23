@@ -61,6 +61,7 @@ import SignUpForm from "./components/dailyUI062";
 import ColorPicker from "./components/dailyUI060";
 import RedeemCouponModal from "./components/dailyUI061";
 import BestOfPage from "./components/dailyUI063";
+import UserSelection from "./components/dailyUI064";
 
 function App() {
   return (
@@ -139,6 +140,7 @@ function App() {
         <Route path="/061" element={<RedeemCouponModal />} />
         <Route path="/062" element={<SignUpForm />} />
         <Route path="/063" element={<BestOfPage />} />
+        <Route path="/064" element={<UserSelection />} />
 
         <Route path="/plugin-management" element={<PluginManagement />} />
 

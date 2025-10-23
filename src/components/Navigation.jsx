@@ -696,6 +696,17 @@ const Navigation = () => {
         technologies: ["React", "Tailwind", "Framer Motion"],
         difficulty: "Intermediate",
         completedDate: "2025-10-02",
+      },
+      {
+        day: "064",
+        title: "User Selection",
+        description:
+          "A user selection component allowing users to choose from multiple profiles.",
+        status: "completed",
+        route: "/064",
+        technologies: ["React", "Tailwind", "Framer Motion"],
+        difficulty: "Easy",
+        completedDate: "2025-10-03",
       }
     ],
     []
