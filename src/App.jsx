@@ -1,4 +1,8 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+} from "react-router-dom";
 import Navigation from "./components/Navigation";
 import ProductivitySignUp from "./components/dailyUI001";
 import CreditCardCheckout from "./components/dailyUI002";
@@ -62,93 +66,107 @@ import ColorPicker from "./components/dailyUI060";
 import RedeemCouponModal from "./components/dailyUI061";
 import BestOfPage from "./components/dailyUI063";
 import UserSelection from "./components/dailyUI064";
+import NotesWidget from "./components/dailyUI065";
+import Confirmation from "./components/dailyUI054";
+import BreadCrumbs from "./components/dailyUI056";
+import IconSet from "./components/dailyUI055";
+import ScrollToTop from "./utils/ScrollToTop";
 
 function App() {
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<Navigation />} />
-        <Route path="/001" element={<ProductivitySignUp />} />
-        <Route path="/002" element={<CreditCardCheckout />} />
-        <Route path="/003" element={<LandingPage />} />
-        <Route path="/004" element={<CarbonFootprintCalculator />} />
-        <Route path="/005" element={<AppIconShowcase />} />
-        <Route path="/006" element={<ProfessionalProfileCard />} />
-        <Route path="/007" element={<CMSSettingsPanel />} />
-        <Route path="/008" element={<Simple404 />} />
-        <Route path="/009" element={<ImmersiveMusicPlayer />} />
-        <Route path="/010" element={<SocialShare />} />
-        <Route path="/011" element={<FlashMessages />} />
-        <Route path="/012" element={<IceCreamShop />} />
-        <Route path="/013" element={<BuyerSellerChat />} />
-        <Route path="/014" element={<RetroGameCountdown />} />
-        <Route path="/015" element={<ServiceToggle />} />
-        <Route path="/016" element={<PremiumContentOverlay />} />
-        <Route path="/017" element={<DigitalReceipt />} />
-        <Route path="/018" element={<FinanceAnalytics />} />
-        <Route path="/019" element={<Leaderboard />} />
-        <Route path="/020" element={<LocationTrackerPin />} />
-        <Route path="/021" element={<HomeMonitoringDashboard />} />
-        <Route path="/022" element={<SearchBar />} />
-        <Route path="/023" element={<Onboarding />} />
-        <Route path="/024" element={<BoardingPass />} />
-        <Route path="/025" element={<TVApp />} />
-        <Route path="/026" element={<Subscription />} />
-        <Route path="/027" element={<DropdownShowcase />} />
-        <Route path="/028" element={<ContactPage />} />
-        <Route path="/029" element={<MapDesign />} />
-        <Route path="/030" element={<PricingCard />} />
-        <Route path="/031" element={<FileUpload />} />
+    <>
+      <Router>
+        <ScrollToTop/>
+        <Routes>
+          <Route path="/" element={<Navigation />} />
+          <Route path="/001" element={<ProductivitySignUp />} />
+          <Route path="/002" element={<CreditCardCheckout />} />
+          <Route path="/003" element={<LandingPage />} />
+          <Route path="/004" element={<CarbonFootprintCalculator />} />
+          <Route path="/005" element={<AppIconShowcase />} />
+          <Route path="/006" element={<ProfessionalProfileCard />} />
+          <Route path="/007" element={<CMSSettingsPanel />} />
+          <Route path="/008" element={<Simple404 />} />
+          <Route path="/009" element={<ImmersiveMusicPlayer />} />
+          <Route path="/010" element={<SocialShare />} />
+          <Route path="/011" element={<FlashMessages />} />
+          <Route path="/012" element={<IceCreamShop />} />
+          <Route path="/013" element={<BuyerSellerChat />} />
+          <Route path="/014" element={<RetroGameCountdown />} />
+          <Route path="/015" element={<ServiceToggle />} />
+          <Route path="/016" element={<PremiumContentOverlay />} />
+          <Route path="/017" element={<DigitalReceipt />} />
+          <Route path="/018" element={<FinanceAnalytics />} />
+          <Route path="/019" element={<Leaderboard />} />
+          <Route path="/020" element={<LocationTrackerPin />} />
+          <Route path="/021" element={<HomeMonitoringDashboard />} />
+          <Route path="/022" element={<SearchBar />} />
+          <Route path="/023" element={<Onboarding />} />
+          <Route path="/024" element={<BoardingPass />} />
+          <Route path="/025" element={<TVApp />} />
+          <Route path="/026" element={<Subscription />} />
+          <Route path="/027" element={<DropdownShowcase />} />
+          <Route path="/028" element={<ContactPage />} />
+          <Route path="/029" element={<MapDesign />} />
+          <Route path="/030" element={<PricingCard />} />
+          <Route path="/031" element={<FileUpload />} />
 
-        {/* figma files only */}
-        <Route path="/032" element={<StartupFunding />} />
-        <Route path="/033" element={<CustomizeProduct />} />
-        <Route path="/034" element={<AutomotiveInterface />} />
-        <Route path="/035" element={<BlogPost />} />
-        <Route path="/036" element={<SpecialOffer />} />
+          {/* figma files only */}
+          <Route path="/032" element={<StartupFunding />} />
+          <Route path="/033" element={<CustomizeProduct />} />
+          <Route path="/034" element={<AutomotiveInterface />} />
+          <Route path="/035" element={<BlogPost />} />
+          <Route path="/036" element={<SpecialOffer />} />
 
-        <Route path="/037" element={<WeatherUI />} />
-        <Route path="/038" element={<Calendar />} />
-        <Route path="/039" element={<Testimonials />} />
-        <Route path="/040" element={<KitchenDisplaySystem />} />
-        <Route path="/041" element={<WorkoutUI />} />
-        <Route path="/042" element={<ToDoTask />} />
-        <Route path="/043" element={<FoodMenu />} />
-        <Route path="/044" element={<FavoriteSection />} />
+          <Route path="/037" element={<WeatherUI />} />
+          <Route path="/038" element={<Calendar />} />
+          <Route path="/039" element={<Testimonials />} />
+          <Route path="/040" element={<KitchenDisplaySystem />} />
+          <Route path="/041" element={<WorkoutUI />} />
+          <Route path="/042" element={<ToDoTask />} />
+          <Route path="/043" element={<FoodMenu />} />
+          <Route path="/044" element={<FavoriteSection />} />
 
-        {/* figma file */}
-        <Route path="/045" element={<NFTInfoCard />} />
+          {/* figma file */}
+          <Route path="/045" element={<NFTInfoCard />} />
 
-        <Route path="/046" element={<InvoiceCard />} />
-        <Route path="/047" element={<ActivityFeed />} />
-        <Route path="/048" element={<ComingSoon />} />
-        <Route path="/049" element={<NotificationUI />} />
+          <Route path="/046" element={<InvoiceCard />} />
+          <Route path="/047" element={<ActivityFeed />} />
+          <Route path="/048" element={<ComingSoon />} />
+          <Route path="/049" element={<NotificationUI />} />
 
-        {/* figma file */}
-        <Route path="/050" element={<JobListing />} />
+          {/* figma file */}
+          <Route path="/050" element={<JobListing />} />
 
-        <Route path="/051" element={<PresPage />} />
-        <Route path="/052" element={<LogoDesign />} />
-        <Route path="/053" element={<Navbar />} />
+          <Route path="/051" element={<PresPage />} />
+          <Route path="/052" element={<LogoDesign />} />
+          <Route path="/053" element={<Navbar />} />
 
-        {/* <Route path="/057" element={<VideoPlayer ambientMode="general" />}/> */}
-        <Route path="/057" element={<VideoPlayer ambientMode="dark" />} />
-        {/* <Route path="/057" element={<VideoPlayer ambientMode="vibrant" />}/> */}
-        <Route path="/058" element={<ShoppingCartUI />} />
-        <Route path="/059" element={<BackgroundPattern />} />
-        <Route path="/060" element={<ColorPicker />} />
-        <Route path="/061" element={<RedeemCouponModal />} />
-        <Route path="/062" element={<SignUpForm />} />
-        <Route path="/063" element={<BestOfPage />} />
-        <Route path="/064" element={<UserSelection />} />
+          {/* figma file */}
+          <Route path="/054" element={<Confirmation />} />
 
-        <Route path="/plugin-management" element={<PluginManagement />} />
+          <Route path="/055" element={<IconSet />} />
+          <Route path="/056" element={<BreadCrumbs />} />
+          {/* <Route path="/057" element={<VideoPlayer ambientMode="general" />}/> */}
+          <Route path="/057" element={<VideoPlayer ambientMode="dark" />} />
+          {/* <Route path="/057" element={<VideoPlayer ambientMode="vibrant" />}/> */}
+          <Route path="/058" element={<ShoppingCartUI />} />
+          <Route path="/059" element={<BackgroundPattern />} />
+          <Route path="/060" element={<ColorPicker />} />
+          <Route path="/061" element={<RedeemCouponModal />} />
+          <Route path="/062" element={<SignUpForm />} />
+          <Route path="/063" element={<BestOfPage />} />
+          <Route path="/064" element={<UserSelection />} />
+          <Route path="/065" element={<NotesWidget />} />
 
-        {/* <Route path="/002" element={<New Element />} /> */}
-        {/* Fallback route */}
-        <Route path="*" element={<Navigation />} />
-      </Routes>
-    </Router>
+          <Route path="/plugin-management" element={<PluginManagement />} />
+
+          {/* <Route path="/002" element={<New Element />} /> */}
+          {/* Fallback route */}
+          <Route path="*" element={<Navigation />} />
+        </Routes>
+      </Router>
+    </>
   );
 }
 

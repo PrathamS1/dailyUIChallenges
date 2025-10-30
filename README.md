@@ -76,9 +76,9 @@ Welcome to my 100 Days Daily UI Challenge journey! This repository showcases my 
 51. [Day 51 – Press Page](https://daily-ui-challenges-iota.vercel.app/051)  
 52. [Day 52 – Logo Design](https://daily-ui-challenges-iota.vercel.app/052)  
 53. [Day 53 – Navigation Bar](https://daily-ui-challenges-iota.vercel.app/053)
-54. [Day 54 - Confirmation]
-55. [Day 55 - Icon set]
-56. [Day 56 - Breadcrumbs]
+54. [Day 54 - Confirmation](https://daily-ui-challenges-iota.vercel.app/054)
+55. [Day 55 - Icon set](https://daily-ui-challenges-iota.vercel.app/055)
+56. [Day 56 - Breadcrumbs](https://daily-ui-challenges-iota.vercel.app/056)
 57. [Day 57 – Video Player UI](https://daily-ui-challenges-iota.vercel.app/057)  
 58. [Day 58 – Shopping Cart](https://daily-ui-challenges-iota.vercel.app/058)  
 59. [Day 59 – Background Pattern](https://daily-ui-challenges-iota.vercel.app/059)  
@@ -87,6 +87,7 @@ Welcome to my 100 Days Daily UI Challenge journey! This repository showcases my 
 62. [Day 62 – Sign Up Form](https://daily-ui-challenges-iota.vercel.app/062)
 63. [Day 63 - Best Of page](https://daily-ui-challenges-iota.vercel.app/063)
 64. [Day 64 - User Selection](https://daily-ui-challenges-iota.vercel.app/064)
+65. [Day 65 - Notes Widget](https://daily-ui-challenges-iota.vercel.app/065)
 
 ---
 

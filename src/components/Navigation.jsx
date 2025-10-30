@@ -618,7 +618,39 @@ const Navigation = () => {
         difficulty: "Easy",
         completedDate: "2025-09-22",
       },
-
+      {
+        day: "054",
+        title: "Confirmation",
+        description:
+          "A hotel booking confirmation screen for a mobile app with booking details and useful information.",
+        status: "completed",
+        route: "/054",
+        technologies: ["Figma"],
+        difficulty: "Advanced",
+        completedDate: "2025-09-23",
+      },
+      {
+        day: "055",
+        title: "Icon Set",
+        description:
+          "A modern icon set design for web and mobile applications.",
+        status: "completed",
+        route: "/055",
+        technologies: ["Figma"],
+        difficulty: "Easy",
+        completedDate: "2025-09-24",
+      },
+      {
+        day: "056",
+        title: "Breadcrumbs",
+        description:
+          "A breadcrumb navigation component to enhance user experience and site navigation.",
+        status: "completed",
+        route: "/056",
+        technologies: ["React", "Tailwind CSS"],
+        difficulty: "Easy",
+        completedDate: "2025-09-25",
+      },
       {
         day: "057",
         title: "Video Player UI",
@@ -655,8 +687,7 @@ const Navigation = () => {
       {
         day: "060",
         title: "Color Picker",
-        description:
-          "Custom designed color picker component",
+        description: "Custom designed color picker component",
         status: "completed",
         route: "/060",
         technologies: ["React", "Tailwind"],
@@ -678,8 +709,7 @@ const Navigation = () => {
       {
         day: "062",
         title: "Sign Up Form",
-        description:
-          "Simple zinc-theme Sign Up Form UI design",
+        description: "Simple zinc-theme Sign Up Form UI design",
         status: "completed",
         route: "/062",
         technologies: ["React", "Tailwind", "Framer Motion"],
@@ -707,7 +737,18 @@ const Navigation = () => {
         technologies: ["React", "Tailwind", "Framer Motion"],
         difficulty: "Easy",
         completedDate: "2025-10-03",
-      }
+      },
+      {
+        day: "065",
+        title: "Notes Widget",
+        description:
+          "Design of a notes widget allowing users to create, view, and edit notes.",
+        status: "completed",
+        route: "/065",
+        technologies: ["React", "Tailwind", "Framer Motion"],
+        difficulty: "Intermediate",
+        completedDate: "2025-10-04",
+      },
     ],
     []
   );
@@ -819,7 +860,8 @@ const Navigation = () => {
     visible: {
       opacity: 1,
       transition: {
-        staggerChildren: 0.1,
+        staggerChildren: 0.08,
+        when: "beforeChildren",
       },
     },
   };
@@ -1124,6 +1166,7 @@ const Navigation = () => {
 
         {/* Challenges Grid */}
         <motion.div
+          key={`${searchTerm}-${difficultyFilter}-${sortBy}`}
           variants={containerVariants}
           initial="hidden"
           animate="visible"
