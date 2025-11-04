@@ -19,7 +19,7 @@ Welcome to my 100 Days Daily UI Challenge journey! This repository showcases my 
 
 ## 📅 Challenge Progress
 
-**Current Progress: 64/100** ⭐
+**Current Progress: 67/100** ⭐
 
 ### ✅ Completed Challenges
 
@@ -88,6 +88,8 @@ Welcome to my 100 Days Daily UI Challenge journey! This repository showcases my 
 63. [Day 63 - Best Of page](https://daily-ui-challenges-iota.vercel.app/063)
 64. [Day 64 - User Selection](https://daily-ui-challenges-iota.vercel.app/064)
 65. [Day 65 - Notes Widget](https://daily-ui-challenges-iota.vercel.app/065)
+66. [Day 66 - Statistics](https://daily-ui-challenges-iota.vercel.app/066)
+67. [Day 67 - Vacation Rental Booking](https://daily-ui-challenges-iota.vercel.app/067)
 
 ---
 

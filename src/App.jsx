@@ -71,6 +71,8 @@ import Confirmation from "./components/dailyUI054";
 import BreadCrumbs from "./components/dailyUI056";
 import IconSet from "./components/dailyUI055";
 import ScrollToTop from "./utils/ScrollToTop";
+import StatisticsUI from "./components/dailyUI066";
+import VacationRentalListing from "./components/dailyUI067";
 
 function App() {
   return (
@@ -158,6 +160,10 @@ function App() {
           <Route path="/063" element={<BestOfPage />} />
           <Route path="/064" element={<UserSelection />} />
           <Route path="/065" element={<NotesWidget />} />
+          
+          <Route path="/066" element={<StatisticsUI />} />
+
+          <Route path="/067" element={<VacationRentalListing />} />
 
           <Route path="/plugin-management" element={<PluginManagement />} />
 

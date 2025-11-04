@@ -749,6 +749,28 @@ const Navigation = () => {
         difficulty: "Intermediate",
         completedDate: "2025-10-04",
       },
+      {
+        day: "066",
+        title: "Statistics UI",
+        description:
+          "A statistics UI cards displaying various data visualizations and insights.",
+        status: "completed",
+        route: "/066",
+        technologies: ["Figma"],
+        difficulty: "Intermediate",
+        completedDate: "2025-10-05",
+      },
+      {
+        day: "067",
+        title: "Vacation Rental Page",
+        description:
+          "A beautifully designed vacation rental page showcasing an individual property for renting like Airbnb.",
+        status: "completed",
+        route: "/067",
+        technologies: ["React", "Tailwind CSS", "Framer Motion"],
+        difficulty: "Advanced",
+        completedDate: "2025-10-06",
+      }
     ],
     []
   );
