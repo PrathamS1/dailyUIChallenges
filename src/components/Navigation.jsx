@@ -770,6 +770,17 @@ const Navigation = () => {
         technologies: ["React", "Tailwind CSS", "Framer Motion"],
         difficulty: "Advanced",
         completedDate: "2025-10-06",
+      },
+      {
+        day: "068",
+        title: "Flight Search",
+        description:
+          "A flight search UI allowing users to search and filter flights based on various criteria.",
+        status: "completed",
+        route: "/068",
+        technologies: ["React", "Tailwind CSS"],
+        difficulty: "Intermediate",
+        completedDate: "2025-10-07",
       }
     ],
     []

@@ -90,6 +90,7 @@ Welcome to my 100 Days Daily UI Challenge journey! This repository showcases my 
 65. [Day 65 - Notes Widget](https://daily-ui-challenges-iota.vercel.app/065)
 66. [Day 66 - Statistics](https://daily-ui-challenges-iota.vercel.app/066)
 67. [Day 67 - Vacation Rental Booking](https://daily-ui-challenges-iota.vercel.app/067)
+68. [Day 68 - Flight Search](https://daily-ui-challenges-iota.vercel.app/068)
 
 ---
 

@@ -73,6 +73,7 @@ import IconSet from "./components/dailyUI055";
 import ScrollToTop from "./utils/ScrollToTop";
 import StatisticsUI from "./components/dailyUI066";
 import VacationRentalListing from "./components/dailyUI067";
+import FlightSearch from "./components/dailyUI068";
 
 function App() {
   return (
@@ -164,6 +165,7 @@ function App() {
           <Route path="/066" element={<StatisticsUI />} />
 
           <Route path="/067" element={<VacationRentalListing />} />
+          <Route path="/068" element={<FlightSearch />} />
 
           <Route path="/plugin-management" element={<PluginManagement />} />
 
