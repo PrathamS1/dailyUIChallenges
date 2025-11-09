@@ -781,7 +781,18 @@ const Navigation = () => {
         technologies: ["React", "Tailwind CSS"],
         difficulty: "Intermediate",
         completedDate: "2025-10-07",
-      }
+      },
+      {
+        day: "069",
+        title: "Trending Page",
+        description:
+          "A modern fintech dashboard displaying trending market assets with data visuals, dual theme, and smooth animations.",
+        status: "completed",
+        route: "/069",
+        technologies: ["React", "Tailwind CSS", "Framer Motion"],
+        difficulty: "Advanced",
+        completedDate: "2025-10-08",
+      },
     ],
     []
   );
