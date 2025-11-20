@@ -793,6 +793,16 @@ const Navigation = () => {
         difficulty: "Advanced",
         completedDate: "2025-10-08",
       },
+      {
+        day: "070",
+        title: "Event Listing",
+        description:"Education focused event listing page showing listing of workshops and events with category wise sort feature. ",
+        status: "completed",
+        route: "/070",
+        technologies: ["React", "Tailwind CSS", "Framer Motion"],
+        difficulty: "Advanced",
+        completedDate: "2025-10-09",
+      },
     ],
     []
   );
