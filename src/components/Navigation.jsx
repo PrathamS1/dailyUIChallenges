@@ -803,6 +803,17 @@ const Navigation = () => {
         difficulty: "Advanced",
         completedDate: "2025-10-09",
       },
+      {
+        day: "071",
+        title: "Scheduling",
+        description:"Patient Scheduling Component Deign for Healthcare platforms. ",
+        status: "completed",
+        route: "/071",
+        technologies: ["React", "Tailwind CSS", "Framer Motion"],
+        difficulty: "Advanced",
+        completedDate: "2025-10-10",
+
+      }
     ],
     []
   );

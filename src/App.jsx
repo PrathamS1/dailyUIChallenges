@@ -76,6 +76,7 @@ import VacationRentalListing from "./components/dailyUI067";
 import FlightSearch from "./components/dailyUI068";
 import TrendingPage from "./components/dailyUI069";
 import EventListing from "./components/dailyUI070";
+import Scheduling from "./components/dailyUI071";
 
 function App() {
   return (
@@ -170,6 +171,7 @@ function App() {
           <Route path="/068" element={<FlightSearch />} />
           <Route path="/069" element={<TrendingPage />} />
           <Route path="/070" element={<EventListing />} />
+          <Route path="/071" element={<Scheduling />} />
 
           <Route path="/plugin-management" element={<PluginManagement />} />
 

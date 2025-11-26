@@ -13,86 +13,114 @@ Welcome to my 100 Days Daily UI Challenge journey! This repository showcases my 
 - **Vite** - Lightning fast build tool and dev server
 - **Framer Motion** - Smooth animations and micro-interactions
 - **Tailwind CSS** - Utility-first CSS framework
-- **React Router DOM** - Client-side routing and navigation
-- **Lucide React** - Beautiful, customizable icons
 - **Vercel** - Deployment and hosting platform
+
+---
+
+## ✨ Featured Highlights
+
+*Check out my personal favorites from the challenge so far:*
+
+<table>
+  <tr>
+    <td align="center" width="33%">
+      <img src="public\01.png" width="100%" />
+      <br />
+      <b>Day 01: Sign Up Page</b>
+    </td>
+    <td align="center" width="33%">
+      <img src="public\03.png" width="100%" />
+      <br />
+      <b>Day 03: Landing Page</b>
+    </td>
+    <td align="center" width="33%">
+      <img src="public\32.png" width="100%" />
+      <br />
+      <b>Day 32: Crowdfunding Platform</b>
+    </td>
+  </tr>
+</table>
+
+---
 
 ## 📅 Challenge Progress
 
-**Current Progress: 70/100** ⭐
+**Current Progress: 71/100** ⭐
 
 ### ✅ Completed Challenges
-
-1. [Day 1 - Sign Up Page](https://daily-ui-challenges-iota.vercel.app/001)  
-2. [Day 2 - Credit Card Checkout](https://daily-ui-challenges-iota.vercel.app/002)  
-3. [Day 3 - Landing Page](https://daily-ui-challenges-iota.vercel.app/003)  
-4. [Day 4 - Calculator](https://daily-ui-challenges-iota.vercel.app/004)  
-5. [Day 5 - App Icon](https://daily-ui-challenges-iota.vercel.app/005)  
-6. [Day 6 - User Profile](https://daily-ui-challenges-iota.vercel.app/006)  
-7. [Day 7 - Settings](https://daily-ui-challenges-iota.vercel.app/007)  
-8. [Day 8 - 404 Page](https://daily-ui-challenges-iota.vercel.app/008)  
-9. [Day 9 - Music Player](https://daily-ui-challenges-iota.vercel.app/009)  
-10. [Day 10 - Social Share](https://daily-ui-challenges-iota.vercel.app/010)  
-11. [Day 11 - Flash Message](https://daily-ui-challenges-iota.vercel.app/011)  
-12. [Day 12 - E-commerce Shop](https://daily-ui-challenges-iota.vercel.app/012)  
-13. [Day 13 - Direct Messaging](https://daily-ui-challenges-iota.vercel.app/013)  
-14. [Day 14 - Countdown Timer](https://daily-ui-challenges-iota.vercel.app/014)  
-15. [Day 15 - On/Off Switch](https://daily-ui-challenges-iota.vercel.app/015)  
-16. [Day 16 - Pop-up Overlay](https://daily-ui-challenges-iota.vercel.app/016)  
-17. [Day 17 - Purchase Receipt](https://daily-ui-challenges-iota.vercel.app/017)  
-18. [Day 18 - Analytics Chart](https://daily-ui-challenges-iota.vercel.app/018)  
-19. [Day 19 - Leaderboard](https://daily-ui-challenges-iota.vercel.app/019)  
-20. [Day 20 - Location Tracker Pin](https://daily-ui-challenges-iota.vercel.app/020)  
-21. [Day 21 - Home Monitoring Dashboard](https://daily-ui-challenges-iota.vercel.app/021)  
-22. [Day 22 - Retro Search Bar](https://daily-ui-challenges-iota.vercel.app/022)  
-23. [Day 23 - Onboarding Flow](https://daily-ui-challenges-iota.vercel.app/023)  
-24. [Day 24 - Boarding Pass](https://daily-ui-challenges-iota.vercel.app/024)  
-25. [Day 25 - Subscribe Modal](https://daily-ui-challenges-iota.vercel.app/025)  
-26. [Day 26 - Subscription Modal](https://daily-ui-challenges-iota.vercel.app/026)  
-27. [Day 27 - Dropdowns UI](https://daily-ui-challenges-iota.vercel.app/027)  
-28. [Day 28 - Contact & Support Page](https://daily-ui-challenges-iota.vercel.app/028)  
-29. [Day 29 - Estate Site Map Design](https://daily-ui-challenges-iota.vercel.app/029)  
-30. [Day 30 - Premium Pricing Card](https://daily-ui-challenges-iota.vercel.app/030)  
-31. [Day 31 - Animated File Upload](https://daily-ui-challenges-iota.vercel.app/031)
-32. [Day 32 – Crowdfunding](https://daily-ui-challenges-iota.vercel.app/032)  
-33. [Day 33 – Product Customization](https://daily-ui-challenges-iota.vercel.app/033)  
-34. [Day 34 – Automotive Interface](https://daily-ui-challenges-iota.vercel.app/034)  
-35. [Day 35 – Blog Post](https://daily-ui-challenges-iota.vercel.app/035)  
-36. [Day 36 – Special Offer](https://daily-ui-challenges-iota.vercel.app/036)  
-37. [Day 37 – Weather UI](https://daily-ui-challenges-iota.vercel.app/037)  
-38. [Day 38 – Calendar](https://daily-ui-challenges-iota.vercel.app/038)  
-39. [Day 39 – Testimonials](https://daily-ui-challenges-iota.vercel.app/039)  
-40. [Day 40 – Kitchen Display System](https://daily-ui-challenges-iota.vercel.app/040)  
-41. [Day 41 – Workout App](https://daily-ui-challenges-iota.vercel.app/041)  
-42. [Day 42 – To-Do Task Management](https://daily-ui-challenges-iota.vercel.app/042)  
-43. [Day 43 – Food Menu](https://daily-ui-challenges-iota.vercel.app/043)  
-44. [Day 44 – Favorites](https://daily-ui-challenges-iota.vercel.app/044)  
-45. [Day 45 – NFT Info Card](https://daily-ui-challenges-iota.vercel.app/045)  
-46. [Day 46 – Invoice](https://daily-ui-challenges-iota.vercel.app/046)  
-47. [Day 47 – Activity Feed](https://daily-ui-challenges-iota.vercel.app/047)  
-48. [Day 48 – Coming Soon](https://daily-ui-challenges-iota.vercel.app/048)  
-49. [Day 49 – Notification](https://daily-ui-challenges-iota.vercel.app/049)  
-50. [Day 50 – Job Listing](https://daily-ui-challenges-iota.vercel.app/050)  
-51. [Day 51 – Press Page](https://daily-ui-challenges-iota.vercel.app/051)  
-52. [Day 52 – Logo Design](https://daily-ui-challenges-iota.vercel.app/052)  
-53. [Day 53 – Navigation Bar](https://daily-ui-challenges-iota.vercel.app/053)
-54. [Day 54 - Confirmation](https://daily-ui-challenges-iota.vercel.app/054)
-55. [Day 55 - Icon set](https://daily-ui-challenges-iota.vercel.app/055)
-56. [Day 56 - Breadcrumbs](https://daily-ui-challenges-iota.vercel.app/056)
-57. [Day 57 – Video Player UI](https://daily-ui-challenges-iota.vercel.app/057)  
-58. [Day 58 – Shopping Cart](https://daily-ui-challenges-iota.vercel.app/058)  
-59. [Day 59 – Background Pattern](https://daily-ui-challenges-iota.vercel.app/059)  
-60. [Day 60 – Color Picker](https://daily-ui-challenges-iota.vercel.app/060)
-61. [Day 61 - Redeem Coupon](https://daily-ui-challenges-iota.vercel.app/061)
-62. [Day 62 – Sign Up Form](https://daily-ui-challenges-iota.vercel.app/062)
-63. [Day 63 - Best Of page](https://daily-ui-challenges-iota.vercel.app/063)
-64. [Day 64 - User Selection](https://daily-ui-challenges-iota.vercel.app/064)
-65. [Day 65 - Notes Widget](https://daily-ui-challenges-iota.vercel.app/065)
-66. [Day 66 - Statistics](https://daily-ui-challenges-iota.vercel.app/066)
-67. [Day 67 - Vacation Rental Booking](https://daily-ui-challenges-iota.vercel.app/067)
-68. [Day 68 - Flight Search](https://daily-ui-challenges-iota.vercel.app/068)
-69. [Day 69 - Trending Page](https://daily-ui-challenges-iota.vercel.app/069)
-70. [Day 70 - Event Listing](https://daily-ui-challenges-iota.vercel.app/070)
+| # | Component Name | Live Demo | Source Code |
+| :--- | :--- | :---: | :---: |
+| 001 | **Sign Up Page** | [View](https://daily-ui-challenges-iota.vercel.app/001) | [Code](/src/components/dailyUI001.jsx) |
+| 002 | **Credit Card Checkout** | [View](https://daily-ui-challenges-iota.vercel.app/002) | [Code](/src/components/dailyUI002.jsx) |
+| 003 | **Landing Page** | [View](https://daily-ui-challenges-iota.vercel.app/003) | [Code](/src/components/dailyUI003.tsx) |
+| 004 | **Calculator** | [View](https://daily-ui-challenges-iota.vercel.app/004) | [Code](/src/components/dailyUI004.tsx) |
+| 005 | **App Icon** | [View](https://daily-ui-challenges-iota.vercel.app/005) | [Code](/src/components/dailyUI005.jsx) |
+| 006 | **User Profile** | [View](https://daily-ui-challenges-iota.vercel.app/006) | [Code](/src/components/dailyUI006.jsx) |
+| 007 | **Settings** | [View](https://daily-ui-challenges-iota.vercel.app/007) | [Code](/src/components/dailyUI007.jsx) |
+| 008 | **404 Page** | [View](https://daily-ui-challenges-iota.vercel.app/008) | [Code](/src/components/dailyUI008.jsx) |
+| 009 | **Music Player** | [View](https://daily-ui-challenges-iota.vercel.app/009) | [Code](/src/components/dailyUI009.jsx) |
+| 010 | **Social Share** | [View](https://daily-ui-challenges-iota.vercel.app/010) | [Code](/src/components/dailyUI010.jsx) |
+| 011 | **Flash Message** | [View](https://daily-ui-challenges-iota.vercel.app/011) | [Code](/src/components/dailyUI011.jsx) |
+| 012 | **E-commerce Shop** | [View](https://daily-ui-challenges-iota.vercel.app/012) | [Code](/src/components/dailyUI012.jsx) |
+| 013 | **Direct Messaging** | [View](https://daily-ui-challenges-iota.vercel.app/013) | [Code](/src/components/dailyUI013.jsx) |
+| 014 | **Countdown Timer** | [View](https://daily-ui-challenges-iota.vercel.app/014) | [Code](/src/components/dailyUI014.jsx) |
+| 015 | **On/Off Switch** | [View](https://daily-ui-challenges-iota.vercel.app/015) | [Code](/src/components/dailyUI015.jsx) |
+| 016 | **Pop-up Overlay** | [View](https://daily-ui-challenges-iota.vercel.app/016) | [Code](/src/components/dailyUI016.jsx) |
+| 017 | **Purchase Receipt** | [View](https://daily-ui-challenges-iota.vercel.app/017) | [Code](/src/components/dailyUI017.jsx) |
+| 018 | **Analytics Chart** | [View](https://daily-ui-challenges-iota.vercel.app/018) | [Code](/src/components/dailyUI018.jsx) |
+| 019 | **Leaderboard** | [View](https://daily-ui-challenges-iota.vercel.app/019) | [Code](/src/components/dailyUI019.jsx) |
+| 020 | **Location Tracker Pin** | [View](https://daily-ui-challenges-iota.vercel.app/020) | [Code](/src/components/dailyUI020.jsx) |
+| 021 | **Home Monitoring Dashboard** | [View](https://daily-ui-challenges-iota.vercel.app/021) | [Code](/src/components/dailyUI021.jsx) |
+| 022 | **Retro Search Bar** | [View](https://daily-ui-challenges-iota.vercel.app/022) | [Code](/src/components/dailyUI022.jsx) |
+| 023 | **Onboarding Flow** | [View](https://daily-ui-challenges-iota.vercel.app/023) | [Code](/src/components/dailyUI023.jsx) |
+| 024 | **Boarding Pass** | [View](https://daily-ui-challenges-iota.vercel.app/024) | [Code](/src/components/dailyUI024.jsx) |
+| 025 | **Subscribe Modal** | [View](https://daily-ui-challenges-iota.vercel.app/025) | [Code](/src/components/dailyUI025.jsx) |
+| 026 | **Subscription Modal** | [View](https://daily-ui-challenges-iota.vercel.app/026) | [Code](/src/components/dailyUI026.jsx) |
+| 027 | **Dropdowns UI** | [View](https://daily-ui-challenges-iota.vercel.app/027) | [Code](/src/components/dailyUI027.jsx) |
+| 028 | **Contact & Support Page** | [View](https://daily-ui-challenges-iota.vercel.app/028) | [Code](/src/components/dailyUI028.jsx) |
+| 029 | **Estate Site Map Design** | [View](https://daily-ui-challenges-iota.vercel.app/029) | [Code](/src/components/dailyUI029.jsx) |
+| 030 | **Premium Pricing Card** | [View](https://daily-ui-challenges-iota.vercel.app/030) | [Code](/src/components/dailyUI030.jsx) |
+| 031 | **Animated File Upload** | [View](https://daily-ui-challenges-iota.vercel.app/031) | [Code](/src/components/dailyUI031.jsx) |
+| 032 | **Crowdfunding** | [View](https://daily-ui-challenges-iota.vercel.app/032) | [Code](/src/components/dailyUI032.jsx) |
+| 033 | **Product Customization** | [View](https://daily-ui-challenges-iota.vercel.app/033) | [Code](/src/components/dailyUI033.jsx) |
+| 034 | **Automotive Interface** | [View](https://daily-ui-challenges-iota.vercel.app/034) | [Code](/src/components/dailyUI034.jsx) |
+| 035 | **Blog Post** | [View](https://daily-ui-challenges-iota.vercel.app/035) | [Code](/src/components/dailyUI035.jsx) |
+| 036 | **Special Offer** | [View](https://daily-ui-challenges-iota.vercel.app/036) | [Code](/src/components/dailyUI036.jsx) |
+| 037 | **Weather UI** | [View](https://daily-ui-challenges-iota.vercel.app/037) | [Code](/src/components/dailyUI037.jsx) |
+| 038 | **Calendar** | [View](https://daily-ui-challenges-iota.vercel.app/038) | [Code](/src/components/dailyUI038.jsx) |
+| 039 | **Testimonials** | [View](https://daily-ui-challenges-iota.vercel.app/039) | [Code](/src/components/dailyUI039.jsx) |
+| 040 | **Kitchen Display System** | [View](https://daily-ui-challenges-iota.vercel.app/040) | [Code](/src/components/dailyUI040.jsx) |
+| 041 | **Workout App** | [View](https://daily-ui-challenges-iota.vercel.app/041) | [Code](/src/components/dailyUI041.jsx) |
+| 042 | **To-Do Task Management** | [View](https://daily-ui-challenges-iota.vercel.app/042) | [Code](/src/components/dailyUI042.jsx) |
+| 043 | **Food Menu** | [View](https://daily-ui-challenges-iota.vercel.app/043) | [Code](/src/components/dailyUI043.jsx) |
+| 044 | **Favorites** | [View](https://daily-ui-challenges-iota.vercel.app/044) | [Code](/src/components/dailyUI044.jsx) |
+| 045 | **NFT Info Card** | [View](https://daily-ui-challenges-iota.vercel.app/045) | [Code](/src/components/dailyUI045.jsx) |
+| 046 | **Invoice** | [View](https://daily-ui-challenges-iota.vercel.app/046) | [Code](/src/components/dailyUI046.jsx) |
+| 047 | **Activity Feed** | [View](https://daily-ui-challenges-iota.vercel.app/047) | [Code](/src/components/dailyUI047.jsx) |
+| 048 | **Coming Soon** | [View](https://daily-ui-challenges-iota.vercel.app/048) | [Code](/src/components/dailyUI048.jsx) |
+| 049 | **Notification** | [View](https://daily-ui-challenges-iota.vercel.app/049) | [Code](/src/components/dailyUI049.jsx) |
+| 050 | **Job Listing** | [View](https://daily-ui-challenges-iota.vercel.app/050) | [Code](/src/components/dailyUI050.jsx) |
+| 051 | **Press Page** | [View](https://daily-ui-challenges-iota.vercel.app/051) | [Code](/src/components/dailyUI051.jsx) |
+| 052 | **Logo Design** | [View](https://daily-ui-challenges-iota.vercel.app/052) | [Code](/src/components/dailyUI052.jsx) |
+| 053 | **Navigation Bar** | [View](https://daily-ui-challenges-iota.vercel.app/053) | [Code](/src/components/dailyUI053.jsx) |
+| 054 | **Confirmation** | [View](https://daily-ui-challenges-iota.vercel.app/054) | [Code](/src/components/dailyUI054.jsx) |
+| 055 | **Icon set** | [View](https://daily-ui-challenges-iota.vercel.app/055) | [Code](/src/components/dailyUI055.jsx) |
+| 056 | **Breadcrumbs** | [View](https://daily-ui-challenges-iota.vercel.app/056) | [Code](/src/components/dailyUI056.jsx) |
+| 057 | **Video Player UI** | [View](https://daily-ui-challenges-iota.vercel.app/057) | [Code](/src/components/dailyUI057.jsx) |
+| 058 | **Shopping Cart** | [View](https://daily-ui-challenges-iota.vercel.app/058) | [Code](/src/components/dailyUI058.jsx) |
+| 059 | **Background Pattern** | [View](https://daily-ui-challenges-iota.vercel.app/059) | [Code](/src/components/dailyUI059.jsx) |
+| 060 | **Color Picker** | [View](https://daily-ui-challenges-iota.vercel.app/060) | [Code](/src/components/dailyUI060.jsx) |
+| 061 | **Redeem Coupon** | [View](https://daily-ui-challenges-iota.vercel.app/061) | [Code](/src/components/dailyUI061.jsx) |
+| 062 | **Sign Up Form** | [View](https://daily-ui-challenges-iota.vercel.app/062) | [Code](/src/components/dailyUI062.jsx) |
+| 063 | **Best Of page** | [View](https://daily-ui-challenges-iota.vercel.app/063) | [Code](/src/components/dailyUI063.jsx) |
+| 064 | **User Selection** | [View](https://daily-ui-challenges-iota.vercel.app/064) | [Code](/src/components/dailyUI064.jsx) |
+| 065 | **Notes Widget** | [View](https://daily-ui-challenges-iota.vercel.app/065) | [Code](/src/components/dailyUI065.jsx) |
+| 066 | **Statistics** | [View](https://daily-ui-challenges-iota.vercel.app/066) | [Code](/src/components/dailyUI066.jsx) |
+| 067 | **Vacation Rental Booking** | [View](https://daily-ui-challenges-iota.vercel.app/067) | [Code](/src/components/dailyUI067.jsx) |
+| 068 | **Flight Search** | [View](https://daily-ui-challenges-iota.vercel.app/068) | [Code](/src/components/dailyUI068.jsx) |
+| 069 | **Trending Page** | [View](https://daily-ui-challenges-iota.vercel.app/069) | [Code](/src/components/dailyUI069.jsx) |
+| 070 | **Event Listing** | [View](https://daily-ui-challenges-iota.vercel.app/070) | [Code](/src/components/dailyUI070.jsx) |
+| 071 | **Scheduling** | [View](https://daily-ui-challenges-iota.vercel.app/071) | [Code](/src/components/dailyUI071.tsx) |
 
 ---
 
