@@ -812,7 +812,16 @@ const Navigation = () => {
         technologies: ["React", "Tailwind CSS", "Framer Motion"],
         difficulty: "Advanced",
         completedDate: "2025-10-10",
-
+      },
+      {
+        day: "072",
+        title: "Slider",
+        description:"A tilted perspective, parallax depth, and physics-based slider for premium experience. ",
+        status: "completed",
+        route: "/072",
+        technologies: ["React", "Tailwind CSS", "Framer Motion"],
+        difficulty: "Advanced",
+        completedDate: "2025-10-11",
       }
     ],
     []
