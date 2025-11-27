@@ -388,7 +388,7 @@ export default function Scheduling() {
                         <input
                           type="text"
                           required
-                          placeholder="John Doe"
+                          placeholder="Ex. Pratham Singh"
                           className="w-full pl-10 pr-4 py-2.5 rounded-xl border border-slate-200 focus:outline-none focus:border-emerald-500 focus:ring-4 focus:ring-emerald-500/10 transition-all bg-slate-50/50 focus:bg-white"
                           value={formData.name}
                           onChange={(e) =>
@@ -424,7 +424,7 @@ export default function Scheduling() {
                         <input
                           type="email"
                           required
-                          placeholder="john@example.com"
+                          placeholder="name@example.com"
                           className="w-full pl-10 pr-4 py-2.5 rounded-xl border border-slate-200 focus:outline-none focus:border-emerald-500 focus:ring-4 focus:ring-emerald-500/10 transition-all bg-slate-50/50 focus:bg-white"
                           value={formData.email}
                           onChange={(e) =>
@@ -443,7 +443,7 @@ export default function Scheduling() {
                         <input
                           type="tel"
                           required
-                          placeholder="(555) 000-0000"
+                          placeholder="00000 xxxxx"
                           className="w-full pl-10 pr-4 py-2.5 rounded-xl border border-slate-200 focus:outline-none focus:border-emerald-500 focus:ring-4 focus:ring-emerald-500/10 transition-all bg-slate-50/50 focus:bg-white"
                           value={formData.phone}
                           onChange={(e) =>
