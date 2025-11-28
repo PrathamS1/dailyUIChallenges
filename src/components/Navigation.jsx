@@ -822,6 +822,17 @@ const Navigation = () => {
         technologies: ["React", "Tailwind CSS", "Framer Motion"],
         difficulty: "Advanced",
         completedDate: "2025-10-11",
+      },
+      {
+        day: "073",
+        title: "Virtual Reality",
+        description:"User Interface design for Virtual Reality Headsets, giving immersive feel without blocking the essential options.",
+        status: "completed",
+        route: "/073",
+        technologies: ["React", "Tailwind CSS", "Framer Motion"],
+        difficulty: "Advanced",
+        completedDate: "2025-10-12",
+        
       }
     ],
     []
