@@ -45,7 +45,7 @@ Welcome to my 100 Days Daily UI Challenge journey! This repository showcases my 
 
 ## 📅 Challenge Progress
 
-**Current Progress: 73/100** ⭐
+**Current Progress: 74/100** ⭐
 
 ### ✅ Completed Challenges
 
@@ -124,6 +124,8 @@ Welcome to my 100 Days Daily UI Challenge journey! This repository showcases my 
 | 071 | **Scheduling** | [View](https://daily-ui-challenges-iota.vercel.app/071) | [Code](/src/components/dailyUI071.tsx) |
 | 072 | **Slider** | [View](https://daily-ui-challenges-iota.vercel.app/072) | [Code](/src/components/dailyUI072.tsx) |
 | 073 | **Virtual Reality** | [View](https://daily-ui-challenges-iota.vercel.app/073) | [Code](/src/components/dailyUI073.tsx) |
+| 074 | **App Download Page** | [View](https://daily-ui-challenges-iota.vercel.app/074) | [Code](/src/components/dailyUI074.tsx) |
+
 
 ---
 

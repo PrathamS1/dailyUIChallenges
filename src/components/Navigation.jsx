@@ -832,7 +832,16 @@ const Navigation = () => {
         technologies: ["React", "Tailwind CSS", "Framer Motion"],
         difficulty: "Advanced",
         completedDate: "2025-10-12",
-        
+      },
+      {
+        day: "074",
+        title: "App Download Page",
+        description:"Neuromorphism themed UI design for an app's download page.",
+        status: "completed",
+        route: "/074",
+        technologies: ["React", "Tailwind CSS", "Framer Motion"],
+        difficulty: "Advanced",
+        completedDate: "2025-10-13",
       }
     ],
     []
