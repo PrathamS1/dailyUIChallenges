@@ -842,6 +842,16 @@ const Navigation = () => {
         technologies: ["React", "Tailwind CSS", "Framer Motion"],
         difficulty: "Advanced",
         completedDate: "2025-10-13",
+      },
+      {
+        day: "075",
+        title: "Pre-order Page",
+        description:"A pre-order UI featuring a strict bento-grid layout, monospaced data typography, and an interactive 3D device visualization.",
+        status: "completed",
+        route: "/075",
+        technologies: ["React", "Tailwind CSS", "Framer Motion", 'React Three Fibre'],
+        difficulty: "Advanced",
+        completedDate: "2025-10-14",
       }
     ],
     []

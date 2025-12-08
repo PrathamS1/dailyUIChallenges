@@ -80,7 +80,7 @@ import Scheduling from "./components/dailyUI071";
 import Slider from "./components/dailyUI072";
 import VRInterface from "./components/dailyUI073";
 import AppDownloadPage from "./components/dailyUI074";
-import LandingPageTest from "./components/test";
+import PreOrderPage from "./components/dailyUI075";
 
 function App() {
   return (
@@ -179,8 +179,7 @@ function App() {
           <Route path="/072" element={<Slider />} />
           <Route path="/073" element={<VRInterface />} />
           <Route path="/074" element={<AppDownloadPage />} />
-
-          <Route path="/test" element={<LandingPageTest />} />
+          <Route path="/075" element={<PreOrderPage />} />
 
           <Route path="/plugin-management" element={<PluginManagement />} />
 
