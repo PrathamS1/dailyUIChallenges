@@ -852,6 +852,26 @@ const Navigation = () => {
         technologies: ["React", "Tailwind CSS", "Framer Motion", 'React Three Fibre'],
         difficulty: "Advanced",
         completedDate: "2025-10-14",
+      },
+      {
+        day: "076",
+        title: "Loading Screen",
+        description:"A creative loading screen with comic style to keep users entertained during wait times.",
+        status: "completed",
+        route: "/076",
+        technologies: ["React", "Tailwind CSS", "Framer Motion"],
+        difficulty: "Intermediate",
+        completedDate: "2025-10-15",
+      },
+      {
+        day: "077",
+        title: "Thanks Page",
+        description:"A thank you page design to express gratitude to users after completing an action.",
+        status: "completed",
+        route: "/077",
+        technologies: ["React", "Tailwind CSS", "Framer Motion"],
+        difficulty: "Intermediate",
+        completedDate: "2025-10-16",
       }
     ],
     []

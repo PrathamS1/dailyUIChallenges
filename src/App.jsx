@@ -81,6 +81,8 @@ import Slider from "./components/dailyUI072";
 import VRInterface from "./components/dailyUI073";
 import AppDownloadPage from "./components/dailyUI074";
 import PreOrderPage from "./components/dailyUI075";
+import PortfolioLoader from "./components/dailyUI076";
+import ThankYouPage from "./components/dailyUI077";
 
 function App() {
   return (
@@ -180,6 +182,8 @@ function App() {
           <Route path="/073" element={<VRInterface />} />
           <Route path="/074" element={<AppDownloadPage />} />
           <Route path="/075" element={<PreOrderPage />} />
+          <Route path="/076" element={<PortfolioLoader />} />
+          <Route path="/077" element={<ThankYouPage />} />
 
           <Route path="/plugin-management" element={<PluginManagement />} />
 
