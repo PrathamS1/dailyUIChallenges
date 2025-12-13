@@ -195,7 +195,7 @@ export default function PreOrderPage() {
                 exit={{ opacity: 0, scale: 0.98 }}
                 className="bg-zinc-800/50 border border-zinc-700 p-8 rounded-sm text-center relative overflow-hidden"
               >
-                <div className="absolute inset-0 bg-[linear-gradient(to_bottom,transparent_2px,rgba(0,0,0,0.2)_2px)] bg-[length:100%_4px] pointer-events-none opacity-50"></div>
+                <div className="absolute inset-0 bg-[linear-gradient(to_bottom,transparent_2px,rgba(0,0,0,0.2)_2px)] bg-size-[100%_4px] pointer-events-none opacity-50"></div>
 
                 <div className="w-12 h-12 mx-auto bg-stone-950 border border-stone-900 rounded-full flex items-center justify-center mb-4">
                   <Check className="w-5 h-5 text-stone-400" />

@@ -83,6 +83,7 @@ import AppDownloadPage from "./components/dailyUI074";
 import PreOrderPage from "./components/dailyUI075";
 import PortfolioLoader from "./components/dailyUI076";
 import ThankYouPage from "./components/dailyUI077";
+import InvitationPage from "./components/dailyUI078";
 
 function App() {
   return (
@@ -184,6 +185,8 @@ function App() {
           <Route path="/075" element={<PreOrderPage />} />
           <Route path="/076" element={<PortfolioLoader />} />
           <Route path="/077" element={<ThankYouPage />} />
+          <Route path="/078" element={<InvitationPage />} />
+          
 
           <Route path="/plugin-management" element={<PluginManagement />} />
 

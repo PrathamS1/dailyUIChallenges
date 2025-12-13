@@ -872,6 +872,17 @@ const Navigation = () => {
         technologies: ["React", "Tailwind CSS", "Framer Motion"],
         difficulty: "Intermediate",
         completedDate: "2025-10-16",
+      },
+      {
+        day: "078",
+        title: "Invitation Page",
+        description:"An elegant invitation page for early access to an AI browser.",
+        status: "completed",
+        route: "/078",
+        technologies: ["React", "Tailwind CSS", "Framer Motion"],
+        difficulty: "Advanced",
+        completedDate: "2025-10-17",
+        
       }
     ],
     []
