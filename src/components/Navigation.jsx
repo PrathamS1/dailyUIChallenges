@@ -882,7 +882,16 @@ const Navigation = () => {
         technologies: ["React", "Tailwind CSS", "Framer Motion"],
         difficulty: "Advanced",
         completedDate: "2025-10-17",
-        
+      },
+      {
+        day: "079",
+        title: "ItineraryApp",
+        description:"Itinerary UX design for showing a travel/trip complete journey.",
+        status: "completed",
+        route: "/079",
+        technologies: ["React", "Tailwind CSS"],
+        difficulty: "Easy",
+        completedDate: "2025-10-18",
       }
     ],
     []
