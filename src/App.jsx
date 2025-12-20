@@ -85,6 +85,7 @@ import PortfolioLoader from "./components/dailyUI076";
 import ThankYouPage from "./components/dailyUI077";
 import InvitationPage from "./components/dailyUI078";
 import ItineraryApp from "./components/dailyUI079";
+import DatePickerShowcase from "./components/dailyUI080";
 
 function App() {
   return (
@@ -188,6 +189,7 @@ function App() {
           <Route path="/077" element={<ThankYouPage />} />
           <Route path="/078" element={<InvitationPage />} />
           <Route path="/079" element={<ItineraryApp />} />
+          <Route path="/080" element={<DatePickerShowcase />} />
           
 
           <Route path="/plugin-management" element={<PluginManagement />} />

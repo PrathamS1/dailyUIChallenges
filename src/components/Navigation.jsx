@@ -885,13 +885,24 @@ const Navigation = () => {
       },
       {
         day: "079",
-        title: "ItineraryApp",
+        title: "Itinerary Travel UI",
         description:"Itinerary UX design for showing a travel/trip complete journey.",
         status: "completed",
         route: "/079",
         technologies: ["React", "Tailwind CSS"],
         difficulty: "Easy",
         completedDate: "2025-10-18",
+      },
+      {
+        day: "080",
+        title: "Date Picker",
+        description:"A date picker component's UI.",
+        status: "completed",
+        route: "/080",
+        technologies: ["React", "Tailwind CSS"],
+        difficulty: "Easy",
+        completedDate: "2025-10-19",
+
       }
     ],
     []
