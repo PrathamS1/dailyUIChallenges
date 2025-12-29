@@ -912,6 +912,16 @@ const Navigation = () => {
         technologies: ["React", "Tailwind CSS", "Framer Motion"],
         difficulty: "Easy",
         completedDate: "2025-10-20",
+      },
+      {
+        day: "082",
+        title: "Form",
+        description:"A modern form UI design for developer registration with focus on user experience and accessibility.",
+        status: "completed",
+        route: "/082",
+        technologies: ["React", "Tailwind CSS", "Framer Motion"],
+        difficulty: "Easy",
+        completedDate: "2025-10-21",
       }
     ],
     []

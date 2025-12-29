@@ -87,6 +87,7 @@ import InvitationPage from "./components/dailyUI078";
 import ItineraryApp from "./components/dailyUI079";
 import DatePickerShowcase from "./components/dailyUI080";
 import StatusUpdate from "./components/dailyUI081";
+import DeveloperRegistrationForm from "./components/dailyUI082";
 
 function App() {
   return (
@@ -192,6 +193,7 @@ function App() {
           <Route path="/079" element={<ItineraryApp />} />
           <Route path="/080" element={<DatePickerShowcase />} />
           <Route path="/081" element={<StatusUpdate />} />
+          <Route path="/082" element={<DeveloperRegistrationForm />} />
 
           <Route path="/plugin-management" element={<PluginManagement />} />
 
