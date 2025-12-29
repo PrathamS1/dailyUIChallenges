@@ -131,6 +131,7 @@ Welcome to my 100 Days Daily UI Challenge journey! This repository showcases my 
 | 078 | **Invitation Page** | [View](https://daily-ui-challenges-iota.vercel.app/078) | [Code](/src/components/dailyUI078.tsx) |
 | 079 | **Itinerary** | [View](https://daily-ui-challenges-iota.vercel.app/079) | [Code](/src/components/dailyUI079.tsx) |
 | 080 | **Date Picker** | [View](https://daily-ui-challenges-iota.vercel.app/080) | [Code](/src/components/dailyUI080.tsx) |
+| 081 | **Status Update** | [View](https://daily-ui-challenges-iota.vercel.app/081) | [Code](/src/components/dailyUI081.tsx) |
 
 
 ---

@@ -902,7 +902,16 @@ const Navigation = () => {
         technologies: ["React", "Tailwind CSS"],
         difficulty: "Easy",
         completedDate: "2025-10-19",
-
+      },
+      {
+        day: "081",
+        title: "Status Update",
+        description:"A status update component for showing download status with different transitions of a download button.",
+        status: "completed",
+        route: "/081",
+        technologies: ["React", "Tailwind CSS", "Framer Motion"],
+        difficulty: "Easy",
+        completedDate: "2025-10-20",
       }
     ],
     []

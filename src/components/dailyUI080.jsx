@@ -69,7 +69,7 @@ const HeritageDatePicker = ({ onSelect }) => {
       <div className="flex justify-between items-start mb-6">
         <div>
           <h3 className="text-[10px] font-bold uppercase tracking-[0.2em] text-stone-400 mb-1">
-            Archive Chronology
+            Date Picker UI
           </h3>
           <button
             onClick={() => setView(view === "decades" ? "days" : "decades")}
