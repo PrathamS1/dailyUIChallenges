@@ -922,6 +922,16 @@ const Navigation = () => {
         technologies: ["React", "Tailwind CSS", "Framer Motion"],
         difficulty: "Easy",
         completedDate: "2025-10-21",
+      },
+      {
+        day: "083",
+        title: "Buttons",
+        description:"A collection of modern button designs with various styles, colors, and interactions.",
+        status: "completed",
+        route: "/083",
+        technologies: ["React", "Tailwind CSS", "Framer Motion"],
+        difficulty: "Easy",
+        completedDate: "2025-10-22",
       }
     ],
     []
